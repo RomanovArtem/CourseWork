@@ -1,5 +1,6 @@
 package com.example.artem.cw;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,7 +8,7 @@ import android.view.View;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
-import static com.example.artem.cw.R.layout.main;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+
     }
 
     public void onToggleButtonClick (View button){
@@ -23,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
                 Boolean.toString(((ToggleButton) button).isChecked()),
                 Toast.LENGTH_SHORT).show();
 
+        Intent intent = new Intent(MainActivity.this, Fruit.class);
+        startActivity(intent);
     }
 
     public void onClick(View view) {

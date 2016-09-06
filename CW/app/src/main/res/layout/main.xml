@@ -5,7 +5,7 @@
     android:background="#dddddd" >
 
     <ToggleButton
-        android:id="@+id/act_main_btn_telephony"
+        android:id="@+id/fruit"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@drawable/button_background"
@@ -30,7 +30,7 @@
         android:layout_marginBottom="61dp"
         android:onClick="onClick"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/act_main_btn_telephony"
-        android:layout_alignEnd="@+id/act_main_btn_telephony" />
+        android:layout_alignRight="@+id/fruit"
+        android:layout_alignEnd="@+id/fruit" />
 
 </RelativeLayout>

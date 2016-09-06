@@ -24,13 +24,17 @@ public class Fruit extends Activity {
         setContentView(R.layout.fruit);
     }
 
+    public void onToggleButtonClick (View button){
+        getApplicationContext();
+        Toast.makeText(
+                getApplicationContext(),
+                Boolean.toString(((ToggleButton) button).isChecked()),
+                Toast.LENGTH_SHORT).show();
+    }
     public void onClick(View view) {
         Intent intent = new Intent(Fruit.this, MainActivity.class);
         startActivity(intent);
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
+
 }
