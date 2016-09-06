@@ -1,8 +1,16 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:id="@+id/scrollView"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:padding="6dp"
-    android:background="#dddddd" >
+    android:background="@drawable/background_fon" >
+
 
     <ToggleButton
         android:id="@+id/fruit"
@@ -27,10 +35,28 @@
         android:layout_height="wrap_content"
         android:text="Далее"
         android:id="@+id/button"
-        android:layout_marginBottom="61dp"
         android:onClick="onClick"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/fruit"
         android:layout_alignEnd="@+id/fruit" />
 
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/button_background"
+        android:drawableTop="@drawable/fruit_on_off"
+        android:gravity="center_vertical"
+        android:textOn="Фрукты"
+        android:textOff="Фрукты"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/color"
+        android:onClick="onToggleButtonClick"
+        android:checked="false"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+
 </RelativeLayout>
+    </ScrollView>

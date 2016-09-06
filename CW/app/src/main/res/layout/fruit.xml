@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
-    android:fillViewport="false"
-    android:padding="6dp"
-    android:id="@+id/scroll">
-
-
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/background"
+    android:tileMode="repeat">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        >
         <ToggleButton
             android:id="@+id/fruit_ananas"
             android:layout_width="100dp"
@@ -24,9 +24,7 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+             />
 
         <ToggleButton
             android:id="@+id/fruit_orange"
@@ -105,8 +103,8 @@
             android:background="@drawable/button_background"
             android:drawableTop="@drawable/fruit_lemon"
             android:gravity="center_vertical"
-            android:textOn="Лемон"
-            android:textOff="Лемон"
+            android:textOn="Лимон"
+            android:textOff="Лимон"
             android:textSize="14dp"
             android:textAlignment="center"
             android:textColor="@color/color"
@@ -117,85 +115,202 @@
             android:layout_alignStart="@+id/fruit_banana" />
 
         <ToggleButton
-            android:id="@+id/toggleButton"
+            android:id="@+id/fruit_tangerines"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/button_background"
-            android:drawableTop="@drawable/fruit_grape"
+            android:drawableTop="@drawable/fruit_tangerines"
             android:gravity="center_vertical"
-            android:textOn="Виноград"
-            android:textOff="Виноград"
+            android:textOn="Магдарин"
+            android:textOff="Мандарин"
             android:textSize="14dp"
             android:textAlignment="center"
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_below="@+id/toggleButton2"
+            android:layout_below="@+id/fruit_grape"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="35dp" />
+
+        <ToggleButton
+            android:id="@+id/fruit_peache"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_peache"
+            android:gravity="center_vertical"
+            android:textOn="Персик"
+            android:textOff="Персик"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_alignTop="@+id/fruit_tangerines"
             android:layout_centerHorizontal="true" />
+
+        <ToggleButton
+            android:id="@+id/fruit_plum"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_plum"
+            android:gravity="center_vertical"
+            android:textOn="Слива"
+            android:textOff="Слива"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_alignTop="@+id/fruit_peache"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
 
         <ToggleButton
             android:id="@+id/toggleButton2"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/button_background"
-            android:drawableTop="@drawable/fruit_dried_apricot"
+            android:drawableTop="@drawable/fruit_peache"
             android:gravity="center_vertical"
-            android:textOn="Курага"
-            android:textOff="Курага"
+            android:textOn="Персик"
+            android:textOff="Персик"
             android:textSize="14dp"
             android:textAlignment="center"
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_below="@+id/fruit_dried_apricot"
-            android:layout_centerHorizontal="true" />
-
-        <ToggleButton
-            android:id="@+id/toggleButton3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/button_background"
-            android:drawableTop="@drawable/fruit_lemon"
-            android:gravity="center_vertical"
-            android:textOn="Лемон"
-            android:textOff="Лемон"
-            android:textSize="14dp"
-            android:textAlignment="center"
-            android:textColor="@color/color"
-            android:onClick="onToggleButtonClick"
-            android:checked="false"
-            android:layout_below="@+id/toggleButton"
-            android:layout_centerHorizontal="true" />
-
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Назад"
-            android:id="@+id/button2"
-            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/fruit_tangerines"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginBottom="41dp"
-            android:onClick="onClick"/>
+            android:layout_marginTop="44dp" />
 
         <ToggleButton
             android:id="@+id/toggleButton4"
             android:layout_width="100dp"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:background="@drawable/button_background"
-            android:drawableTop="@drawable/fruit_lemon"
+            android:drawableTop="@drawable/fruit_peache"
             android:gravity="center_vertical"
-            android:textOn="Лемон"
-            android:textOff="Лемон"
+            android:textOn="Персик"
+            android:textOff="Персик"
             android:textSize="14dp"
             android:textAlignment="center"
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
+            android:layout_alignLeft="@+id/fruit_plum"
+            android:layout_alignStart="@+id/fruit_plum"
+            android:layout_alignTop="@+id/toggleButton2" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_peache"
+            android:gravity="center_vertical"
+            android:textOn="Персик"
+            android:textOff="Персик"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_below="@+id/toggleButton2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="58dp" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_peache"
+            android:gravity="center_vertical"
+            android:textOn="Персик"
+            android:textOff="Персик"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_alignTop="@+id/toggleButton5"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_peache"
+            android:gravity="center_vertical"
+            android:textOn="Персик"
+            android:textOff="Персик"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_below="@+id/toggleButton5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="100dp" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton10"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_peache"
+            android:gravity="center_vertical"
+            android:textOn="Персик"
+            android:textOff="Персик"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_above="@+id/button2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_peache"
+            android:gravity="center_vertical"
+            android:textOn="Персик"
+            android:textOff="Персик"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_above="@+id/button2"
+            android:layout_toRightOf="@+id/fruit_peache"
+            android:layout_toEndOf="@+id/fruit_peache" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:text="Назад"
+            android:id="@+id/button2"
+            android:onClick="onClick"
             android:layout_alignParentBottom="true"
-            android:layout_toLeftOf="@+id/fruit_lemon"
-            android:layout_toStartOf="@+id/fruit_lemon" />
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="50dp" />
 
     </RelativeLayout>
 
