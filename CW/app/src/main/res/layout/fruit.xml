@@ -262,7 +262,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginTop="30dp"
-            android:layout_marginBottom="100dp" />
+            android:layout_marginBottom="160dp" />
 
         <ToggleButton
             android:id="@+id/toggleButton10"
@@ -282,23 +282,6 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
 
-        <ToggleButton
-            android:id="@+id/toggleButton9"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="@drawable/button_background"
-            android:drawableTop="@drawable/fruit_peache"
-            android:gravity="center_vertical"
-            android:textOn="Персик"
-            android:textOff="Персик"
-            android:textSize="14dp"
-            android:textAlignment="center"
-            android:textColor="@color/color"
-            android:onClick="onToggleButtonClick"
-            android:checked="false"
-            android:layout_above="@+id/button2"
-            android:layout_toRightOf="@+id/fruit_peache"
-            android:layout_toEndOf="@+id/fruit_peache" />
 
         <Button
             style="?android:attr/buttonStyleSmall"
@@ -309,8 +292,18 @@
             android:onClick="onClick"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:id="@+id/etText"
+            android:layout_alignTop="@+id/toggleButton7"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="50dp" />
+            android:layout_marginTop="66dp"
+            android:layout_marginBottom="100dp"
+            android:layout_marginLeft="130dp" />
 
     </RelativeLayout>
 
