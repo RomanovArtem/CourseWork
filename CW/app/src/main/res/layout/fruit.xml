@@ -11,7 +11,7 @@
         android:fillViewport="true"
         >
         <ToggleButton
-            android:id="@+id/fruit_ananas"
+            android:id="@+id/f1"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/button_background"
@@ -27,7 +27,7 @@
              />
 
         <ToggleButton
-            android:id="@+id/fruit_orange"
+            android:id="@+id/f2"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/button_background"
@@ -43,7 +43,7 @@
             android:layout_centerHorizontal="true" />
 
         <ToggleButton
-            android:id="@+id/fruit_banana"
+            android:id="@+id/f3"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/button_background"
@@ -73,9 +73,9 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_below="@+id/fruit_ananas"
-            android:layout_alignLeft="@+id/fruit_ananas"
-            android:layout_alignStart="@+id/fruit_ananas"
+            android:layout_below="@+id/f1"
+            android:layout_alignLeft="@+id/f1"
+            android:layout_alignStart="@+id/f1"
             android:layout_marginTop="35dp" />
 
         <ToggleButton
@@ -93,8 +93,8 @@
             android:onClick="onToggleButtonClick"
             android:checked="false"
             android:layout_alignTop="@+id/fruit_grape"
-            android:layout_alignLeft="@+id/fruit_orange"
-            android:layout_alignStart="@+id/fruit_orange" />
+            android:layout_alignLeft="@+id/f2"
+            android:layout_alignStart="@+id/f2" />
 
         <ToggleButton
             android:id="@+id/fruit_lemon"
@@ -111,8 +111,8 @@
             android:onClick="onToggleButtonClick"
             android:checked="false"
             android:layout_alignTop="@+id/fruit_dried_apricot"
-            android:layout_alignLeft="@+id/fruit_banana"
-            android:layout_alignStart="@+id/fruit_banana" />
+            android:layout_alignLeft="@+id/f3"
+            android:layout_alignStart="@+id/f3" />
 
         <ToggleButton
             android:id="@+id/fruit_tangerines"

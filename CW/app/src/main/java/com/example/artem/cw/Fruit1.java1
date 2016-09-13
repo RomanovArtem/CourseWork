@@ -1,0 +1,194 @@
+package com.example.artem.cw;
+
+import android.app.Activity;
+import android.content.ContentValues;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
+import android.widget.ToggleButton;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+/**
+ * Created by Artem on 05.09.2016.
+ */
+
+public class Fruit extends Activity {
+
+    private DatabaseHelper mDatabaseHelper;
+    private SQLiteDatabase mSqLiteDatabase;
+
+   /* List<ToggleButton> listTB = new ArrayList();
+    List<ToggleButton> listCheckedTB = new ArrayList();
+    public void abc()
+    {
+
+        listTB.add((ToggleButton) findViewById(R.id.f1));
+        listTB.add((ToggleButton) findViewById(R.id.f2));
+        listTB.add((ToggleButton) findViewById(R.id.f3));
+    }
+
+    public void Search()
+    {
+        for (int i = 0; i < listTB.size(); i++)
+        {
+            ToggleButton toggleButton;
+            toggleButton = listTB.get(i);
+            if (toggleButton.isChecked() == true)
+            {
+                listCheckedTB.add(toggleButton);
+            }
+        }
+        saveSelection(listCheckedTB);
+    }
+*/
+
+
+
+
+
+
+
+
+    ToggleButton toogleButton;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        mDatabaseHelper = new DatabaseHelper(this, "mydatabase.db", null, 1);
+        SQLiteDatabase sdb;
+        sdb = mDatabaseHelper.getReadableDatabase();
+
+        setContentView(R.layout.fruit);
+
+
+
+
+
+
+        ContentValues values = new ContentValues();
+        // Задайте значения для каждого столбца
+        values.put(DatabaseHelper.ID_PRODUCT_COLUMN, "1");
+        values.put(DatabaseHelper.CATEGORY_PRODUCT_COLUMN, "fruit");
+        values.put(DatabaseHelper.CHOICE_PRODUCT_COLUMN, "1");
+        // Вставляем данные в таблицу
+        mSqLiteDatabase.insert("product", null, values);
+
+
+
+
+
+
+/////
+
+        Cursor cursor = mSqLiteDatabase.query("cats", new String[]{DatabaseHelper.ID_PRODUCT_COLUMN,
+                        DatabaseHelper.CATEGORY_PRODUCT_COLUMN, DatabaseHelper.CHOICE_PRODUCT_COLUMN},
+                null, null,
+                null, null, null);
+
+        cursor.moveToFirst();
+
+        int idProduct = cursor.getInt(cursor.getColumnIndex(DatabaseHelper.ID_PRODUCT_COLUMN));
+        //long phoneNumber = cursor.getLong(cursor.getColumnIndex(DatabaseHelper.PHONE_COLUMN));
+        int choiceProduct = cursor.getInt(cursor.getColumnIndex(DatabaseHelper.CHOICE_PRODUCT_COLUMN));
+
+        // не забываем закрывать курсор
+        cursor.close();
+        boolean flag = false;
+        if (choiceProduct == 1)
+        {
+            flag = true;
+        }
+
+        toogleButton = (ToggleButton) findViewById(idProduct);
+        toogleButton.setChecked(flag);
+
+
+        ///////
+
+
+
+
+
+
+        // etText = (EditText) findViewById(R.id.etText);
+        // toogleButton = (ToggleButton) findViewById(R.id.f1);
+        // loadSelection();
+    }
+
+    public void onToggleButtonClick (View button){
+        getApplicationContext();
+        // aaa();
+        /*Toast.makeText(
+                getApplicationContext(),
+                Boolean.toString(((ToggleButton) button).isChecked()),
+                Toast.LENGTH_SHORT).show();*/
+    }
+
+
+    //EditText etText;
+    //SharedPreferences sPref;
+
+    final String SAVED_TEXT = "saved_text";
+
+   /* void aaa()
+    {
+        if (toogleButton.isChecked() == true)
+        {
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "Пора покормить кота!", Toast.LENGTH_SHORT);
+            toast.show();
+        }
+        else if(toogleButton.isChecked() == false)
+        {
+            Toast toast = Toast.makeText(getApplicationContext(),
+                    "Не Пора покормить кота!", Toast.LENGTH_SHORT);
+            toast.show();
+        }
+    }
+
+    void saveSelection(List<ToggleButton> listCheckedTB)
+    {
+        sPref = getPreferences(MODE_PRIVATE); //получаем объект sPref класса SharedPreferences, который позволяет работать с данными
+                                                //Константа MODE_PRIVATE используется для настройки доступа и означает, что после сохранения, данные будут видны только этому приложению
+        SharedPreferences.Editor ed = sPref.edit(); //чтобы редактировать данные, необходим объект Editor – он получается из sPref
+        ed.put(SAVED_TEXT, listCheckedTB); //В метод putString указывается наименование переменной – это константа SAVED_TEXT, и значение – содержимое поля etText
+        ed.commit(); //Чтобы данные сохранились, необходимо выполнить commit
+       // Toast.makeText(this, "Text saved", Toast.LENGTH_SHORT).show(); // выводит ссобщ, что данные сохранены
+    }
+
+    void loadSelection()
+    {
+        sPref = getPreferences(MODE_PRIVATE);
+
+        boolean savedSelection = sPref.getBoolean(SAVED_TEXT, false);
+        toogleButton.setChecked(savedSelection);
+       // Toast.makeText(this, "Text loaded", Toast.LENGTH_SHORT).show();
+    } */
+
+
+
+
+    public void onClick(View view) {
+        //Search();
+        // saveSelection();
+
+        ContentValues values = new ContentValues();
+        // Задайте значения для каждого столбца
+        values.put(DatabaseHelper.ID_PRODUCT_COLUMN, "2");
+        values.put(DatabaseHelper.CATEGORY_PRODUCT_COLUMN, "fruit");
+        values.put(DatabaseHelper.CHOICE_PRODUCT_COLUMN, "1");
+        // Вставляем данные в таблицу
+        mSqLiteDatabase.insert("product", null, values);
+
+        Intent intent = new Intent(Fruit.this, MainActivity.class);
+        startActivity(intent);
+    }
+
+}
