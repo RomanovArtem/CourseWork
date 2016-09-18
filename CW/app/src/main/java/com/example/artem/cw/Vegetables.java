@@ -5,37 +5,30 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import java.util.ArrayList;
 
-
 /**
- * Created by Artem on 05.09.2016.
+ * Created by Artem on 18.09.2016.
  */
-
-public class Fruit extends Activity
-{
+public class Vegetables extends Activity {
     ArrayList<ToggleButton> listTB = new ArrayList();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fruit);
+        setContentView(R.layout.vegetables);
 
-        listTB.add((ToggleButton) findViewById(R.id.f_1));
-        listTB.add((ToggleButton) findViewById(R.id.f_2));
-        listTB.add((ToggleButton) findViewById(R.id.f_3));
-        listTB.add((ToggleButton) findViewById(R.id.f_4));
-        listTB.add((ToggleButton) findViewById(R.id.f_5));
-        listTB.add((ToggleButton) findViewById(R.id.f_6));
-        listTB.add((ToggleButton) findViewById(R.id.f_7));
-        listTB.add((ToggleButton) findViewById(R.id.f_8));
-        listTB.add((ToggleButton) findViewById(R.id.f_9));
-        listTB.add((ToggleButton) findViewById(R.id.f_10));
-        listTB.add((ToggleButton) findViewById(R.id.f_11));
+        listTB.add((ToggleButton) findViewById(R.id.v_1));
+        listTB.add((ToggleButton) findViewById(R.id.v_2));
+        listTB.add((ToggleButton) findViewById(R.id.v_3));
+        listTB.add((ToggleButton) findViewById(R.id.v_4));
+        listTB.add((ToggleButton) findViewById(R.id.v_5));
+        listTB.add((ToggleButton) findViewById(R.id.v_6));
+        listTB.add((ToggleButton) findViewById(R.id.v_7));
+        listTB.add((ToggleButton) findViewById(R.id.v_8));
+        listTB.add((ToggleButton) findViewById(R.id.v_9));
 
-;
         loadSelection();
     }
 
@@ -60,41 +53,41 @@ public class Fruit extends Activity
     {
 
         sPref = getPreferences(MODE_PRIVATE); //получаем объект sPref класса SharedPreferences, который позволяет работать с данными
-                                                //Константа MODE_PRIVATE используется для настройки доступа и означает, что после сохранения, данные будут видны только этому приложению
+        //Константа MODE_PRIVATE используется для настройки доступа и означает, что после сохранения, данные будут видны только этому приложению
         SharedPreferences.Editor ed = sPref.edit(); //чтобы редактировать данные, необходим объект Editor – он получается из sPref
-        for (int i = 0; i < 11; i++)
+        for (int i = 0; i < 9; i++)
         {
-            String fru = "f";
+            String veg = "v";
             ToggleButton toggleButton;
             toggleButton = listTB.get(i);
             String str = Integer.toString(i);
-            fru = fru.concat(str);
-            ed.putBoolean(fru, toggleButton.isChecked()); //В метод putString указывается наименование переменной – это константа SAVED_TEXT, и значение – содержимое поля etText
+            veg = veg.concat(str);
+            ed.putBoolean(veg, toggleButton.isChecked()); //В метод putString указывается наименование переменной – это константа SAVED_TEXT, и значение – содержимое поля etText
             ed.commit(); //Чтобы данные сохранились, необходимо выполнить commit
         }
 
-       // Toast.makeText(this, "Text saved", Toast.LENGTH_SHORT).show(); // выводит ссобщ, что данные сохранены
+        // Toast.makeText(this, "Text saved", Toast.LENGTH_SHORT).show(); // выводит ссобщ, что данные сохранены
     }
 
     void loadSelection()
     {
         sPref = getPreferences(MODE_PRIVATE);
-        for (int i = 0; i < 11; i++)
+        for (int i = 0; i < 9; i++)
         {
-            String fru = "f";
+            String veg = "v";
             ToggleButton toggleButton;
             toggleButton = listTB.get(i);
             String str = Integer.toString(i);
-            fru = fru.concat(str);
-            boolean savedSelection1 = sPref.getBoolean(fru, false);
+            veg = veg.concat(str);
+            boolean savedSelection1 = sPref.getBoolean(veg, false);
             toggleButton.setChecked(savedSelection1);
         }
-       // Toast.makeText(this, "Text loaded", Toast.LENGTH_SHORT).show();
+        // Toast.makeText(this, "Text loaded", Toast.LENGTH_SHORT).show();
     }
 
     public void onClick(View view) {
         saveSelection();
-        Intent intent = new Intent(Fruit.this, MainActivity.class);
+        Intent intent = new Intent(Vegetables.this, MainActivity.class);
         startActivity(intent);
     }
 

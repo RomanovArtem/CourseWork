@@ -12,6 +12,7 @@ import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
 
+    ToggleButton toggleButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,18 +20,26 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void onToggleButtonClick (View button){
-        Toast.makeText(
-                getApplicationContext(),
-                Boolean.toString(((ToggleButton) button).isChecked()),
-                Toast.LENGTH_SHORT).show();
+    public void onToggleButtonClick (View view)
+    {
+        toggleButton = (ToggleButton) findViewById(R.id.fruit);
+        if (toggleButton.isChecked() == true)
+        {
+            Intent intent = new Intent(MainActivity.this, Fruit.class);
+            startActivity(intent);
+        }
+        toggleButton = (ToggleButton) findViewById(R.id.vegetables);
+        if (toggleButton.isChecked() == true)
+        {
+            Intent intent = new Intent(MainActivity.this, Vegetables.class);
+            startActivity(intent);
+        }
 
-        Intent intent = new Intent(MainActivity.this, Fruit.class);
-        startActivity(intent);
     }
 
+
     public void onClick(View view) {
-        Intent intent = new Intent(MainActivity.this, Fruit.class);
+        Intent intent = new Intent(MainActivity.this, Vegetables.class);
         startActivity(intent);
     }
 }
