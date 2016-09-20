@@ -13,6 +13,10 @@ import java.util.ArrayList;
  * Created by Artem on 18.09.2016.
  */
 public class Vegetables extends Activity {
+
+    public static final String APP_PREFERENCES = "mysettings";
+
+
     ArrayList<ToggleButton> listTB = new ArrayList();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +32,12 @@ public class Vegetables extends Activity {
         listTB.add((ToggleButton) findViewById(R.id.v_7));
         listTB.add((ToggleButton) findViewById(R.id.v_8));
         listTB.add((ToggleButton) findViewById(R.id.v_9));
+        listTB.add((ToggleButton) findViewById(R.id.v_10));
+        listTB.add((ToggleButton) findViewById(R.id.v_11));
+        listTB.add((ToggleButton) findViewById(R.id.v_12));
+        listTB.add((ToggleButton) findViewById(R.id.v_13));
+        listTB.add((ToggleButton) findViewById(R.id.v_14));
+        listTB.add((ToggleButton) findViewById(R.id.v_15));
 
         loadSelection();
     }
@@ -42,7 +52,7 @@ public class Vegetables extends Activity {
     }
 
 
-    SharedPreferences sPref;
+   // SharedPreferences sPref;
 
 
 
@@ -52,10 +62,10 @@ public class Vegetables extends Activity {
     void saveSelection()
     {
 
-        sPref = getPreferences(MODE_PRIVATE); //получаем объект sPref класса SharedPreferences, который позволяет работать с данными
+        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES, MODE_PRIVATE); //получаем объект sPref класса SharedPreferences, который позволяет работать с данными
         //Константа MODE_PRIVATE используется для настройки доступа и означает, что после сохранения, данные будут видны только этому приложению
-        SharedPreferences.Editor ed = sPref.edit(); //чтобы редактировать данные, необходим объект Editor – он получается из sPref
-        for (int i = 0; i < 9; i++)
+        SharedPreferences.Editor ed = sharedPreferences.edit(); //чтобы редактировать данные, необходим объект Editor – он получается из sPref
+        for (int i = 0; i < 15; i++)
         {
             String veg = "v";
             ToggleButton toggleButton;
@@ -71,15 +81,15 @@ public class Vegetables extends Activity {
 
     void loadSelection()
     {
-        sPref = getPreferences(MODE_PRIVATE);
-        for (int i = 0; i < 9; i++)
+        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
+        for (int i = 0; i < 15; i++)
         {
             String veg = "v";
             ToggleButton toggleButton;
             toggleButton = listTB.get(i);
             String str = Integer.toString(i);
             veg = veg.concat(str);
-            boolean savedSelection1 = sPref.getBoolean(veg, false);
+            boolean savedSelection1 = sharedPreferences.getBoolean(veg, false);
             toggleButton.setChecked(savedSelection1);
         }
         // Toast.makeText(this, "Text loaded", Toast.LENGTH_SHORT).show();

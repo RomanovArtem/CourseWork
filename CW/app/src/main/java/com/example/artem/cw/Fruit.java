@@ -17,6 +17,8 @@ import java.util.ArrayList;
 
 public class Fruit extends Activity
 {
+    public static final String APP_PREFERENCES = "mysettings";
+
     ArrayList<ToggleButton> listTB = new ArrayList();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +51,7 @@ public class Fruit extends Activity
     }
 
 
-    SharedPreferences sPref;
+    //SharedPreferences sPref;
 
 
 
@@ -58,10 +60,9 @@ public class Fruit extends Activity
     String f_3 = "f_3";
     void saveSelection()
     {
-
-        sPref = getPreferences(MODE_PRIVATE); //получаем объект sPref класса SharedPreferences, который позволяет работать с данными
+        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE); //получаем объект sPref класса SharedPreferences, который позволяет работать с данными
                                                 //Константа MODE_PRIVATE используется для настройки доступа и означает, что после сохранения, данные будут видны только этому приложению
-        SharedPreferences.Editor ed = sPref.edit(); //чтобы редактировать данные, необходим объект Editor – он получается из sPref
+        SharedPreferences.Editor ed = sharedPreferences.edit(); //чтобы редактировать данные, необходим объект Editor – он получается из sPref
         for (int i = 0; i < 11; i++)
         {
             String fru = "f";
@@ -78,7 +79,8 @@ public class Fruit extends Activity
 
     void loadSelection()
     {
-        sPref = getPreferences(MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
+        sharedPreferences = getPreferences(MODE_PRIVATE);
         for (int i = 0; i < 11; i++)
         {
             String fru = "f";
@@ -86,7 +88,7 @@ public class Fruit extends Activity
             toggleButton = listTB.get(i);
             String str = Integer.toString(i);
             fru = fru.concat(str);
-            boolean savedSelection1 = sPref.getBoolean(fru, false);
+            boolean savedSelection1 = sharedPreferences.getBoolean(fru, false);
             toggleButton.setChecked(savedSelection1);
         }
        // Toast.makeText(this, "Text loaded", Toast.LENGTH_SHORT).show();
