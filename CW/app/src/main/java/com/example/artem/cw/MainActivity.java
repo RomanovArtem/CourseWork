@@ -10,11 +10,18 @@ import android.widget.Button;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.InetSocketAddress;
+import java.net.Socket;
 
 
 public class MainActivity extends AppCompatActivity {
-    private Button mButtonOpen  = null;
-    private Client mServer = null;
     private static final String LOG_TAG = "myServerApp";
 
 
@@ -23,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        mButtonOpen = (Button)findViewById(R.id.next);
+
     }
 
     public void onToggleButtonClick (View view)
@@ -45,31 +52,56 @@ public class MainActivity extends AppCompatActivity {
 
         public void onClick(View view) {
         /* создаем объект для работы с сервером*/
-        mServer = new Client();
-        /* Открываем соединение. Открытие должно происходить в отдельном потоке от ui */
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    mServer.openConnection();
-                    mServer.sendData("Send text to server".getBytes());
-                    mServer.closeConnection();
+            Thread ct=new Thread(doInThread);
+            //Thread ct1=new Thread
+            ct.start();
 
-                    /*
-                        устанавливаем активные кнопки для отправки данных
-                        и закрытия соедиения. Все данные по обновлению интерфеса должны
-                        обрабатывается в Ui потоке, а так как мы сейчас находимся в
-                        отдельном потоке, нам необходимо вызвать метод  runOnUiThread()
-                    */
-                } catch (Exception e) {
-                    Log.e(LOG_TAG, e.getMessage());
-                    mServer = null;
-                }
-            }
-        }).start();
-
-
-            /* Закрываем соединение */
-
+         ;
     }
+    private Runnable doInThread = new Runnable() {
+        Socket socket;
+        public void run() {
+
+           // int serverPort = 31007; // здесь обязательно нужно указать порт к которому привязывается сервер.
+            //String address = "192.168.0.102"; // это IP-адрес компьютера, где исполняется наша серверная программа.
+            // Здесь указан адрес того самого компьютера где будет исполняться и клиент.
+
+            try {
+                InetSocketAddress inetAddress = new InetSocketAddress("192.168.0.101", 31010); // создаем объект который отображает вышеописанный IP-адрес.
+                System.out.println("Сокет с адресом : " + inetAddress);
+                socket = new Socket(inetAddress.getAddress(), 31010); // создаем сокет используя IP-адрес и порт сервера.
+                System.out.println("Сокет создан.");
+
+                // Берем входной и выходной потоки сокета, теперь можем получать и отсылать данные клиентом.
+                InputStream sin = socket.getInputStream();
+                OutputStream sout = socket.getOutputStream();
+
+                // Конвертируем потоки в другой тип, чтоб легче обрабатывать текстовые сообщения.
+                DataInputStream in = new DataInputStream(sin);
+                DataOutputStream out = new DataOutputStream(sout);
+
+                // Создаем поток для чтения с клавиатуры.
+                //BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
+                String line = "12334";
+                System.out.println();
+
+                //while (true) {
+                    //line = keyboard.readLine(); // ждем пока пользователь введет что-то и нажмет кнопку Enter.
+                    System.out.println("Посылаем данные серверу...");
+                    out.writeUTF(line); // отсылаем введенную строку текста серверу.
+                    out.flush(); // заставляем поток закончить передачу данных.
+                    line = in.readUTF(); // ждем пока сервер отошлет строку текста.
+                    System.out.println("Сервер прислал: : " + line);
+                    System.out.println();
+               // }
+            } catch (Exception x) {
+                x.printStackTrace();
+            }
+            try {
+                socket.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    };
 }
