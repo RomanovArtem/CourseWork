@@ -2,6 +2,7 @@ package com.example.artem.cw;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -19,10 +20,17 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
 import java.net.Socket;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 
 public class MainActivity extends AppCompatActivity {
     private static final String LOG_TAG = "myServerApp";
+    public static final String APP_PREFERENCES = "mysettings";
+    //Map <String, Boolean> hashmap = new HashMap<String, Boolean>();
+    ArrayList<String> selectedProducts = new ArrayList();
+
 
 
     ToggleButton toggleButton;
@@ -49,15 +57,63 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
         public void onClick(View view) {
         /* создаем объект для работы с сервером*/
             Thread ct=new Thread(doInThread);
             //Thread ct1=new Thread
-            ct.start();
+           // ct.start();
+            loadSelectionFruit();
+            loadSelectionVegetables();
 
-         ;
     }
+
+
+    void loadSelectionFruit()
+    {
+        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
+        for (int i = 0; i < 11; i++)
+        {
+            String fru = "f";
+            String str = Integer.toString(i);
+            fru = fru.concat(str);
+            boolean selection = sharedPreferences.getBoolean(fru, false);
+            if (selection == true)
+            {
+                selectedProducts.add(fru);
+                //hashmap.put(fru, selection);
+            }
+        }
+        // Toast.makeText(this, "Text loaded", Toast.LENGTH_SHORT).show();
+    }
+    void loadSelectionVegetables()
+    {
+        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
+        for (int i = 0; i < 15; i++)
+        {
+            String veg = "v";
+            String str = Integer.toString(i);
+            veg = veg.concat(str);
+            boolean selection = sharedPreferences.getBoolean(veg, false);
+            if (selection == true)
+            {
+                selectedProducts.add(veg);
+                //hashmap.put(veg, selection);
+            }
+        }
+
+        for (String selectedProduct : selectedProducts) {
+             System.out.println(selectedProduct);
+        }
+        /*for (Map.Entry entry : hashmap.entrySet()) {
+            System.out.println("Key: " + entry.getKey() + " Value: " + entry.getValue());
+        }*/
+    }
+
+
+
+
+
+
     private Runnable doInThread = new Runnable() {
         Socket socket;
         public void run() {

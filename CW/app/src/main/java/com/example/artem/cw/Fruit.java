@@ -80,7 +80,6 @@ public class Fruit extends Activity
     void loadSelection()
     {
         SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
-        sharedPreferences = getPreferences(MODE_PRIVATE);
         for (int i = 0; i < 11; i++)
         {
             String fru = "f";
@@ -91,7 +90,7 @@ public class Fruit extends Activity
             boolean savedSelection1 = sharedPreferences.getBoolean(fru, false);
             toggleButton.setChecked(savedSelection1);
         }
-       // Toast.makeText(this, "Text loaded", Toast.LENGTH_SHORT).show();
+        // Toast.makeText(this, "Text loaded", Toast.LENGTH_SHORT).show();
     }
 
     public void onClick(View view) {
@@ -99,5 +98,4 @@ public class Fruit extends Activity
         Intent intent = new Intent(Fruit.this, MainActivity.class);
         startActivity(intent);
     }
-
 }
