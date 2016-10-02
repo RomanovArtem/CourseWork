@@ -24,13 +24,16 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 
 public class MainActivity extends AppCompatActivity {
     private static final String LOG_TAG = "myServerApp";
     public static final String APP_PREFERENCES = "mysettings";
     //Map <String, Boolean> hashmap = new HashMap<String, Boolean>();
     ArrayList<String> selectedProducts = new ArrayList();
-
+    JSONObject object = new JSONObject();
 
 
     ToggleButton toggleButton;
@@ -59,11 +62,12 @@ public class MainActivity extends AppCompatActivity {
     }
         public void onClick(View view) {
         /* создаем объект для работы с сервером*/
-            Thread ct=new Thread(doInThread);
-            //Thread ct1=new Thread
-           // ct.start();
             loadSelectionFruit();
             loadSelectionVegetables();
+            Thread ct=new Thread(doInThread);
+            //Thread ct1=new Thread
+            ct.start();
+
 
     }
 
@@ -101,14 +105,21 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        for (String selectedProduct : selectedProducts) {
+        /*for (String selectedProduct : selectedProducts) {
              System.out.println(selectedProduct);
-        }
-        /*for (Map.Entry entry : hashmap.entrySet()) {
-            System.out.println("Key: " + entry.getKey() + " Value: " + entry.getValue());
         }*/
+
+
     }
 
+    public String Convert()
+    {
+        String line = new String();
+        for (String selectedProduct : selectedProducts) {
+            line += selectedProduct + " ";
+        }
+        return line;
+    }
 
 
 
@@ -138,16 +149,17 @@ public class MainActivity extends AppCompatActivity {
 
                 // Создаем поток для чтения с клавиатуры.
                 //BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
-                String line = "12334";
+
                 System.out.println();
 
                 //while (true) {
                     //line = keyboard.readLine(); // ждем пока пользователь введет что-то и нажмет кнопку Enter.
                     System.out.println("Посылаем данные серверу...");
-                    out.writeUTF(line); // отсылаем введенную строку текста серверу.
+                    String stroka = Convert();
+                    out.writeUTF(stroka); // отсылаем введенную строку текста серверу.
                     out.flush(); // заставляем поток закончить передачу данных.
-                    line = in.readUTF(); // ждем пока сервер отошлет строку текста.
-                    System.out.println("Сервер прислал: : " + line);
+                    stroka = in.readUTF(); // ждем пока сервер отошлет строку текста.
+                    System.out.println("Сервер прислал: : " + stroka);
                     System.out.println();
                // }
             } catch (Exception x) {
