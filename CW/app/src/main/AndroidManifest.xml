@@ -18,6 +18,7 @@
         <activity android:name=".Fruit"
             android:label="@string/about_title"></activity>
         <activity android:name=".Vegetables"></activity>
+        <activity android:name=".Meals"></activity>
 
     </application>
 

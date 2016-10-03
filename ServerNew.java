@@ -21,7 +21,9 @@ public class ServerNew {
 
          String line = null;
         // while(true) {
+		   line = "";
            line = in.readUTF(); // ожидаем пока клиент пришлет строку текста.
+		   AAA(line);
            System.out.println("Клиент прислал : " + line);
            System.out.println("Я ему отсылкаю:...");
            out.writeUTF("End"); // отсылаем клиенту обратно ту самую строку текста.
@@ -29,5 +31,16 @@ public class ServerNew {
            System.out.println();
        //  }
       } catch(Exception x) { x.printStackTrace(); }
+   }
+   
+   public static void AAA(String inputString)
+   {
+	   String[] parts = inputString.split(" ");
+	   int i = 0;
+	   for (String part : parts )
+	   {
+			System.out.println(i + parts[i]);
+			i++;
+	   }
    }
 }

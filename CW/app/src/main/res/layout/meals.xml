@@ -1,0 +1,141 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/background1"
+    android:tileMode="repeat">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Что будем готовить?"
+            android:textSize="30dp"
+            android:textColor="#f1121d"
+            android:id="@+id/textView"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_centerHorizontal="true" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_ananas"
+            android:gravity="center_vertical"
+            android:textOn="Ананас"
+            android:textOff="Ананас"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_marginTop="56dp"
+            android:layout_below="@+id/textView"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_ananas"
+            android:gravity="center_vertical"
+            android:textOn="Ананас"
+            android:textOff="Ананас"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_alignBottom="@+id/toggleButton"
+            android:layout_alignRight="@+id/textView"
+            android:layout_alignEnd="@+id/textView" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_ananas"
+            android:gravity="center_vertical"
+            android:textOn="Ананас"
+            android:textOff="Ананас"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_below="@+id/toggleButton"
+            android:layout_alignLeft="@+id/toggleButton"
+            android:layout_alignStart="@+id/toggleButton"
+            android:layout_marginTop="50dp" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_ananas"
+            android:gravity="center_vertical"
+            android:textOn="Ананас"
+            android:textOff="Ананас"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_alignTop="@+id/toggleButton3"
+            android:layout_alignLeft="@+id/toggleButton2"
+            android:layout_alignStart="@+id/toggleButton2" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton5"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_ananas"
+            android:gravity="center_vertical"
+            android:textOn="Ананас"
+            android:textOff="Ананас"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_alignTop="@+id/toggleButton6"
+            android:layout_alignLeft="@+id/toggleButton3"
+            android:layout_alignStart="@+id/toggleButton3" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton6"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_ananas"
+            android:gravity="center_vertical"
+            android:textOn="Ананас"
+            android:textOff="Ананас"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/toggleButton4"
+            android:layout_alignStart="@+id/toggleButton4" />
+
+    </RelativeLayout>
+</ScrollView>
