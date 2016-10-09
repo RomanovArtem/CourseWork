@@ -67,8 +67,8 @@ public class MainActivity extends AppCompatActivity {
             Thread ct=new Thread(doInThread);
             //Thread ct1=new Thread
             ct.start();
-            Intent intent = new Intent(MainActivity.this, Meals.class);
-            startActivity(intent);
+            //Intent intent = new Intent(MainActivity.this, Meals.class);
+            //startActivity(intent);
 
 
     }
