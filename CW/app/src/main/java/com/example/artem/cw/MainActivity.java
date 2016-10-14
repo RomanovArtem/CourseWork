@@ -62,13 +62,12 @@ public class MainActivity extends AppCompatActivity {
     }
         public void onClick(View view) {
         /* создаем объект для работы с сервером*/
-            loadSelectionFruit();
-            loadSelectionVegetables();
-            Thread ct=new Thread(doInThread);
-            //Thread ct1=new Thread
-            ct.start();
-            //Intent intent = new Intent(MainActivity.this, Meals.class);
-            //startActivity(intent);
+           // loadSelectionFruit();
+            //loadSelectionVegetables();
+            //Thread ct=new Thread(doInThread);
+            //ct.start();
+            Intent intent = new Intent(MainActivity.this, Meals.class);
+            startActivity(intent);
 
 
     }
@@ -124,6 +123,29 @@ public class MainActivity extends AppCompatActivity {
         System.out.println("line: " + line);
         return line;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
