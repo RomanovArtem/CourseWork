@@ -34,8 +34,8 @@
             android:background="@drawable/button_background"
             android:drawableTop="@drawable/fruit_ananas"
             android:gravity="center_vertical"
-            android:textOn="Ананас"
-            android:textOff="Ананас"
+            android:textOn="Суп"
+            android:textOff="Суп"
             android:textSize="14dp"
             android:textAlignment="center"
             android:textColor="@color/color"
@@ -54,7 +54,7 @@
             android:drawableTop="@drawable/fruit_ananas"
             android:gravity="center_vertical"
             android:textOn="Ананас"
-            android:textOff="Ананас"
+            android:textOff="чтот еще"
             android:textSize="14dp"
             android:textAlignment="center"
             android:textColor="@color/color"
@@ -133,9 +133,23 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_alignParentBottom="true"
+            android:layout_marginTop="182dp"
+            android:layout_below="@+id/toggleButton4"
             android:layout_alignLeft="@+id/toggleButton4"
-            android:layout_alignStart="@+id/toggleButton4" />
+            android:layout_alignStart="@+id/toggleButton4"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Далее"
+            android:id="@+id/button"
+            android:onClick="onClick"
+            android:layout_below="@+id/toggleButton3"
+            android:layout_toLeftOf="@+id/toggleButton4"
+            android:layout_toStartOf="@+id/toggleButton4"
+            android:layout_marginTop="59dp" />
 
     </RelativeLayout>
 </ScrollView>

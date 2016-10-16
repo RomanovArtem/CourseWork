@@ -29,11 +29,6 @@ import org.json.JSONObject;
 
 
 public class MainActivity extends AppCompatActivity {
-    private static final String LOG_TAG = "myServerApp";
-    public static final String APP_PREFERENCES = "mysettings";
-    //Map <String, Boolean> hashmap = new HashMap<String, Boolean>();
-    ArrayList<String> selectedProducts = new ArrayList();
-    JSONObject object = new JSONObject();
 
 
     ToggleButton toggleButton;
@@ -60,144 +55,23 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-        public void onClick(View view) {
+    public void onClick(View view) {
         /* создаем объект для работы с сервером*/
-           // loadSelectionFruit();
-            //loadSelectionVegetables();
-            //Thread ct=new Thread(doInThread);
-            //ct.start();
-            Intent intent = new Intent(MainActivity.this, Meals.class);
-            startActivity(intent);
+        // loadSelectionFruit();
+        //loadSelectionVegetables();
+        //Thread ct=new Thread(doInThread);
+        //ct.start();
+        Intent intent = new Intent(MainActivity.this, Meals.class);
+        startActivity(intent);
 
 
     }
 
 
-    void loadSelectionFruit()
-    {
-        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
-        for (int i = 0; i < 11; i++)
-        {
-            String fru = "f";
-            String str = Integer.toString(i);
-            fru = fru.concat(str);
-            boolean selection = sharedPreferences.getBoolean(fru, false);
-            if (selection == true)
-            {
-                selectedProducts.add(fru);
-                //hashmap.put(fru, selection);
-            }
-        }
-        // Toast.makeText(this, "Text loaded", Toast.LENGTH_SHORT).show();
-    }
-    void loadSelectionVegetables()
-    {
-        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
-        for (int i = 0; i < 15; i++)
-        {
-            String veg = "v";
-            String str = Integer.toString(i);
-            veg = veg.concat(str);
-            boolean selection = sharedPreferences.getBoolean(veg, false);
-            if (selection == true)
-            {
-                selectedProducts.add(veg);
-                //hashmap.put(veg, selection);
-            }
-        }
-
-        /*for (String selectedProduct : selectedProducts) {
-             System.out.println(selectedProduct);
-        }*/
-
-
-    }
-
-    public String Convert()
-    {
-        String line = new String();
-        line = "";
-        for (String selectedProduct : selectedProducts) {
-            line = line + selectedProduct + " ";
-        }
-        System.out.println("line: " + line);
-        return line;
-    }
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    private Runnable doInThread = new Runnable() {
-        Socket socket;
-        public void run() {
-
-           // int serverPort = 31007; // здесь обязательно нужно указать порт к которому привязывается сервер.
-            //String address = "192.168.0.102"; // это IP-адрес компьютера, где исполняется наша серверная программа.
-            // Здесь указан адрес того самого компьютера где будет исполняться и клиент.
-
-            try {
-                InetSocketAddress inetAddress = new InetSocketAddress("192.168.0.102", 31010); // создаем объект который отображает вышеописанный IP-адрес.
-                System.out.println("Сокет с адресом : " + inetAddress);
-                socket = new Socket(inetAddress.getAddress(), 31010); // создаем сокет используя IP-адрес и порт сервера.
-                System.out.println("Сокет создан.");
-
-                // Берем входной и выходной потоки сокета, теперь можем получать и отсылать данные клиентом.
-                InputStream sin = socket.getInputStream();
-                OutputStream sout = socket.getOutputStream();
-
-                // Конвертируем потоки в другой тип, чтоб легче обрабатывать текстовые сообщения.
-                DataInputStream in = new DataInputStream(sin);
-                DataOutputStream out = new DataOutputStream(sout);
-
-                // Создаем поток для чтения с клавиатуры.
-                //BufferedReader keyboard = new BufferedReader(new InputStreamReader(System.in));
-
-                System.out.println();
-                String stroka;
-                //while (true) {
-                    //line = keyboard.readLine(); // ждем пока пользователь введет что-то и нажмет кнопку Enter.
-                    System.out.println("Посылаем данные серверу...");
-                    stroka = Convert();
-                    out.writeUTF(stroka); // отсылаем введенную строку текста серверу.
-                    System.out.println("Посылаем серверу: " + stroka);
-                    out.flush(); // заставляем поток закончить передачу данных.
-                    stroka = in.readUTF(); // ждем пока сервер отошлет строку текста.
-                    System.out.println("Сервер прислал: : " + stroka);
-                    System.out.println();
-                    stroka = "";
-               // }
-            } catch (Exception x) {
-                x.printStackTrace();
-            }
-            try {
-                socket.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    };
 }

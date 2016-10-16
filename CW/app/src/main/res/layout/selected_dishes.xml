@@ -1,0 +1,66 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/background1"
+    android:tileMode="repeat">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        >
+        <ToggleButton
+            android:id="@+id/aaa"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_ananas"
+            android:gravity="center_vertical"
+            android:textOn="Ананас"
+            android:textOff="Ананас"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:text="Назад"
+            android:id="@+id/f_button_back"
+            android:onClick="onClick"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="600dp" />
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:text="New Text"
+            android:id="@+id/textView2"
+            android:layout_marginTop="33dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/textView3"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/aaa"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</ScrollView>
