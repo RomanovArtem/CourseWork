@@ -49,7 +49,8 @@ public class Meals extends Activity {
         for (int i = 0; i < 11; i++)
         {
             String fru = "f";
-            String str = Integer.toString(i);
+            int j = (i + 1);
+            String str = Integer.toString(j);
             fru = fru.concat(str);
             boolean selection = sharedPreferences.getBoolean(fru, false);
             if (selection == true)
@@ -66,7 +67,8 @@ public class Meals extends Activity {
         for (int i = 0; i < 15; i++)
         {
             String veg = "v";
-            String str = Integer.toString(i);
+            int j = (i + 13);
+            String str = Integer.toString(j);
             veg = veg.concat(str);
             boolean selection = sharedPreferences.getBoolean(veg, false);
             if (selection == true)
@@ -99,8 +101,8 @@ public class Meals extends Activity {
 
     public void onClick(View view) {
         /* создаем объект для работы с сервером*/
-        //loadSelectionFruit();
-        //loadSelectionVegetables();
+        loadSelectionFruit();
+        loadSelectionVegetables();
         Intent intent = new Intent(this, SelectedDishes.class);
         Client client=new Client();
 

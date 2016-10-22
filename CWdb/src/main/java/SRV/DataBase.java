@@ -27,16 +27,23 @@ public class DataBase {
              Statement statement = connection.createStatement()) {
             System.out.println("Соединение с БД установлено!");
 
-            String query = "select * from one";
-            ResultSet resultSet = statement.executeQuery(query);
 
-            while (resultSet.next()) {
-                int id = resultSet.getInt(1);
-                String name = resultSet.getString(2);
-                String author = resultSet.getString(3);
-                System.out.printf("id: %d, name: %s, author: %s %n", id, name, author);
-                System.out.println(id);
+            String[] a = Server.AAA();
+            int i = 0;
+            for (String part : a )
+            {
+                String query = "SELECT id_dish \n" +
+                        "FROM ingredient \n" +
+                        "WHERE id_product =" + a[i];
+                ResultSet resultSet = statement.executeQuery(query);
+                i++;
+
+                while (resultSet.next()) {
+                    int id = resultSet.getInt(1);
+                    System.out.println(id);
+                }
             }
+
 
             //statement.addBatch("INSERT INTO one(nameca, desca) VALUES('name1','desc');");
             //statement.addBatch("INSERT INTO one(nameca, desca) VALUES('name2','desc');");
@@ -53,4 +60,6 @@ public class DataBase {
             System.out.println("Соединение с БД закрыто!");
         }*/
     }
+
+
 }

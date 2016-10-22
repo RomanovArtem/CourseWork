@@ -68,7 +68,8 @@ public class Fruit extends Activity
             String fru = "f";
             ToggleButton toggleButton;
             toggleButton = listTB.get(i);
-            String str = Integer.toString(i);
+            int j = (i + 1);
+            String str = Integer.toString(j);
             fru = fru.concat(str);
             ed.putBoolean(fru, toggleButton.isChecked()); //В метод putString указывается наименование переменной – это константа SAVED_TEXT, и значение – содержимое поля etText
             ed.commit(); //Чтобы данные сохранились, необходимо выполнить commit
@@ -85,7 +86,8 @@ public class Fruit extends Activity
             String fru = "f";
             ToggleButton toggleButton;
             toggleButton = listTB.get(i);
-            String str = Integer.toString(i);
+            int j = (i + 1);
+            String str = Integer.toString(j);
             fru = fru.concat(str);
             boolean savedSelection1 = sharedPreferences.getBoolean(fru, false);
             toggleButton.setChecked(savedSelection1);

@@ -23,21 +23,21 @@ public class Vegetables extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.vegetables);
 
-        listTB.add((ToggleButton) findViewById(R.id.v_1));
-        listTB.add((ToggleButton) findViewById(R.id.v_2));
-        listTB.add((ToggleButton) findViewById(R.id.v_3));
-        listTB.add((ToggleButton) findViewById(R.id.v_4));
-        listTB.add((ToggleButton) findViewById(R.id.v_5));
-        listTB.add((ToggleButton) findViewById(R.id.v_6));
-        listTB.add((ToggleButton) findViewById(R.id.v_7));
-        listTB.add((ToggleButton) findViewById(R.id.v_8));
-        listTB.add((ToggleButton) findViewById(R.id.v_9));
-        listTB.add((ToggleButton) findViewById(R.id.v_10));
-        listTB.add((ToggleButton) findViewById(R.id.v_11));
-        listTB.add((ToggleButton) findViewById(R.id.v_12));
         listTB.add((ToggleButton) findViewById(R.id.v_13));
         listTB.add((ToggleButton) findViewById(R.id.v_14));
         listTB.add((ToggleButton) findViewById(R.id.v_15));
+        listTB.add((ToggleButton) findViewById(R.id.v_16));
+        listTB.add((ToggleButton) findViewById(R.id.v_17));
+        listTB.add((ToggleButton) findViewById(R.id.v_18));
+        listTB.add((ToggleButton) findViewById(R.id.v_19));
+        listTB.add((ToggleButton) findViewById(R.id.v_20));
+        listTB.add((ToggleButton) findViewById(R.id.v_21));
+        listTB.add((ToggleButton) findViewById(R.id.v_22));
+        listTB.add((ToggleButton) findViewById(R.id.v_23));
+        listTB.add((ToggleButton) findViewById(R.id.v_24));
+        listTB.add((ToggleButton) findViewById(R.id.v_25));
+        listTB.add((ToggleButton) findViewById(R.id.v_26));
+        listTB.add((ToggleButton) findViewById(R.id.v_27));
 
         loadSelection();
     }
@@ -52,7 +52,7 @@ public class Vegetables extends Activity {
     }
 
 
-   // SharedPreferences sPref;
+    // SharedPreferences sPref;
 
 
 
@@ -70,8 +70,10 @@ public class Vegetables extends Activity {
             String veg = "v";
             ToggleButton toggleButton;
             toggleButton = listTB.get(i);
-            String str = Integer.toString(i);
+            int j = (i + 13);
+            String str = Integer.toString(j);
             veg = veg.concat(str);
+            System.out.println(veg);
             ed.putBoolean(veg, toggleButton.isChecked()); //В метод putString указывается наименование переменной – это константа SAVED_TEXT, и значение – содержимое поля etText
             ed.commit(); //Чтобы данные сохранились, необходимо выполнить commit
         }
@@ -87,7 +89,8 @@ public class Vegetables extends Activity {
             String veg = "v";
             ToggleButton toggleButton;
             toggleButton = listTB.get(i);
-            String str = Integer.toString(i);
+            int j = (i + 13);
+            String str = Integer.toString(j);
             veg = veg.concat(str);
             boolean savedSelection1 = sharedPreferences.getBoolean(veg, false);
             toggleButton.setChecked(savedSelection1);

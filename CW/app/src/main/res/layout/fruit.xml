@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:background="@drawable/background1"
+    android:background="@drawable/background"
     android:tileMode="repeat">
     <RelativeLayout
         android:layout_width="match_parent"
