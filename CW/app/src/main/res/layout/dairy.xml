@@ -1,0 +1,243 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/background"
+    android:tileMode="repeat">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        >
+        <ToggleButton
+            android:id="@+id/d_1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_ananas"
+            android:gravity="center_vertical"
+            android:textOn="Брынза"
+            android:textOff="Брынза"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            />
+
+        <ToggleButton
+            android:id="@+id/d_2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_orange"
+            android:gravity="center_vertical"
+            android:textOn="Йогурт"
+            android:textOff="Йогурт"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_centerHorizontal="true" />
+
+        <ToggleButton
+            android:id="@+id/d_3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_banana"
+            android:gravity="center_vertical"
+            android:textOn="Кефир"
+            android:textOff="Кефир"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ToggleButton
+            android:id="@+id/d_4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_grape"
+            android:gravity="center_vertical"
+            android:textOn="Маргарин"
+            android:textOff="Маргарин"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_below="@+id/d_1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="35dp" />
+
+        <ToggleButton
+            android:id="@+id/d_5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_dried_apricot"
+            android:gravity="center_vertical"
+            android:textOn="Масло сливочное"
+            android:textOff="Масло сливочное"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_alignTop="@+id/d_6"
+            android:layout_alignLeft="@+id/d_2"
+            android:layout_alignStart="@+id/d_2" />
+
+        <ToggleButton
+            android:id="@+id/d_6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_lemon"
+            android:gravity="center_vertical"
+            android:textOn="Молоко"
+            android:textOff="Молоко"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_alignTop="@+id/d_4"
+            android:layout_alignLeft="@+id/d_3"
+            android:layout_alignStart="@+id/d_3" />
+
+        <ToggleButton
+            android:id="@+id/d_7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_tangerines"
+            android:gravity="center_vertical"
+            android:textOn="Сгущеное молоко"
+            android:textOff="Сгущеное молоко"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_below="@+id/d_4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="35dp" />
+
+        <ToggleButton
+            android:id="@+id/d_8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_peache"
+            android:gravity="center_vertical"
+            android:textOn="Сливки"
+            android:textOff="Сливки"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_alignTop="@+id/d_7"
+            android:layout_alignLeft="@+id/d_5"
+            android:layout_alignStart="@+id/d_5" />
+
+        <ToggleButton
+            android:id="@+id/d_9"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_plum"
+            android:gravity="center_vertical"
+            android:textOn="Сметана"
+            android:textOff="Сметана"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_alignTop="@+id/d_8"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+        <ToggleButton
+            android:id="@+id/d_10"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_tangerines"
+            android:gravity="center_vertical"
+            android:textOn="Сыр"
+            android:textOff="Сыр"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_below="@+id/d_7"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="35dp" />
+
+        <ToggleButton
+            android:id="@+id/d_11"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_tangerines"
+            android:gravity="center_vertical"
+            android:textOn="Сыр плавленный"
+            android:textOff="Сыр плавленный"
+            android:textSize="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_alignTop="@+id/d_10"
+            android:layout_alignLeft="@+id/d_8"
+            android:layout_alignStart="@+id/d_8" />
+
+        <ToggleButton
+            android:id="@+id/d_12"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_tangerines"
+            android:gravity="center_vertical"
+            android:textOn="Творог"
+            android:textOff="Творог"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_alignTop="@+id/d_11"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:text="Назад"
+            android:id="@+id/f_button_back"
+            android:onClick="onClick"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="600dp" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -46,6 +46,43 @@
         android:layout_alignBottom="@+id/fruit"
         android:layout_centerHorizontal="true" />
 
+    <ToggleButton
+        android:id="@+id/seasoning"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/button_background"
+        android:drawableTop="@drawable/seasoning_off"
+        android:gravity="center_vertical"
+        android:textOn="Приправы"
+        android:textOff="Приправы"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:textColor="@color/color"
+        android:onClick="onToggleButtonClick"
+        android:checked="false"
+        android:layout_alignBottom="@+id/vegetables"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ToggleButton
+        android:id="@+id/dairy"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/button_background"
+        android:drawableTop="@drawable/fruit_on_off"
+        android:gravity="center_vertical"
+        android:textOn="Молочные продукты"
+        android:textOff="Молочные продукты"
+        android:textSize="14dp"
+        android:textColor="@color/color"
+        android:onClick="onToggleButtonClick"
+        android:checked="false"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/fruit"
+        android:layout_alignRight="@+id/next"
+        android:layout_alignEnd="@+id/next"
+        android:textAlignment="center" />
+
     <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"

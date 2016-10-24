@@ -53,6 +53,18 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, Vegetables.class);
             startActivity(intent);
         }
+        toggleButton = (ToggleButton) findViewById(R.id.seasoning);
+        if (toggleButton.isChecked() == true)
+        {
+            Intent intent = new Intent(MainActivity.this, Seasoning.class);
+            startActivity(intent);
+        }
+        toggleButton = (ToggleButton) findViewById(R.id.dairy);
+        if (toggleButton.isChecked() == true)
+        {
+            Intent intent = new Intent(MainActivity.this, Dairy.class);
+            startActivity(intent);
+        }
 
     }
     public void onClick(View view) {
