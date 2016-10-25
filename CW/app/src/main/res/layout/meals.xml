@@ -101,44 +101,6 @@
             android:layout_alignLeft="@+id/toggleButton2"
             android:layout_alignStart="@+id/toggleButton2" />
 
-        <ToggleButton
-            android:id="@+id/toggleButton5"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:background="@drawable/button_background"
-            android:drawableTop="@drawable/fruit_ananas"
-            android:gravity="center_vertical"
-            android:textOn="Ананас"
-            android:textOff="Ананас"
-            android:textSize="14dp"
-            android:textAlignment="center"
-            android:textColor="@color/color"
-            android:onClick="onToggleButtonClick"
-            android:checked="false"
-            android:layout_alignTop="@+id/toggleButton6"
-            android:layout_alignLeft="@+id/toggleButton3"
-            android:layout_alignStart="@+id/toggleButton3" />
-
-        <ToggleButton
-            android:id="@+id/toggleButton6"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:background="@drawable/button_background"
-            android:drawableTop="@drawable/fruit_ananas"
-            android:gravity="center_vertical"
-            android:textOn="Ананас"
-            android:textOff="Ананас"
-            android:textSize="14dp"
-            android:textAlignment="center"
-            android:textColor="@color/color"
-            android:onClick="onToggleButtonClick"
-            android:checked="false"
-            android:layout_marginTop="182dp"
-            android:layout_below="@+id/toggleButton4"
-            android:layout_alignLeft="@+id/toggleButton4"
-            android:layout_alignStart="@+id/toggleButton4"
-            android:layout_marginBottom="20dp" />
-
         <Button
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"

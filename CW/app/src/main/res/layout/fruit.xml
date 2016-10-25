@@ -24,7 +24,7 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-             />
+            />
 
         <ToggleButton
             android:id="@+id/f_2"

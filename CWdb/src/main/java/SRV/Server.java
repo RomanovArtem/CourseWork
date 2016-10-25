@@ -10,7 +10,7 @@ public class Server {
         try {
             ServerSocket ss = new ServerSocket(port); // создаем сокет сервера и привязываем его к вышеуказанному порту
             System.out.println("Ожидаем клиента...");
-           // while(true) {
+            while(true) {
                 Socket socket = ss.accept(); // заставляем сервер ждать подключений и выводим сообщение когда кто-то связался с сервером
                 System.out.println("Клиент подключился.");
                 System.out.println();
@@ -40,7 +40,7 @@ public class Server {
                         "6.  При подаче на стол добавить сметаны, можно украсить зеленью."); // отсылаем клиенту обратно ту самую строку текста.
                 out.flush(); // заставляем поток закончить передачу данных.
                 System.out.println();
-            //}
+            }
         } catch(Exception x) { x.printStackTrace(); }
     }
 

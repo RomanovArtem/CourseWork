@@ -37,7 +37,7 @@ public class Fruit extends Activity
         listTB.add((ToggleButton) findViewById(R.id.f_10));
         listTB.add((ToggleButton) findViewById(R.id.f_11));
 
-;
+        ;
         loadSelection();
     }
 
@@ -61,7 +61,7 @@ public class Fruit extends Activity
     void saveSelection()
     {
         SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE); //получаем объект sPref класса SharedPreferences, который позволяет работать с данными
-                                                //Константа MODE_PRIVATE используется для настройки доступа и означает, что после сохранения, данные будут видны только этому приложению
+        //Константа MODE_PRIVATE используется для настройки доступа и означает, что после сохранения, данные будут видны только этому приложению
         SharedPreferences.Editor ed = sharedPreferences.edit(); //чтобы редактировать данные, необходим объект Editor – он получается из sPref
         for (int i = 0; i < 11; i++)
         {
@@ -75,7 +75,7 @@ public class Fruit extends Activity
             ed.commit(); //Чтобы данные сохранились, необходимо выполнить commit
         }
 
-       // Toast.makeText(this, "Text saved", Toast.LENGTH_SHORT).show(); // выводит ссобщ, что данные сохранены
+        // Toast.makeText(this, "Text saved", Toast.LENGTH_SHORT).show(); // выводит ссобщ, что данные сохранены
     }
 
     void loadSelection()
