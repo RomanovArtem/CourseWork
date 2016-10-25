@@ -77,12 +77,40 @@ public class Meals extends Activity {
                 //hashmap.put(veg, selection);
             }
         }
-
         /*for (String selectedProduct : selectedProducts) {
              System.out.println(selectedProduct);
         }*/
+    }
 
+    void loadSelectionSeasoning()
+    {
+        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
+        for (int i = 0; i < 8; i++)
+        {
+            String sea = "s";
+            int j = (i + 28);
+            String str = Integer.toString(j);
+            sea = sea.concat(str);
+            boolean selection = sharedPreferences.getBoolean(sea, false);
+            if (selection == true) {
+                selectedProducts.add(sea);
+            }
+        }
+    }
 
+    void loadSelectionDairy()
+    {
+        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
+        for (int i = 0; i < 12; i++) {
+            String sea = "d";
+            int j = (i + 36);
+            String str = Integer.toString(j);
+            sea = sea.concat(str);
+            boolean selection = sharedPreferences.getBoolean(sea, false);
+            if (selection == true) {
+                selectedProducts.add(sea);
+            }
+        }
     }
 
     public static String Convert()
@@ -103,6 +131,8 @@ public class Meals extends Activity {
         /* создаем объект для работы с сервером*/
         loadSelectionFruit();
         loadSelectionVegetables();
+        loadSelectionSeasoning();
+        loadSelectionDairy();
         Intent intent = new Intent(this, SelectedDishes.class);
         Client client=new Client();
 

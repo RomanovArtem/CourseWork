@@ -30,6 +30,10 @@ public class Server {
                 System.out.println("Клиент прислал : " + line);
                 AAA();
                 System.out.println("Я ему отсылкаю:...");
+                //
+                //
+                //
+                DataBase.ConnectDB();
                 out.writeUTF("1.  Курицу разморозить, разделить на части и поставить варить. Посолить бульон.\n" +
                         "\n" +
                         "\n" +
@@ -52,6 +56,8 @@ public class Server {
         {
             parts[i] = parts[i].replaceFirst ("v", "");
             parts[i] = parts[i].replaceFirst ("f", "");
+            parts[i] = parts[i].replaceFirst ("s", "");
+            parts[i] = parts[i].replaceFirst ("d", "");
             //System.out.println(i + " " + parts[i]);
             i++;
         }
