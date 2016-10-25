@@ -11,7 +11,7 @@
         android:fillViewport="true"
         >
         <ToggleButton
-            android:id="@+id/f_1"
+            android:id="@+id/n_60"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/button_background"
@@ -27,7 +27,7 @@
             />
 
         <ToggleButton
-            android:id="@+id/f_2"
+            android:id="@+id/n_61"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/button_background"
@@ -43,7 +43,7 @@
             android:layout_centerHorizontal="true" />
 
         <ToggleButton
-            android:id="@+id/f_3"
+            android:id="@+id/n_62"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/button_background"
@@ -60,7 +60,7 @@
             android:layout_alignParentEnd="true" />
 
         <ToggleButton
-            android:id="@+id/f_4"
+            android:id="@+id/n_63"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/button_background"
@@ -73,13 +73,13 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_below="@+id/f_1"
-            android:layout_alignLeft="@+id/f_1"
-            android:layout_alignStart="@+id/f_1"
+            android:layout_below="@+id/n_60"
+            android:layout_alignLeft="@+id/n_60"
+            android:layout_alignStart="@+id/n_60"
             android:layout_marginTop="35dp" />
 
         <ToggleButton
-            android:id="@+id/f_5"
+            android:id="@+id/n_64"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/button_background"
@@ -92,9 +92,9 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_alignTop="@+id/f_4"
-            android:layout_alignLeft="@+id/f_2"
-            android:layout_alignStart="@+id/f_2" />
+            android:layout_alignTop="@+id/n_63"
+            android:layout_alignLeft="@+id/n_61"
+            android:layout_alignStart="@+id/n_61" />
 
         <ToggleButton
             android:id="@+id/f_6"
@@ -110,9 +110,9 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_alignTop="@+id/f_5"
-            android:layout_alignLeft="@+id/f_3"
-            android:layout_alignStart="@+id/f_3" />
+            android:layout_alignTop="@+id/n_64"
+            android:layout_alignLeft="@+id/n_62"
+            android:layout_alignStart="@+id/n_62" />
 
         <ToggleButton
             android:id="@+id/f_7"
@@ -128,7 +128,7 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_below="@+id/f_4"
+            android:layout_below="@+id/n_63"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginTop="35dp" />

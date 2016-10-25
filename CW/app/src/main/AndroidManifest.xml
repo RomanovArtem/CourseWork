@@ -22,6 +22,9 @@
         <activity android:name=".Dairy"></activity>
         <activity android:name=".Seasoning"></activity>
         <activity android:name=".SelectedDishes"></activity>
+        <activity android:name=".Supplements"></activity>
+        <activity android:name=".Nuts"></activity>
+        <activity android:name=".Meat"></activity>
     </application>
 
 </manifest>

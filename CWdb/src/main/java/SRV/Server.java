@@ -54,11 +54,14 @@ public class Server {
         int i = 0;
         for (String part : parts )
         {
+
             parts[i] = parts[i].replaceFirst ("v", "");
             parts[i] = parts[i].replaceFirst ("f", "");
-            parts[i] = parts[i].replaceFirst ("s", "");
+            parts[i] = parts[i].replaceFirst ("se", "");
             parts[i] = parts[i].replaceFirst ("d", "");
-            //System.out.println(i + " " + parts[i]);
+            parts[i] = parts[i].replaceFirst ("su", "");
+            parts[i] = parts[i].replaceFirst ("n", "");
+            parts[i] = parts[i].replaceFirst ("m", "");
             i++;
         }
         return parts;

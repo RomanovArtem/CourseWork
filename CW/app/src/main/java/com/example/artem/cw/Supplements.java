@@ -14,7 +14,7 @@ import java.util.ArrayList;
  * Created by Artem on 05.09.2016.
  */
 
-public class Fruit extends Activity
+public class Supplements extends Activity
 {
     public static final String APP_PREFERENCES = "mysettings";
 
@@ -22,52 +22,38 @@ public class Fruit extends Activity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fruit);
+        setContentView(R.layout.supplements);
 
-        listTB.add((ToggleButton) findViewById(R.id.n_60));
-        listTB.add((ToggleButton) findViewById(R.id.n_61));
-        listTB.add((ToggleButton) findViewById(R.id.n_62));
-        listTB.add((ToggleButton) findViewById(R.id.n_63));
-        listTB.add((ToggleButton) findViewById(R.id.n_64));
-        listTB.add((ToggleButton) findViewById(R.id.f_6));
-        listTB.add((ToggleButton) findViewById(R.id.f_7));
-        listTB.add((ToggleButton) findViewById(R.id.f_8));
-        listTB.add((ToggleButton) findViewById(R.id.f_9));
-        listTB.add((ToggleButton) findViewById(R.id.f_10));
-        listTB.add((ToggleButton) findViewById(R.id.f_11));
-
-        ;
+        listTB.add((ToggleButton) findViewById(R.id.m_65));
+        listTB.add((ToggleButton) findViewById(R.id.m_66));
+        listTB.add((ToggleButton) findViewById(R.id.m_67));
+        listTB.add((ToggleButton) findViewById(R.id.m_68));
+        listTB.add((ToggleButton) findViewById(R.id.m_69));
+        listTB.add((ToggleButton) findViewById(R.id.m_70));
+        listTB.add((ToggleButton) findViewById(R.id.m_71));
+        listTB.add((ToggleButton) findViewById(R.id.m_72));
+        listTB.add((ToggleButton) findViewById(R.id.m_73));
+        listTB.add((ToggleButton) findViewById(R.id.m_74));
+        listTB.add((ToggleButton) findViewById(R.id.su_58));
+        listTB.add((ToggleButton) findViewById(R.id.su_59));
         loadSelection();
     }
 
     public void onToggleButtonClick (View button){
         getApplicationContext();
-        //aaa();
-        /*Toast.makeText(
-                getApplicationContext(),
-                Boolean.toString(((ToggleButton) button).isChecked()),
-                Toast.LENGTH_SHORT).show();*/
     }
 
-
-    //SharedPreferences sPref;
-
-
-
-    String f_1 = "f_1";
-    String f_2 = "f_2";
-    String f_3 = "f_3";
     void saveSelection()
     {
         SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE); //получаем объект sPref класса SharedPreferences, который позволяет работать с данными
         //Константа MODE_PRIVATE используется для настройки доступа и означает, что после сохранения, данные будут видны только этому приложению
         SharedPreferences.Editor ed = sharedPreferences.edit(); //чтобы редактировать данные, необходим объект Editor – он получается из sPref
-        for (int i = 0; i < 11; i++)
+        for (int i = 0; i < 12; i++)
         {
-            String fru = "f";
+            String fru = "su";
             ToggleButton toggleButton;
             toggleButton = listTB.get(i);
-            int j = (i + 1);
+            int j = (i + 48);
             String str = Integer.toString(j);
             fru = fru.concat(str);
             ed.putBoolean(fru, toggleButton.isChecked()); //В метод putString указывается наименование переменной – это константа SAVED_TEXT, и значение – содержимое поля etText
@@ -80,23 +66,22 @@ public class Fruit extends Activity
     void loadSelection()
     {
         SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
-        for (int i = 0; i < 11; i++)
+        for (int i = 0; i < 12; i++)
         {
-            String fru = "f";
+            String fru = "su";
             ToggleButton toggleButton;
             toggleButton = listTB.get(i);
-            int j = (i + 1);
+            int j = (i + 48);
             String str = Integer.toString(j);
             fru = fru.concat(str);
             boolean savedSelection1 = sharedPreferences.getBoolean(fru, false);
             toggleButton.setChecked(savedSelection1);
         }
-        // Toast.makeText(this, "Text loaded", Toast.LENGTH_SHORT).show();
     }
 
     public void onClick(View view) {
         saveSelection();
-        Intent intent = new Intent(Fruit.this, MainActivity.class);
+        Intent intent = new Intent(Supplements.this, MainActivity.class);
         startActivity(intent);
     }
 }

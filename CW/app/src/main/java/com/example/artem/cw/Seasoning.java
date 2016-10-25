@@ -23,14 +23,14 @@ public class Seasoning extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.seasoning);
 
-        listTB.add((ToggleButton) findViewById(R.id.s_28));
-        listTB.add((ToggleButton) findViewById(R.id.s_29));
-        listTB.add((ToggleButton) findViewById(R.id.s_30));
-        listTB.add((ToggleButton) findViewById(R.id.s_31));
-        listTB.add((ToggleButton) findViewById(R.id.s_32));
-        listTB.add((ToggleButton) findViewById(R.id.s_33));
-        listTB.add((ToggleButton) findViewById(R.id.s_34));
-        listTB.add((ToggleButton) findViewById(R.id.s_35));
+        listTB.add((ToggleButton) findViewById(R.id.m_65));
+        listTB.add((ToggleButton) findViewById(R.id.m_66));
+        listTB.add((ToggleButton) findViewById(R.id.m_67));
+        listTB.add((ToggleButton) findViewById(R.id.m_68));
+        listTB.add((ToggleButton) findViewById(R.id.m_69));
+        listTB.add((ToggleButton) findViewById(R.id.m_70));
+        listTB.add((ToggleButton) findViewById(R.id.m_71));
+        listTB.add((ToggleButton) findViewById(R.id.m_72));
         loadSelection();
     }
 
@@ -51,7 +51,7 @@ public class Seasoning extends Activity {
         SharedPreferences.Editor ed = sharedPreferences.edit(); //чтобы редактировать данные, необходим объект Editor – он получается из sPref
         for (int i = 0; i < 8; i++)
         {
-            String veg = "s";
+            String veg = "se";
             ToggleButton toggleButton;
             toggleButton = listTB.get(i);
             int j = (i + 28);
@@ -70,7 +70,7 @@ public class Seasoning extends Activity {
         SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
         for (int i = 0; i < 8; i++)
         {
-            String veg = "s";
+            String veg = "se";
             ToggleButton toggleButton;
             toggleButton = listTB.get(i);
             int j = (i + 28);

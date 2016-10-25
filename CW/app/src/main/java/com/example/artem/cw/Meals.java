@@ -87,7 +87,7 @@ public class Meals extends Activity {
         SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
         for (int i = 0; i < 8; i++)
         {
-            String sea = "s";
+            String sea = "se";
             int j = (i + 28);
             String str = Integer.toString(j);
             sea = sea.concat(str);
@@ -113,13 +113,58 @@ public class Meals extends Activity {
         }
     }
 
+    void loadSelectionSupplements()
+    {
+        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
+        for (int i = 0; i < 12; i++) {
+            String sea = "su";
+            int j = (i + 48);
+            String str = Integer.toString(j);
+            sea = sea.concat(str);
+            boolean selection = sharedPreferences.getBoolean(sea, false);
+            if (selection == true) {
+                selectedProducts.add(sea);
+            }
+        }
+    }
+
+    void loadSelectionNuts()
+    {
+        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
+        for (int i = 0; i < 5; i++) {
+            String sea = "n";
+            int j = (i + 60);
+            String str = Integer.toString(j);
+            sea = sea.concat(str);
+            boolean selection = sharedPreferences.getBoolean(sea, false);
+            if (selection == true) {
+                selectedProducts.add(sea);
+            }
+        }
+    }
+
+    void loadSelectionMeat()
+    {
+        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
+        for (int i = 0; i < 11; i++) {
+            String sea = "m";
+            int j = (i + 65);
+            String str = Integer.toString(j);
+            sea = sea.concat(str);
+            boolean selection = sharedPreferences.getBoolean(sea, false);
+            if (selection == true) {
+                selectedProducts.add(sea);
+            }
+        }
+    }
+
     public static String Convert()
     {
         String line = new String();
         line = "";
         for (String selectedProduct : selectedProducts) {
-            line = line + selectedProduct + " ";
-        }
+        line = line + selectedProduct + " ";
+    }
         System.out.println("line: " + line);
         return line;
     }
@@ -133,6 +178,9 @@ public class Meals extends Activity {
         loadSelectionVegetables();
         loadSelectionSeasoning();
         loadSelectionDairy();
+        loadSelectionSupplements();
+        loadSelectionNuts();
+        loadSelectionMeat();
         Intent intent = new Intent(this, SelectedDishes.class);
         Client client=new Client();
 
