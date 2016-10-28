@@ -25,6 +25,10 @@
         <activity android:name=".Supplements"></activity>
         <activity android:name=".Nuts"></activity>
         <activity android:name=".Meat"></activity>
+        <activity android:name=".Refill"></activity>
+        <activity android:name=".Seafood"></activity>
+        <activity android:name=".Cereals"></activity>
+        <activity android:name=".Greenery"></activity>
     </application>
 
 </manifest>

@@ -24,15 +24,15 @@ public class Fruit extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fruit);
 
-        listTB.add((ToggleButton) findViewById(R.id.n_60));
-        listTB.add((ToggleButton) findViewById(R.id.n_61));
-        listTB.add((ToggleButton) findViewById(R.id.n_62));
-        listTB.add((ToggleButton) findViewById(R.id.n_63));
-        listTB.add((ToggleButton) findViewById(R.id.n_64));
+        listTB.add((ToggleButton) findViewById(R.id.gr_109));
+        listTB.add((ToggleButton) findViewById(R.id.gr_110));
+        listTB.add((ToggleButton) findViewById(R.id.gr_111));
+        listTB.add((ToggleButton) findViewById(R.id.gr_112));
+        listTB.add((ToggleButton) findViewById(R.id.gr_113));
         listTB.add((ToggleButton) findViewById(R.id.f_6));
-        listTB.add((ToggleButton) findViewById(R.id.f_7));
-        listTB.add((ToggleButton) findViewById(R.id.f_8));
-        listTB.add((ToggleButton) findViewById(R.id.f_9));
+        listTB.add((ToggleButton) findViewById(R.id.sf_91));
+        listTB.add((ToggleButton) findViewById(R.id.sf_92));
+        listTB.add((ToggleButton) findViewById(R.id.sf_93));
         listTB.add((ToggleButton) findViewById(R.id.f_10));
         listTB.add((ToggleButton) findViewById(R.id.f_11));
 
@@ -64,7 +64,7 @@ public class Fruit extends Activity
         SharedPreferences.Editor ed = sharedPreferences.edit(); //чтобы редактировать данные, необходим объект Editor – он получается из sPref
         for (int i = 0; i < 11; i++)
         {
-            String fru = "f";
+            String fru = "fr";
             ToggleButton toggleButton;
             toggleButton = listTB.get(i);
             int j = (i + 1);
@@ -82,7 +82,7 @@ public class Fruit extends Activity
         SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
         for (int i = 0; i < 11; i++)
         {
-            String fru = "f";
+            String fru = "fr";
             ToggleButton toggleButton;
             toggleButton = listTB.get(i);
             int j = (i + 1);

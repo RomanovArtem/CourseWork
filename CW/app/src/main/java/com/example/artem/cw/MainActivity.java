@@ -83,6 +83,31 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, Meat.class);
             startActivity(intent);
         }
+        toggleButton = (ToggleButton) findViewById(R.id.refill);
+        if (toggleButton.isChecked() == true)
+        {
+            Intent intent = new Intent(MainActivity.this, Refill.class);
+            startActivity(intent);
+        }
+        toggleButton = (ToggleButton) findViewById(R.id.seafood);
+        if (toggleButton.isChecked() == true)
+        {
+            Intent intent = new Intent(MainActivity.this, Seafood.class);
+            startActivity(intent);
+        }
+        toggleButton = (ToggleButton) findViewById(R.id.cereals);
+        if (toggleButton.isChecked() == true)
+        {
+            Intent intent = new Intent(MainActivity.this, Cereals.class);
+            startActivity(intent);
+        }
+        toggleButton = (ToggleButton) findViewById(R.id.greenery);
+        if (toggleButton.isChecked() == true)
+        {
+            Intent intent = new Intent(MainActivity.this, Greenery.class);
+            startActivity(intent);
+        }
+
 
 
     }

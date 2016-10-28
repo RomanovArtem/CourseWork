@@ -24,11 +24,11 @@ public class Nuts extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nuts);
 
-        listTB.add((ToggleButton) findViewById(R.id.n_60));
-        listTB.add((ToggleButton) findViewById(R.id.n_61));
-        listTB.add((ToggleButton) findViewById(R.id.n_62));
-        listTB.add((ToggleButton) findViewById(R.id.n_63));
-        listTB.add((ToggleButton) findViewById(R.id.n_64));
+        listTB.add((ToggleButton) findViewById(R.id.gr_109));
+        listTB.add((ToggleButton) findViewById(R.id.gr_110));
+        listTB.add((ToggleButton) findViewById(R.id.gr_111));
+        listTB.add((ToggleButton) findViewById(R.id.gr_112));
+        listTB.add((ToggleButton) findViewById(R.id.gr_113));
         loadSelection();
     }
 
@@ -44,7 +44,7 @@ public class Nuts extends Activity
         SharedPreferences.Editor ed = sharedPreferences.edit(); //чтобы редактировать данные, необходим объект Editor – он получается из sPref
         for (int i = 0; i < 5; i++)
         {
-            String fru = "n";
+            String fru = "nu";
             ToggleButton toggleButton;
             toggleButton = listTB.get(i);
             int j = (i + 60);
@@ -62,7 +62,7 @@ public class Nuts extends Activity
         SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
         for (int i = 0; i < 5; i++)
         {
-            String fru = "n";
+            String fru = "nu";
             ToggleButton toggleButton;
             toggleButton = listTB.get(i);
             int j = (i + 60);

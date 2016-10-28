@@ -12,7 +12,7 @@ import java.util.ArrayList;
 /**
  * Created by Artem on 24.10.2016.
  */
-public class Dairy extends Activity {
+public class Seafood extends Activity {
 
     public static final String APP_PREFERENCES = "mysettings";
 
@@ -21,21 +21,26 @@ public class Dairy extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dairy);
+        setContentView(R.layout.seafood);
 
-        listTB.add((ToggleButton) findViewById(R.id.d_36));
-        listTB.add((ToggleButton) findViewById(R.id.d_37));
-        listTB.add((ToggleButton) findViewById(R.id.d_38));
-        listTB.add((ToggleButton) findViewById(R.id.d_39));
-        listTB.add((ToggleButton) findViewById(R.id.d_40));
-        listTB.add((ToggleButton) findViewById(R.id.d_41));
-        listTB.add((ToggleButton) findViewById(R.id.d_42));
-        listTB.add((ToggleButton) findViewById(R.id.d_43));
-        listTB.add((ToggleButton) findViewById(R.id.d_44));
-        listTB.add((ToggleButton) findViewById(R.id.d_45));
-        listTB.add((ToggleButton) findViewById(R.id.d_46));
-        listTB.add((ToggleButton) findViewById(R.id.d_47));
-
+        listTB.add((ToggleButton) findViewById(R.id.gr_109));
+        listTB.add((ToggleButton) findViewById(R.id.gr_110));
+        listTB.add((ToggleButton) findViewById(R.id.gr_111));
+        listTB.add((ToggleButton) findViewById(R.id.gr_112));
+        listTB.add((ToggleButton) findViewById(R.id.gr_113));
+        listTB.add((ToggleButton) findViewById(R.id.sf_90));
+        listTB.add((ToggleButton) findViewById(R.id.sf_91));
+        listTB.add((ToggleButton) findViewById(R.id.sf_92));
+        listTB.add((ToggleButton) findViewById(R.id.sf_93));
+        listTB.add((ToggleButton) findViewById(R.id.sf_94));
+        listTB.add((ToggleButton) findViewById(R.id.sf_95));
+        listTB.add((ToggleButton) findViewById(R.id.sf_96));
+        listTB.add((ToggleButton) findViewById(R.id.sf_97));
+        listTB.add((ToggleButton) findViewById(R.id.sf_98));
+        listTB.add((ToggleButton) findViewById(R.id.sf_99));
+        listTB.add((ToggleButton) findViewById(R.id.sf_100));
+        listTB.add((ToggleButton) findViewById(R.id.sf_101));
+        listTB.add((ToggleButton) findViewById(R.id.sf_102));
         loadSelection();
     }
 
@@ -54,12 +59,12 @@ public class Dairy extends Activity {
         SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES, MODE_PRIVATE); //получаем объект sPref класса SharedPreferences, который позволяет работать с данными
         //Константа MODE_PRIVATE используется для настройки доступа и означает, что после сохранения, данные будут видны только этому приложению
         SharedPreferences.Editor ed = sharedPreferences.edit(); //чтобы редактировать данные, необходим объект Editor – он получается из sPref
-        for (int i = 0; i < 12; i++)
+        for (int i = 0; i < 18; i++)
         {
-            String veg = "da";
+            String veg = "sf";
             ToggleButton toggleButton;
             toggleButton = listTB.get(i);
-            int j = (i + 36);
+            int j = (i + 85);
             String str = Integer.toString(j);
             veg = veg.concat(str);
             System.out.println(veg);
@@ -73,12 +78,12 @@ public class Dairy extends Activity {
     void loadSelection()
     {
         SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
-        for (int i = 0; i < 12; i++)
+        for (int i = 0; i < 18; i++)
         {
-            String veg = "da";
+            String veg = "sf";
             ToggleButton toggleButton;
             toggleButton = listTB.get(i);
-            int j = (i + 36);
+            int j = (i + 85);
             String str = Integer.toString(j);
             veg = veg.concat(str);
             boolean savedSelection1 = sharedPreferences.getBoolean(veg, false);
@@ -89,7 +94,8 @@ public class Dairy extends Activity {
 
     public void onClick(View view) {
         saveSelection();
-        Intent intent = new Intent(Dairy.this, MainActivity.class);
+        Intent intent = new Intent(Seafood.this, MainActivity.class);
         startActivity(intent);
     }
+
 }

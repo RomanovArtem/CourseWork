@@ -48,7 +48,7 @@ public class Meals extends Activity {
         SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
         for (int i = 0; i < 11; i++)
         {
-            String fru = "f";
+            String fru = "fr";
             int j = (i + 1);
             String str = Integer.toString(j);
             fru = fru.concat(str);
@@ -66,7 +66,7 @@ public class Meals extends Activity {
         SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
         for (int i = 0; i < 15; i++)
         {
-            String veg = "v";
+            String veg = "ve";
             int j = (i + 13);
             String str = Integer.toString(j);
             veg = veg.concat(str);
@@ -102,7 +102,7 @@ public class Meals extends Activity {
     {
         SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
         for (int i = 0; i < 12; i++) {
-            String sea = "d";
+            String sea = "da";
             int j = (i + 36);
             String str = Integer.toString(j);
             sea = sea.concat(str);
@@ -132,7 +132,7 @@ public class Meals extends Activity {
     {
         SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
         for (int i = 0; i < 5; i++) {
-            String sea = "n";
+            String sea = "nu";
             int j = (i + 60);
             String str = Integer.toString(j);
             sea = sea.concat(str);
@@ -147,8 +147,65 @@ public class Meals extends Activity {
     {
         SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
         for (int i = 0; i < 11; i++) {
-            String sea = "m";
+            String sea = "me";
             int j = (i + 65);
+            String str = Integer.toString(j);
+            sea = sea.concat(str);
+            boolean selection = sharedPreferences.getBoolean(sea, false);
+            if (selection == true) {
+                selectedProducts.add(sea);
+            }
+        }
+    }
+
+    void loadSelectionRefill()
+    {
+        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
+        for (int i = 0; i < 9; i++) {
+            String sea = "re";
+            int j = (i + 76);
+            String str = Integer.toString(j);
+            sea = sea.concat(str);
+            boolean selection = sharedPreferences.getBoolean(sea, false);
+            if (selection == true) {
+                selectedProducts.add(sea);
+            }
+        }
+    }
+    void loadSelectionSeafood()
+    {
+        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
+        for (int i = 0; i < 18; i++) {
+            String sea = "sf";
+            int j = (i + 85);
+            String str = Integer.toString(j);
+            sea = sea.concat(str);
+            boolean selection = sharedPreferences.getBoolean(sea, false);
+            if (selection == true) {
+                selectedProducts.add(sea);
+            }
+        }
+    }
+    void loadSelectionCereals()
+    {
+        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
+        for (int i = 0; i < 6; i++) {
+            String sea = "ce";
+            int j = (i + 103);
+            String str = Integer.toString(j);
+            sea = sea.concat(str);
+            boolean selection = sharedPreferences.getBoolean(sea, false);
+            if (selection == true) {
+                selectedProducts.add(sea);
+            }
+        }
+    }
+    void loadSelectionGreenery()
+    {
+        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
+        for (int i = 0; i < 16; i++) {
+            String sea = "gr";
+            int j = (i + 109);
             String str = Integer.toString(j);
             sea = sea.concat(str);
             boolean selection = sharedPreferences.getBoolean(sea, false);
@@ -181,8 +238,13 @@ public class Meals extends Activity {
         loadSelectionSupplements();
         loadSelectionNuts();
         loadSelectionMeat();
+        loadSelectionRefill();
+        loadSelectionSeafood();
+        loadSelectionCereals();
+        loadSelectionGreenery();
         Intent intent = new Intent(this, SelectedDishes.class);
-        Client client=new Client();
+       //
+      /*  Client client=new Client();
 
         Toast toast = Toast.makeText(getApplicationContext(), "Подключаемся к серверу!", Toast.LENGTH_SHORT);
         toast.show();
@@ -197,9 +259,8 @@ public class Meals extends Activity {
                 break;
             }
 
-        }
+        } */
+        //
         startActivity(intent);
-        ////System.out.println("sadadasd" + stroka);
-
     }
 }

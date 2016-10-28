@@ -55,13 +55,17 @@ public class Server {
         for (String part : parts )
         {
 
-            parts[i] = parts[i].replaceFirst ("v", "");
-            parts[i] = parts[i].replaceFirst ("f", "");
+            parts[i] = parts[i].replaceFirst ("ve", "");
+            parts[i] = parts[i].replaceFirst ("fr", "");
             parts[i] = parts[i].replaceFirst ("se", "");
-            parts[i] = parts[i].replaceFirst ("d", "");
+            parts[i] = parts[i].replaceFirst ("da", "");
             parts[i] = parts[i].replaceFirst ("su", "");
-            parts[i] = parts[i].replaceFirst ("n", "");
-            parts[i] = parts[i].replaceFirst ("m", "");
+            parts[i] = parts[i].replaceFirst ("nu", "");
+            parts[i] = parts[i].replaceFirst ("me", "");
+            parts[i] = parts[i].replaceFirst ("re", "");
+            parts[i] = parts[i].replaceFirst ("sf", "");
+            parts[i] = parts[i].replaceFirst ("ce", "");
+            parts[i] = parts[i].replaceFirst ("gr", "");
             i++;
         }
         return parts;

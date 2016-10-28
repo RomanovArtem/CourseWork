@@ -67,7 +67,7 @@ public class Vegetables extends Activity {
         SharedPreferences.Editor ed = sharedPreferences.edit(); //чтобы редактировать данные, необходим объект Editor – он получается из sPref
         for (int i = 0; i < 15; i++)
         {
-            String veg = "v";
+            String veg = "ve";
             ToggleButton toggleButton;
             toggleButton = listTB.get(i);
             int j = (i + 13);
@@ -86,7 +86,7 @@ public class Vegetables extends Activity {
         SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
         for (int i = 0; i < 15; i++)
         {
-            String veg = "v";
+            String veg = "ve";
             ToggleButton toggleButton;
             toggleButton = listTB.get(i);
             int j = (i + 13);

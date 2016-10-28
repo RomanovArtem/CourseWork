@@ -49,7 +49,7 @@ public class Meat extends Activity
         SharedPreferences.Editor ed = sharedPreferences.edit(); //чтобы редактировать данные, необходим объект Editor – он получается из sPref
         for (int i = 0; i < 11; i++)
         {
-            String fru = "m";
+            String fru = "me";
             ToggleButton toggleButton;
             toggleButton = listTB.get(i);
             int j = (i + 65);
@@ -67,7 +67,7 @@ public class Meat extends Activity
         SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
         for (int i = 0; i < 11; i++)
         {
-            String fru = "m";
+            String fru = "me";
             ToggleButton toggleButton;
             toggleButton = listTB.get(i);
             int j = (i + 65);
