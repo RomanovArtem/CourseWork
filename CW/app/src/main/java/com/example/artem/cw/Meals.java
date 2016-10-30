@@ -214,6 +214,20 @@ public class Meals extends Activity {
             }
         }
     }
+    void loadSelectionBerries()
+    {
+        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
+        for (int i = 0; i < 7; i++) {
+            String sea = "be";
+            int j = (i + 125);
+            String str = Integer.toString(j);
+            sea = sea.concat(str);
+            boolean selection = sharedPreferences.getBoolean(sea, false);
+            if (selection == true) {
+                selectedProducts.add(sea);
+            }
+        }
+    }
 
     public static String Convert()
     {
@@ -242,9 +256,10 @@ public class Meals extends Activity {
         loadSelectionSeafood();
         loadSelectionCereals();
         loadSelectionGreenery();
+        loadSelectionBerries();
         Intent intent = new Intent(this, SelectedDishes.class);
        //
-      /*  Client client=new Client();
+    /*Client client=new Client();
 
         Toast toast = Toast.makeText(getApplicationContext(), "Подключаемся к серверу!", Toast.LENGTH_SHORT);
         toast.show();

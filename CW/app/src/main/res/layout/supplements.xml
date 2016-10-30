@@ -11,7 +11,7 @@
         android:fillViewport="true"
         >
         <ToggleButton
-            android:id="@+id/m_65"
+            android:id="@+id/su_48"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/button_background"
@@ -29,7 +29,7 @@
             android:layout_alignParentStart="true" />
 
         <ToggleButton
-            android:id="@+id/m_66"
+            android:id="@+id/su_49"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/button_background"
@@ -42,10 +42,11 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true" />
 
         <ToggleButton
-            android:id="@+id/m_67"
+            android:id="@+id/su_50"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/button_background"
@@ -62,7 +63,7 @@
             android:layout_alignParentEnd="true" />
 
         <ToggleButton
-            android:id="@+id/m_68"
+            android:id="@+id/su_51"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/button_background"
@@ -75,13 +76,13 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_below="@+id/m_65"
+            android:layout_below="@+id/su_48"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginTop="35dp" />
 
         <ToggleButton
-            android:id="@+id/m_69"
+            android:id="@+id/su_52"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/button_background"
@@ -94,12 +95,12 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_alignTop="@+id/m_68"
-            android:layout_alignLeft="@+id/m_66"
-            android:layout_alignStart="@+id/m_66" />
+            android:layout_alignTop="@+id/su_51"
+            android:layout_alignLeft="@+id/su_49"
+            android:layout_alignStart="@+id/su_49" />
 
         <ToggleButton
-            android:id="@+id/m_70"
+            android:id="@+id/su_53"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/button_background"
@@ -112,12 +113,12 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_alignTop="@+id/m_69"
-            android:layout_alignLeft="@+id/m_67"
-            android:layout_alignStart="@+id/m_67" />
+            android:layout_alignTop="@+id/su_52"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <ToggleButton
-            android:id="@+id/m_71"
+            android:id="@+id/su_54"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/button_background"
@@ -130,13 +131,13 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_below="@+id/m_68"
+            android:layout_below="@+id/su_51"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginTop="35dp" />
 
         <ToggleButton
-            android:id="@+id/m_72"
+            android:id="@+id/su_55"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/button_background"
@@ -149,12 +150,12 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_alignTop="@+id/m_71"
-            android:layout_alignLeft="@+id/m_69"
-            android:layout_alignStart="@+id/m_69" />
+            android:layout_alignTop="@+id/su_54"
+            android:layout_alignLeft="@+id/su_52"
+            android:layout_alignStart="@+id/su_52" />
 
         <ToggleButton
-            android:id="@+id/m_73"
+            android:id="@+id/su_56"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/button_background"
@@ -167,12 +168,12 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_alignTop="@+id/m_72"
-            android:layout_alignLeft="@+id/m_70"
-            android:layout_alignStart="@+id/m_70" />
+            android:layout_alignTop="@+id/su_55"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
         <ToggleButton
-            android:id="@+id/m_74"
+            android:id="@+id/su_57"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:background="@drawable/button_background"
@@ -185,7 +186,7 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_below="@+id/m_71"
+            android:layout_below="@+id/su_54"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginTop="35dp" />
@@ -204,9 +205,9 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_alignTop="@+id/m_74"
-            android:layout_alignLeft="@+id/m_72"
-            android:layout_alignStart="@+id/m_72" />
+            android:layout_alignTop="@+id/su_57"
+            android:layout_alignLeft="@+id/su_55"
+            android:layout_alignStart="@+id/su_55" />
 
         <ToggleButton
             android:id="@+id/su_59"
@@ -222,7 +223,7 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_alignTop="@+id/m_74"
+            android:layout_alignTop="@+id/su_58"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
 

@@ -24,11 +24,11 @@ public class Nuts extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nuts);
 
-        listTB.add((ToggleButton) findViewById(R.id.gr_109));
-        listTB.add((ToggleButton) findViewById(R.id.gr_110));
-        listTB.add((ToggleButton) findViewById(R.id.gr_111));
-        listTB.add((ToggleButton) findViewById(R.id.gr_112));
-        listTB.add((ToggleButton) findViewById(R.id.gr_113));
+        listTB.add((ToggleButton) findViewById(R.id.nu_60));
+        listTB.add((ToggleButton) findViewById(R.id.nu_61));
+        listTB.add((ToggleButton) findViewById(R.id.nu_62));
+        listTB.add((ToggleButton) findViewById(R.id.nu_63));
+        listTB.add((ToggleButton) findViewById(R.id.nu_64));
         loadSelection();
     }
 

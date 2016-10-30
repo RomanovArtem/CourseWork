@@ -54,9 +54,8 @@ public class Server {
         int i = 0;
         for (String part : parts )
         {
-
-            parts[i] = parts[i].replaceFirst ("ve", "");
             parts[i] = parts[i].replaceFirst ("fr", "");
+            parts[i] = parts[i].replaceFirst ("ve", "");
             parts[i] = parts[i].replaceFirst ("se", "");
             parts[i] = parts[i].replaceFirst ("da", "");
             parts[i] = parts[i].replaceFirst ("su", "");
@@ -66,6 +65,7 @@ public class Server {
             parts[i] = parts[i].replaceFirst ("sf", "");
             parts[i] = parts[i].replaceFirst ("ce", "");
             parts[i] = parts[i].replaceFirst ("gr", "");
+            parts[i] = parts[i].replaceFirst ("be", "");
             i++;
         }
         return parts;

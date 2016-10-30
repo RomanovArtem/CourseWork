@@ -23,18 +23,18 @@ public class Dairy extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dairy);
 
-        listTB.add((ToggleButton) findViewById(R.id.d_36));
-        listTB.add((ToggleButton) findViewById(R.id.d_37));
-        listTB.add((ToggleButton) findViewById(R.id.d_38));
-        listTB.add((ToggleButton) findViewById(R.id.d_39));
-        listTB.add((ToggleButton) findViewById(R.id.d_40));
-        listTB.add((ToggleButton) findViewById(R.id.d_41));
-        listTB.add((ToggleButton) findViewById(R.id.d_42));
-        listTB.add((ToggleButton) findViewById(R.id.d_43));
-        listTB.add((ToggleButton) findViewById(R.id.d_44));
-        listTB.add((ToggleButton) findViewById(R.id.d_45));
-        listTB.add((ToggleButton) findViewById(R.id.d_46));
-        listTB.add((ToggleButton) findViewById(R.id.d_47));
+        listTB.add((ToggleButton) findViewById(R.id.da_36));
+        listTB.add((ToggleButton) findViewById(R.id.da_37));
+        listTB.add((ToggleButton) findViewById(R.id.da_38));
+        listTB.add((ToggleButton) findViewById(R.id.da_39));
+        listTB.add((ToggleButton) findViewById(R.id.da_40));
+        listTB.add((ToggleButton) findViewById(R.id.da_41));
+        listTB.add((ToggleButton) findViewById(R.id.da_42));
+        listTB.add((ToggleButton) findViewById(R.id.da_43));
+        listTB.add((ToggleButton) findViewById(R.id.da_44));
+        listTB.add((ToggleButton) findViewById(R.id.da_45));
+        listTB.add((ToggleButton) findViewById(R.id.da_46));
+        listTB.add((ToggleButton) findViewById(R.id.da_47));
 
         loadSelection();
     }

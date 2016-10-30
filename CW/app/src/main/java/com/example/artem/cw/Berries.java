@@ -14,7 +14,7 @@ import java.util.ArrayList;
  * Created by Artem on 05.09.2016.
  */
 
-public class Supplements extends Activity
+public class Berries extends Activity
 {
     public static final String APP_PREFERENCES = "mysettings";
 
@@ -22,39 +22,41 @@ public class Supplements extends Activity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.supplements);
+        setContentView(R.layout.berries);
 
-        listTB.add((ToggleButton) findViewById(R.id.su_48));
-        listTB.add((ToggleButton) findViewById(R.id.su_49));
-        listTB.add((ToggleButton) findViewById(R.id.su_50));
-        listTB.add((ToggleButton) findViewById(R.id.su_50));
-        listTB.add((ToggleButton) findViewById(R.id.su_51));
-        listTB.add((ToggleButton) findViewById(R.id.su_52));
-        listTB.add((ToggleButton) findViewById(R.id.su_53));
-        listTB.add((ToggleButton) findViewById(R.id.su_54));
-        listTB.add((ToggleButton) findViewById(R.id.su_55));
-        listTB.add((ToggleButton) findViewById(R.id.su_56));
-        listTB.add((ToggleButton) findViewById(R.id.su_57));
-        listTB.add((ToggleButton) findViewById(R.id.su_58));
-        listTB.add((ToggleButton) findViewById(R.id.su_59));
+        listTB.add((ToggleButton) findViewById(R.id.be_125));
+        listTB.add((ToggleButton) findViewById(R.id.be_126));
+        listTB.add((ToggleButton) findViewById(R.id.be_127));
+        listTB.add((ToggleButton) findViewById(R.id.be_128));
+        listTB.add((ToggleButton) findViewById(R.id.be_129));
+        listTB.add((ToggleButton) findViewById(R.id.be_130));
+        listTB.add((ToggleButton) findViewById(R.id.be_131));
         loadSelection();
     }
 
     public void onToggleButtonClick (View button){
         getApplicationContext();
+        //aaa();
+        /*Toast.makeText(
+                getApplicationContext(),
+                Boolean.toString(((ToggleButton) button).isChecked()),
+                Toast.LENGTH_SHORT).show();*/
     }
+
+
+    //SharedPreferences sPref;
 
     void saveSelection()
     {
         SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE); //получаем объект sPref класса SharedPreferences, который позволяет работать с данными
         //Константа MODE_PRIVATE используется для настройки доступа и означает, что после сохранения, данные будут видны только этому приложению
         SharedPreferences.Editor ed = sharedPreferences.edit(); //чтобы редактировать данные, необходим объект Editor – он получается из sPref
-        for (int i = 0; i < 12; i++)
+        for (int i = 0; i < 7; i++)
         {
-            String fru = "su";
+            String fru = "be";
             ToggleButton toggleButton;
             toggleButton = listTB.get(i);
-            int j = (i + 48);
+            int j = (i + 125);
             String str = Integer.toString(j);
             fru = fru.concat(str);
             ed.putBoolean(fru, toggleButton.isChecked()); //В метод putString указывается наименование переменной – это константа SAVED_TEXT, и значение – содержимое поля etText
@@ -67,22 +69,23 @@ public class Supplements extends Activity
     void loadSelection()
     {
         SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
-        for (int i = 0; i < 12; i++)
+        for (int i = 0; i < 7; i++)
         {
-            String fru = "su";
+            String fru = "be";
             ToggleButton toggleButton;
             toggleButton = listTB.get(i);
-            int j = (i + 48);
+            int j = (i + 125);
             String str = Integer.toString(j);
             fru = fru.concat(str);
             boolean savedSelection1 = sharedPreferences.getBoolean(fru, false);
             toggleButton.setChecked(savedSelection1);
         }
+        // Toast.makeText(this, "Text loaded", Toast.LENGTH_SHORT).show();
     }
 
     public void onClick(View view) {
         saveSelection();
-        Intent intent = new Intent(Supplements.this, MainActivity.class);
+        Intent intent = new Intent(Berries.this, MainActivity.class);
         startActivity(intent);
     }
 }

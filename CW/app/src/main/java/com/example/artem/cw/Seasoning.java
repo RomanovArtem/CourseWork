@@ -23,14 +23,14 @@ public class Seasoning extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.seasoning);
 
-        listTB.add((ToggleButton) findViewById(R.id.m_65));
-        listTB.add((ToggleButton) findViewById(R.id.m_66));
-        listTB.add((ToggleButton) findViewById(R.id.m_67));
-        listTB.add((ToggleButton) findViewById(R.id.m_68));
-        listTB.add((ToggleButton) findViewById(R.id.m_69));
-        listTB.add((ToggleButton) findViewById(R.id.m_70));
-        listTB.add((ToggleButton) findViewById(R.id.m_71));
-        listTB.add((ToggleButton) findViewById(R.id.m_72));
+        listTB.add((ToggleButton) findViewById(R.id.se_28));
+        listTB.add((ToggleButton) findViewById(R.id.se_28));
+        listTB.add((ToggleButton) findViewById(R.id.se_30));
+        listTB.add((ToggleButton) findViewById(R.id.se_31));
+        listTB.add((ToggleButton) findViewById(R.id.se_32));
+        listTB.add((ToggleButton) findViewById(R.id.se_33));
+        listTB.add((ToggleButton) findViewById(R.id.se_34));
+        listTB.add((ToggleButton) findViewById(R.id.se_35));
         loadSelection();
     }
 

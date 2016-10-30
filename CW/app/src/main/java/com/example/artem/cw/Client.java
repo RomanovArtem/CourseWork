@@ -19,7 +19,7 @@ public class Client extends Thread {
         // Здесь указан адрес того самого компьютера где будет исполняться и клиент.
 
         try {
-            InetSocketAddress inetAddress = new InetSocketAddress("192.168.0.105", 31010); // создаем объект который отображает вышеописанный IP-адрес.
+            InetSocketAddress inetAddress = new InetSocketAddress("192.168.0.101", 31010); // создаем объект который отображает вышеописанный IP-адрес.
             System.out.println("Сокет с адресом : " + inetAddress);
             socket = new Socket(inetAddress.getAddress(), 31010); // создаем сокет используя IP-адрес и порт сервера.
 

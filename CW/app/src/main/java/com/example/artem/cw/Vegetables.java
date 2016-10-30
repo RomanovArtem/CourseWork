@@ -23,21 +23,21 @@ public class Vegetables extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.vegetables);
 
-        listTB.add((ToggleButton) findViewById(R.id.v_13));
-        listTB.add((ToggleButton) findViewById(R.id.v_14));
-        listTB.add((ToggleButton) findViewById(R.id.v_15));
-        listTB.add((ToggleButton) findViewById(R.id.v_16));
-        listTB.add((ToggleButton) findViewById(R.id.v_17));
-        listTB.add((ToggleButton) findViewById(R.id.v_18));
-        listTB.add((ToggleButton) findViewById(R.id.v_19));
-        listTB.add((ToggleButton) findViewById(R.id.v_20));
-        listTB.add((ToggleButton) findViewById(R.id.v_21));
-        listTB.add((ToggleButton) findViewById(R.id.v_22));
-        listTB.add((ToggleButton) findViewById(R.id.v_23));
-        listTB.add((ToggleButton) findViewById(R.id.v_24));
-        listTB.add((ToggleButton) findViewById(R.id.v_25));
-        listTB.add((ToggleButton) findViewById(R.id.v_26));
-        listTB.add((ToggleButton) findViewById(R.id.v_27));
+        listTB.add((ToggleButton) findViewById(R.id.ve_13));
+        listTB.add((ToggleButton) findViewById(R.id.ve_14));
+        listTB.add((ToggleButton) findViewById(R.id.ve_15));
+        listTB.add((ToggleButton) findViewById(R.id.ve_16));
+        listTB.add((ToggleButton) findViewById(R.id.ve_17));
+        listTB.add((ToggleButton) findViewById(R.id.ve_18));
+        listTB.add((ToggleButton) findViewById(R.id.ve_19));
+        listTB.add((ToggleButton) findViewById(R.id.ve_20));
+        listTB.add((ToggleButton) findViewById(R.id.ve_21));
+        listTB.add((ToggleButton) findViewById(R.id.ve_22));
+        listTB.add((ToggleButton) findViewById(R.id.ve_23));
+        listTB.add((ToggleButton) findViewById(R.id.ve_24));
+        listTB.add((ToggleButton) findViewById(R.id.ve_25));
+        listTB.add((ToggleButton) findViewById(R.id.ve_26));
+        listTB.add((ToggleButton) findViewById(R.id.ve_27));
 
         loadSelection();
     }

@@ -108,7 +108,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
 
-
+        toggleButton = (ToggleButton) findViewById(R.id.berries);
+        if (toggleButton.isChecked() == true)
+        {
+            Intent intent = new Intent(MainActivity.this, Berries.class);
+            startActivity(intent);
+        }
 
     }
     public void onClick(View view) {

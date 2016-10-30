@@ -24,11 +24,11 @@ public class Cereals extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cereals);
 
-        listTB.add((ToggleButton) findViewById(R.id.gr_109));
-        listTB.add((ToggleButton) findViewById(R.id.gr_110));
-        listTB.add((ToggleButton) findViewById(R.id.gr_111));
-        listTB.add((ToggleButton) findViewById(R.id.gr_112));
-        listTB.add((ToggleButton) findViewById(R.id.gr_113));
+        listTB.add((ToggleButton) findViewById(R.id.fr_1));
+        listTB.add((ToggleButton) findViewById(R.id.fr_2));
+        listTB.add((ToggleButton) findViewById(R.id.fr_3));
+        listTB.add((ToggleButton) findViewById(R.id.fr_4));
+        listTB.add((ToggleButton) findViewById(R.id.fr_5));
         listTB.add((ToggleButton) findViewById(R.id.ce_108));
         loadSelection();
     }
