@@ -8,7 +8,8 @@ import java.net.*;
 import java.io.*;
 
 public class Client extends Thread {
-    public volatile String stroka = "";
+    public volatile String outStroka = "";
+    public volatile String inStroka = "";
     static Socket socket;
 
     public void run() {
@@ -19,7 +20,7 @@ public class Client extends Thread {
         // Здесь указан адрес того самого компьютера где будет исполняться и клиент.
 
         try {
-            InetSocketAddress inetAddress = new InetSocketAddress("192.168.0.101", 31010); // создаем объект который отображает вышеописанный IP-адрес.
+            InetSocketAddress inetAddress = new InetSocketAddress("192.168.0.102", 31010); // создаем объект который отображает вышеописанный IP-адрес.
             System.out.println("Сокет с адресом : " + inetAddress);
             socket = new Socket(inetAddress.getAddress(), 31010); // создаем сокет используя IP-адрес и порт сервера.
 
@@ -41,12 +42,12 @@ public class Client extends Thread {
             //while (true) {
             //line = keyboard.readLine(); // ждем пока пользователь введет что-то и нажмет кнопку Enter.
             System.out.println("Посылаем данные серверу...");
-            stroka = Meals.Convert();
+            outStroka = Meals.Convert();
 
-            out.writeUTF(stroka); // отсылаем введенную строку текста серверу.
-            System.out.println("Посылаем серверу: " + stroka);
+            out.writeUTF(outStroka); // отсылаем введенную строку текста серверу.
+            System.out.println("Посылаем серверу: " + outStroka);
             out.flush(); // заставляем поток закончить передачу данных.
-            stroka = in.readUTF(); // ждем пока сервер отошлет строку текста.
+            inStroka = in.readUTF(); // ждем пока сервер отошлет строку текста.
             //System.out.println("Сервер прислал: : " + stroka);
 
             // }

@@ -217,7 +217,7 @@ public class Meals extends Activity {
     void loadSelectionBerries()
     {
         SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
-        for (int i = 0; i < 7; i++) {
+        for (int i = 0; i < 8; i++) {
             String sea = "be";
             int j = (i + 125);
             String str = Integer.toString(j);
@@ -259,22 +259,22 @@ public class Meals extends Activity {
         loadSelectionBerries();
         Intent intent = new Intent(this, SelectedDishes.class);
        //
-    /*Client client=new Client();
+    Client client=new Client();
 
         Toast toast = Toast.makeText(getApplicationContext(), "Подключаемся к серверу!", Toast.LENGTH_SHORT);
         toast.show();
         client.start();
 
         while (true) {
-            if (client.stroka != "") {
-                String data = client.stroka;
-                System.out.println(client.stroka);
+            if (client.inStroka != "") {
+                String data = client.inStroka;
+                System.out.println(client.inStroka);
                 intent.putExtra("name", data);
                 //intent.putExtra("name", data.toString());
                 break;
             }
 
-        } */
+        }
         //
         startActivity(intent);
     }

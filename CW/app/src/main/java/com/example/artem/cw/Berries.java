@@ -31,6 +31,7 @@ public class Berries extends Activity
         listTB.add((ToggleButton) findViewById(R.id.be_129));
         listTB.add((ToggleButton) findViewById(R.id.be_130));
         listTB.add((ToggleButton) findViewById(R.id.be_131));
+        listTB.add((ToggleButton) findViewById(R.id.be_132));
         loadSelection();
     }
 
@@ -51,7 +52,7 @@ public class Berries extends Activity
         SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE); //получаем объект sPref класса SharedPreferences, который позволяет работать с данными
         //Константа MODE_PRIVATE используется для настройки доступа и означает, что после сохранения, данные будут видны только этому приложению
         SharedPreferences.Editor ed = sharedPreferences.edit(); //чтобы редактировать данные, необходим объект Editor – он получается из sPref
-        for (int i = 0; i < 7; i++)
+        for (int i = 0; i < 8; i++)
         {
             String fru = "be";
             ToggleButton toggleButton;
@@ -69,7 +70,7 @@ public class Berries extends Activity
     void loadSelection()
     {
         SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
-        for (int i = 0; i < 7; i++)
+        for (int i = 0; i < 8; i++)
         {
             String fru = "be";
             ToggleButton toggleButton;

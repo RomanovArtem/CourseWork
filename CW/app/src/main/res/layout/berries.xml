@@ -135,6 +135,24 @@
             android:layout_alignParentStart="true"
             android:layout_marginTop="35dp" />
 
+        <ToggleButton
+            android:id="@+id/be_132"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_background"
+            android:drawableTop="@drawable/fruit_tangerines"
+            android:gravity="center_vertical"
+            android:textOn="Смородина"
+            android:textOff="Смородина"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:onClick="onToggleButtonClick"
+            android:checked="false"
+            android:layout_alignTop="@+id/be_131"
+            android:layout_alignLeft="@+id/be_129"
+            android:layout_alignStart="@+id/be_129" />
+
         <Button
             style="?android:attr/buttonStyleSmall"
             android:layout_width="150dp"

@@ -3,6 +3,7 @@ package SRV;
 import com.mysql.fabric.jdbc.FabricMySQLDriver;
 
 import java.sql.*;
+import java.util.Map;
 
 /**
  * Created by Artem on 10.10.2016.
@@ -34,16 +35,19 @@ public class DataBase {
             {
                 String query = "SELECT id_dish \n" +
                         "FROM ingredient \n" +
-                        "WHERE id_product =" + a[i];
+                        "WHERE id_product =" + a[i] + " \n" +
+                        "GROUP BY id_dish";
                 ResultSet resultSet = statement.executeQuery(query);
                 i++;
 
                 while (resultSet.next()) {
                     int id = resultSet.getInt(1);
                     System.out.println(id);
+                    Dictionary.bbb(id);
                 }
             }
-
+            Map<Integer, Integer> dictionary1 = Dictionary.dictionary;
+            System.out.println(dictionary1);
 
             //statement.addBatch("INSERT INTO one(nameca, desca) VALUES('name1','desc');");
             //statement.addBatch("INSERT INTO one(nameca, desca) VALUES('name2','desc');");

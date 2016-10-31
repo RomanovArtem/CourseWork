@@ -87,7 +87,7 @@
             android:gravity="center_vertical"
             android:textOn="Масло раст"
             android:textOff="Масло раст"
-            android:textSize="14dp"
+            android:textSize="11dp"
             android:textAlignment="center"
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
