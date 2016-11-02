@@ -39,28 +39,26 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SRV/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="34">
               <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataBase.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DataBase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SRV/DataBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
+            <state relative-caret-position="225">
+              <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
               <folding>
-                <marker date="1477939935087" expanded="true" signature="1134:1245" ph="SELECT id_di... ingredient" />
-                <marker date="1477939935087" expanded="true" signature="1134:1253" ph="SELECT id_di... ingredient" />
-                <marker date="1477939935087" expanded="true" signature="1134:1262" ph="SELECT id_di... ingredient" />
-                <marker date="1477939935087" expanded="true" signature="1134:1305" ph="SELECT id_di... ingredient" />
-                <marker date="1477939935087" expanded="true" signature="1759:1812" ph="INSERT INTO one... " />
-                <marker date="1477939935087" expanded="true" signature="1851:1904" ph="INSERT INTO one... " />
-                <marker date="1477939935087" expanded="true" signature="1943:1992" ph="INSERT INTO one... " />
+                <marker date="1478073801758" expanded="true" signature="1142:1253" ph="SELECT id_di... ingredient" />
+                <marker date="1478073801758" expanded="true" signature="1142:1261" ph="SELECT id_di... ingredient" />
+                <marker date="1478073801758" expanded="true" signature="1142:1270" ph="SELECT id_di... ingredient" />
+                <marker date="1478073801758" expanded="true" signature="1142:1313" ph="SELECT id_di... ingredient" />
+                <marker date="1478073801758" expanded="true" signature="1802:1855" ph="INSERT INTO one... " />
+                <marker date="1478073801758" expanded="true" signature="1894:1947" ph="INSERT INTO one... " />
+                <marker date="1478073801758" expanded="true" signature="1986:2035" ph="INSERT INTO one... " />
               </folding>
             </state>
           </provider>
@@ -69,23 +67,20 @@
       <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SRV/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="35" column="24" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="24" />
+            <state relative-caret-position="566">
+              <caret line="59" column="56" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dictionary.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Dictionary.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/SRV/Dictionary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+            <state relative-caret-position="181">
+              <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#189#207#0" expanded="true" />
-                <element signature="e#727#728#0" expanded="true" />
-                <element signature="e#760#761#0" expanded="true" />
+                <element signature="e#1119#1128#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,8 +106,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/SRV/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/SRV/Server.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SRV/Dictionary.java" />
         <option value="$PROJECT_DIR$/src/main/java/SRV/DataBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SRV/Dictionary.java" />
       </list>
     </option>
   </component>
@@ -137,8 +132,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="916" />
+    <option name="width" value="1612" />
+    <option name="height" value="912" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -645,15 +640,17 @@
       <workItem from="1477607532425" duration="3711000" />
       <workItem from="1477856721389" duration="3281000" />
       <workItem from="1477924825884" duration="8224000" />
+      <workItem from="1477941136012" duration="1192000" />
+      <workItem from="1478067805141" duration="8382000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63247000" />
+    <option name="totallyTimeSpent" value="72821000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1612" height="912" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -663,17 +660,17 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39591315" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3979461" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21585052" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24933687" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24871135" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39846742" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39846742" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -737,9 +734,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -748,13 +743,13 @@
         <state relative-caret-position="646">
           <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           <folding>
-            <marker date="1477939935087" expanded="true" signature="1134:1245" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1253" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1262" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1305" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1759:1812" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1851:1904" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1943:1992" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1142:1253" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1261" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1270" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1313" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1802:1855" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1894:1947" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1986:2035" ph="INSERT INTO one... " />
           </folding>
         </state>
       </provider>
@@ -771,9 +766,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -782,13 +775,13 @@
         <state relative-caret-position="646">
           <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           <folding>
-            <marker date="1477939935087" expanded="true" signature="1134:1245" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1253" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1262" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1305" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1759:1812" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1851:1904" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1943:1992" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1142:1253" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1261" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1270" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1313" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1802:1855" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1894:1947" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1986:2035" ph="INSERT INTO one... " />
           </folding>
         </state>
       </provider>
@@ -805,9 +798,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -816,13 +807,13 @@
         <state relative-caret-position="612">
           <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           <folding>
-            <marker date="1477939935087" expanded="true" signature="1134:1245" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1253" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1262" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1305" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1759:1812" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1851:1904" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1943:1992" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1142:1253" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1261" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1270" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1313" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1802:1855" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1894:1947" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1986:2035" ph="INSERT INTO one... " />
           </folding>
         </state>
       </provider>
@@ -839,9 +830,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -850,13 +839,13 @@
         <state relative-caret-position="646">
           <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           <folding>
-            <marker date="1477939935087" expanded="true" signature="1134:1245" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1253" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1262" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1305" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1759:1812" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1851:1904" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1943:1992" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1142:1253" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1261" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1270" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1313" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1802:1855" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1894:1947" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1986:2035" ph="INSERT INTO one... " />
           </folding>
         </state>
       </provider>
@@ -873,9 +862,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -884,13 +871,13 @@
         <state relative-caret-position="646">
           <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           <folding>
-            <marker date="1477939935087" expanded="true" signature="1134:1245" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1253" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1262" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1305" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1759:1812" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1851:1904" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1943:1992" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1142:1253" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1261" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1270" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1313" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1802:1855" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1894:1947" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1986:2035" ph="INSERT INTO one... " />
           </folding>
         </state>
       </provider>
@@ -907,9 +894,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -918,13 +903,13 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1477939935087" expanded="true" signature="1134:1245" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1253" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1262" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1305" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1759:1812" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1851:1904" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1943:1992" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1142:1253" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1261" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1270" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1313" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1802:1855" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1894:1947" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1986:2035" ph="INSERT INTO one... " />
           </folding>
         </state>
       </provider>
@@ -941,9 +926,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -952,13 +935,13 @@
         <state relative-caret-position="612">
           <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           <folding>
-            <marker date="1477939935087" expanded="true" signature="1134:1245" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1253" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1262" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1305" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1759:1812" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1851:1904" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1943:1992" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1142:1253" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1261" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1270" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1313" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1802:1855" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1894:1947" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1986:2035" ph="INSERT INTO one... " />
           </folding>
         </state>
       </provider>
@@ -975,9 +958,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -986,13 +967,13 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1477939935087" expanded="true" signature="1134:1245" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1253" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1262" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1305" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1759:1812" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1851:1904" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1943:1992" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1142:1253" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1261" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1270" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1313" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1802:1855" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1894:1947" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1986:2035" ph="INSERT INTO one... " />
           </folding>
         </state>
       </provider>
@@ -1009,9 +990,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1020,13 +999,13 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1477939935087" expanded="true" signature="1134:1245" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1253" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1262" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1305" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1759:1812" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1851:1904" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1943:1992" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1142:1253" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1261" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1270" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1313" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1802:1855" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1894:1947" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1986:2035" ph="INSERT INTO one... " />
           </folding>
         </state>
       </provider>
@@ -1043,9 +1022,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1054,13 +1031,13 @@
         <state relative-caret-position="544">
           <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
           <folding>
-            <marker date="1477939935087" expanded="true" signature="1134:1245" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1253" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1262" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1305" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1759:1812" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1851:1904" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1943:1992" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1142:1253" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1261" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1270" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1313" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1802:1855" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1894:1947" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1986:2035" ph="INSERT INTO one... " />
           </folding>
         </state>
       </provider>
@@ -1077,9 +1054,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1088,13 +1063,13 @@
         <state relative-caret-position="408">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <marker date="1477939935087" expanded="true" signature="1134:1245" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1253" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1262" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1305" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1759:1812" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1851:1904" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1943:1992" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1142:1253" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1261" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1270" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1313" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1802:1855" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1894:1947" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1986:2035" ph="INSERT INTO one... " />
           </folding>
         </state>
       </provider>
@@ -1111,9 +1086,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1122,13 +1095,13 @@
         <state relative-caret-position="408">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <marker date="1477939935087" expanded="true" signature="1134:1245" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1253" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1262" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1305" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1759:1812" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1851:1904" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1943:1992" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1142:1253" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1261" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1270" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1313" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1802:1855" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1894:1947" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1986:2035" ph="INSERT INTO one... " />
           </folding>
         </state>
       </provider>
@@ -1152,9 +1125,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1163,13 +1134,13 @@
         <state relative-caret-position="204">
           <caret line="17" column="32" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="32" />
           <folding>
-            <marker date="1477939935087" expanded="true" signature="1134:1245" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1253" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1262" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1305" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1759:1812" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1851:1904" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1943:1992" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1142:1253" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1261" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1270" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1313" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1802:1855" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1894:1947" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1986:2035" ph="INSERT INTO one... " />
           </folding>
         </state>
       </provider>
@@ -1193,9 +1164,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="5" selection-start-line="17" selection-start-column="7" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1204,13 +1173,13 @@
         <state relative-caret-position="289">
           <caret line="17" column="32" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="32" />
           <folding>
-            <marker date="1477939935087" expanded="true" signature="1134:1245" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1253" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1262" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1305" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1759:1812" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1851:1904" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1943:1992" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1142:1253" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1261" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1270" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1313" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1802:1855" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1894:1947" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1986:2035" ph="INSERT INTO one... " />
           </folding>
         </state>
       </provider>
@@ -1246,47 +1215,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SRV/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="34">
           <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SRV/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="35" column="24" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="24" />
+        <state relative-caret-position="566">
+          <caret line="59" column="56" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SRV/Dictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#189#207#0" expanded="true" />
-            <element signature="e#727#728#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SRV/DataBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
+        <state relative-caret-position="225">
+          <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
           <folding>
-            <marker date="1477939935087" expanded="true" signature="1134:1245" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1253" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1262" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1134:1305" ph="SELECT id_di... ingredient" />
-            <marker date="1477939935087" expanded="true" signature="1759:1812" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1851:1904" ph="INSERT INTO one... " />
-            <marker date="1477939935087" expanded="true" signature="1943:1992" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1142:1253" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1261" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1270" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1142:1313" ph="SELECT id_di... ingredient" />
+            <marker date="1478073801758" expanded="true" signature="1802:1855" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1894:1947" ph="INSERT INTO one... " />
+            <marker date="1478073801758" expanded="true" signature="1986:2035" ph="INSERT INTO one... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SRV/Dictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="30" column="57" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+          <folding>
+            <element signature="e#1119#1128#0" expanded="true" />
           </folding>
         </state>
       </provider>

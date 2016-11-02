@@ -29,7 +29,7 @@ public class DataBase {
             System.out.println("Соединение с БД установлено!");
 
 
-            String[] a = Server.AAA();
+            String[] a = Server.SplitString();
             int i = 0;
             for (String part : a )
             {
@@ -46,8 +46,9 @@ public class DataBase {
                     Dictionary.bbb(id);
                 }
             }
-            Map<Integer, Integer> dictionary1 = Dictionary.dictionary;
-            System.out.println(dictionary1);
+            Dictionary.qwe(i);
+            //Map<Integer, Integer> dictionary1 = Dictionary.dictionary;
+           // System.out.println(dictionary1);
 
             //statement.addBatch("INSERT INTO one(nameca, desca) VALUES('name1','desc');");
             //statement.addBatch("INSERT INTO one(nameca, desca) VALUES('name2','desc');");

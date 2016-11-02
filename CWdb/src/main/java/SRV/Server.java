@@ -28,7 +28,7 @@ public class Server {
 
                 line = in.readUTF(); // ожидаем пока клиент пришлет строку текста.
                 System.out.println("Клиент прислал : " + line);
-                AAA();
+                SplitString();
                 System.out.println("Я ему отсылкаю:...");
                 //
                 //
@@ -48,7 +48,7 @@ public class Server {
         } catch(Exception x) { x.printStackTrace(); }
     }
 
-    public static String[] AAA()
+    public static String[] SplitString()
     {
         String[] parts = line.split(" ");
         int i = 0;
