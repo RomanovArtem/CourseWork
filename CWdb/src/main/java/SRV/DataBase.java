@@ -3,6 +3,8 @@ package SRV;
 import com.mysql.fabric.jdbc.FabricMySQLDriver;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -14,6 +16,10 @@ public class DataBase {
     private static final String PASSWORD = "admin";
 
     public static void ConnectDB() {
+        Map<Integer, Integer> dictionary = Dictionary.dictionary;
+        ArrayList keyList = Dictionary.keyList;
+        ArrayList indexList = Dictionary.indexList;
+        ArrayList indexListTable =  new ArrayList();
         //Connection connection;
 
         // указываем какой jdbc драйвер для взаимодействия с бд будем использовать
@@ -43,18 +49,34 @@ public class DataBase {
                 while (resultSet.next()) {
                     int id = resultSet.getInt(1);
                     System.out.println(id);
-                    Dictionary.bbb(id);
+                    Dictionary.AddDictionary(id);
                 }
             }
-            Dictionary.qwe(i);
-            //Map<Integer, Integer> dictionary1 = Dictionary.dictionary;
-           // System.out.println(dictionary1);
 
-            //statement.addBatch("INSERT INTO one(nameca, desca) VALUES('name1','desc');");
-            //statement.addBatch("INSERT INTO one(nameca, desca) VALUES('name2','desc');");
-            //statement.addBatch("INSERT INTO one(nameca, desca) VALUES('name3','');");
+            Dictionary.addList();
 
-            //statement.executeBatch();
+            for (int j = 0; j < keyList.size(); j++)
+            {
+                String query = "SELECT count \n" +
+                        "FROM dish \n" +
+                        "WHERE id =" + keyList.get(j) + " \n";
+                ResultSet result = statement.executeQuery(query);
+
+                while (result.next()) {
+                    int count = result.getInt(1);
+                    indexListTable.add(count);
+                }
+
+            }
+
+            System.out.println("Словарь: " + dictionary);
+            System.out.println("Ключи: " + keyList );
+            System.out.println("Значения: " + indexList);
+            System.out.println("Значения В таблице: " + indexListTable);
+
+            Dictionary.aaa(keyList, indexList, indexListTable);
+
+            System.out.println("Новые ключи: " + keyList );
         }
         catch (SQLException e) {
             e.printStackTrace();

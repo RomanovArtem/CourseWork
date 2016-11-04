@@ -8,10 +8,13 @@ import java.util.*;
  */
 public class Dictionary {
     static Map<Integer, Integer> dictionary = new HashMap<Integer, Integer>();
+    static ArrayList<Integer> keyList = new ArrayList<>();
+    static ArrayList<Integer> indexList = new ArrayList<>();
 
-    static void bbb(int key){
+    static void AddDictionary(int key){
         if (dictionary.isEmpty()) {
             dictionary.put(key, 1);
+            keyList.add(key);
         }
         else {
            // for (int i = 1; i <= dictionary.size(); i++) {
@@ -21,22 +24,29 @@ public class Dictionary {
                 }
                 else {
                     dictionary.put(key, 1);
+                    keyList.add(key);
                 }
             //}
         }
 
     }
 
-    static void qwe(int count) {
-        Integer[] arr = new Integer[dictionary.size() + 1];
-        System.out.println("Словарь: " + dictionary);
-        arr[0] = 1000; // просто поставил большое значение, т.к. дальше сортирую по убыванию, и чтобы "0" элемент не учитывать
-        for (int i = 1; i <= dictionary.size(); i++)
+    static void addList () {
+        for(int i = 1; i <= dictionary.size(); i++)
         {
-            arr[i] = dictionary.get(i);
+            indexList.add(dictionary.get(keyList.get(i-1)));
         }
-        Arrays.sort(arr, Collections.<Integer>reverseOrder());
-        System.out.print(arr[0] + " " + arr[1] + " " + arr[2] + " " + arr[3] + " " +arr[4] + " ");
+    }
+
+    static void aaa(ArrayList key, ArrayList value, ArrayList valueTable)
+    {
+        for (int i = 0; i < value.size(); i++)
+        {
+            int sub = (int)valueTable.get(i) - (int)value.get(i);
+            if ( sub > 3 ) {
+                key.set(i, null);
+            }
+        }
     }
 
 }
