@@ -15,11 +15,19 @@ public class DataBase {
     private static final String USERNAME = "admin";
     private static final String PASSWORD = "admin";
 
+    public static String cook = new String();
+    public static String noCook = new String();
+
     public static void ConnectDB() {
         Map<Integer, Integer> dictionary = Dictionary.dictionary;
         ArrayList keyList = Dictionary.keyList;
         ArrayList indexList = Dictionary.indexList;
+        ArrayList canCook = Dictionary.canCook;
+        ArrayList noCanCook = Dictionary.noCanCook;
         ArrayList indexListTable =  new ArrayList();
+
+
+
         //Connection connection;
 
         // указываем какой jdbc драйвер для взаимодействия с бд будем использовать
@@ -74,9 +82,44 @@ public class DataBase {
             System.out.println("Значения: " + indexList);
             System.out.println("Значения В таблице: " + indexListTable);
 
-            Dictionary.aaa(keyList, indexList, indexListTable);
+            Dictionary.DistributionId(keyList, indexList, indexListTable);
 
             System.out.println("Новые ключи: " + keyList );
+            System.out.println("Могу приготовить: " + canCook );
+            System.out.println("Не могу приготовить: " + noCanCook );
+
+
+            for (int j = 0; j < canCook.size(); j++)
+            {
+                String query = "SELECT * \n" +
+                        "FROM dish \n" +
+                        "WHERE id =" + (int)canCook.get(j) + " \n";
+                ResultSet resultCook = statement.executeQuery(query);
+
+                while (resultCook.next()) {
+                    int id = resultCook.getInt(1);
+                    String name = resultCook.getString(2);
+
+                    cook = cook + name + ";";
+                }
+            }
+            for (int j = 0; j < noCanCook.size(); j++)
+            {
+                String query = "SELECT * \n" +
+                        "FROM dish \n" +
+                        "WHERE id =" + (int)noCanCook.get(j) + " \n";
+                ResultSet resultNoCook = statement.executeQuery(query);
+
+                while (resultNoCook.next()) {
+                    int id = resultNoCook.getInt(1);
+                    String name = resultNoCook.getString(2);
+
+                    noCook = noCook + name + ";";
+                }
+            }
+
+            System.out.println("Строка, что могу приготовить: " + cook);
+            System.out.println("Строка, что не могу приготовить: " + noCook);
         }
         catch (SQLException e) {
             e.printStackTrace();

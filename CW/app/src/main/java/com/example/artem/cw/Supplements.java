@@ -27,7 +27,6 @@ public class Supplements extends Activity
         listTB.add((ToggleButton) findViewById(R.id.su_48));
         listTB.add((ToggleButton) findViewById(R.id.su_49));
         listTB.add((ToggleButton) findViewById(R.id.su_50));
-        listTB.add((ToggleButton) findViewById(R.id.su_50));
         listTB.add((ToggleButton) findViewById(R.id.su_51));
         listTB.add((ToggleButton) findViewById(R.id.su_52));
         listTB.add((ToggleButton) findViewById(R.id.su_53));

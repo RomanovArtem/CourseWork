@@ -10,6 +10,8 @@ public class Dictionary {
     static Map<Integer, Integer> dictionary = new HashMap<Integer, Integer>();
     static ArrayList<Integer> keyList = new ArrayList<>();
     static ArrayList<Integer> indexList = new ArrayList<>();
+    static ArrayList<Integer> canCook = new ArrayList<>();
+    static ArrayList<Integer> noCanCook = new ArrayList<>();
 
     static void AddDictionary(int key){
         if (dictionary.isEmpty()) {
@@ -38,13 +40,15 @@ public class Dictionary {
         }
     }
 
-    static void aaa(ArrayList key, ArrayList value, ArrayList valueTable)
+    static void DistributionId(ArrayList key, ArrayList value, ArrayList valueTable)
     {
         for (int i = 0; i < value.size(); i++)
         {
             int sub = (int)valueTable.get(i) - (int)value.get(i);
-            if ( sub > 3 ) {
-                key.set(i, null);
+            if (sub == 0)
+                canCook.add(keyList.get(i));
+            if ( sub <= 3 && sub > 0) {
+                noCanCook.add(keyList.get(i));
             }
         }
     }

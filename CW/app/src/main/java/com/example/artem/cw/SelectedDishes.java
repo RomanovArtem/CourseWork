@@ -21,6 +21,19 @@ public class SelectedDishes extends AppCompatActivity {
         setContentView(R.layout.selected_dishes);
 
         String data = getIntent().getStringExtra("name");
+        System.out.println("Что пришло: " + data);
+        String[] parts = data.split("/");
+        String part1 = parts[0];
+        String part2 = parts[1];
+        int i = 0;
+        for (String part : parts )
+        {
+            System.out.println(i + " " + parts[i]);
+            i++;
+        }
+
+
+
         // Инициализируем компонент
         TextView textView = (TextView)findViewById(R.id.textView3);
         textView.setText(data);

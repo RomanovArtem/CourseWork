@@ -29,7 +29,7 @@ import org.json.JSONObject;
 
 
 public class MainActivity extends AppCompatActivity {
-
+    public static final String APP_PREFERENCES = "mysettings";
 
     ToggleButton toggleButton;
     @Override
@@ -129,7 +129,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
+    @Override
+    public void onBackPressed() {
+        // TODO Auto-generated method stub
+        // super.onBackPressed();
+        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES, MODE_PRIVATE);
+        SharedPreferences.Editor ed = sharedPreferences.edit();
+        ed.clear();
+        ed.commit();
+    }
 
 
 
