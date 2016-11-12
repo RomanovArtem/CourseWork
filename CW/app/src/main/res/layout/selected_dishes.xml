@@ -5,6 +5,7 @@
     android:fillViewport="true"
     android:tileMode="repeat">
     <RelativeLayout
+        android:id="@+id/selected"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fillViewport="true"
@@ -32,66 +33,6 @@
             android:layout_marginTop="35dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true" />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="New Text"
-            android:id="@+id/textView3"
-            android:layout_below="@+id/can"
-            android:layout_alignLeft="@+id/textView7"
-            android:layout_alignStart="@+id/textView7"
-            android:textSize="20dp"
-            android:layout_marginTop="33dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Text"
-            android:id="@+id/textView4"
-            android:layout_below="@+id/textView3"
-            android:layout_alignLeft="@+id/textView3"
-            android:layout_alignStart="@+id/textView3"
-            android:layout_marginTop="48dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Text"
-            android:id="@+id/textView5"
-            android:layout_below="@+id/textView4"
-            android:layout_toLeftOf="@+id/can"
-            android:layout_toStartOf="@+id/can" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Text"
-            android:id="@+id/textView6"
-            android:layout_below="@+id/textView5"
-            android:layout_alignLeft="@+id/textView4"
-            android:layout_alignStart="@+id/textView4"
-            android:layout_marginTop="54dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Text"
-            android:id="@+id/textView7"
-            android:layout_below="@+id/textView6"
-            android:layout_toLeftOf="@+id/textView8"
-            android:layout_toStartOf="@+id/textView8"
-            android:layout_marginTop="71dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="New Text"
-            android:id="@+id/textView8"
-            android:layout_below="@+id/textView7"
-            android:layout_alignRight="@+id/f_button_back"
-            android:layout_alignEnd="@+id/f_button_back"
-            android:layout_marginTop="70dp" />
 
     </RelativeLayout>
 
