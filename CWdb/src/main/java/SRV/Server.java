@@ -4,6 +4,7 @@ import java.net.*;
 import java.io.*;
 public class Server {
     static String line = new String();
+    static String line22 = new String();
     public static void CreateServer() {
         int port = 31010; //случайный порт (может быть любое число от 1025 до 65535)
 
@@ -36,10 +37,14 @@ public class Server {
                 DataBase.ConnectDB();
                 String cook = DataBase.cook;
                 String noCook = DataBase.noCook;
+                String recipe = DataBase.recipe;
 
                 String str = new String();
                 str = cook + "/" + noCook;
                 out.writeUTF(str); // отсылаем клиенту обратно ту самую строку текста.
+
+                line22 = in.readUTF();
+                out.writeUTF(line22); // отсылаем клиенту обратно ту самую строку текста.
                 out.flush(); // заставляем поток закончить передачу данных.
                 System.out.println();
             }

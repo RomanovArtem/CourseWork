@@ -30,6 +30,7 @@
         <activity android:name=".Cereals"></activity>
         <activity android:name=".Greenery"></activity>
         <activity android:name=".Berries"></activity>
+        <activity android:name=".Recipe"></activity>
     </application>
 
 </manifest>

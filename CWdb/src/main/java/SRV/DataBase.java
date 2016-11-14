@@ -17,6 +17,7 @@ public class DataBase {
 
     public static String cook = new String();
     public static String noCook = new String();
+    public static String recipe = new String();
 
     public static void ConnectDB() {
         Map<Integer, Integer> dictionary = Dictionary.dictionary;
@@ -99,8 +100,10 @@ public class DataBase {
                 while (resultCook.next()) {
                     int id = resultCook.getInt(1);
                     String name = resultCook.getString(2);
+                    String recipedb = resultCook.getString(4);
 
                     cook = cook + name + ";";
+                    recipe = recipe + recipedb + ";";
                 }
             }
             for (int j = 0; j < noCanCook.size(); j++)
@@ -113,8 +116,10 @@ public class DataBase {
                 while (resultNoCook.next()) {
                     int id = resultNoCook.getInt(1);
                     String name = resultNoCook.getString(2);
+                    String recipedb = resultNoCook.getString(4);
 
                     noCook = noCook + name + ";";
+                    recipe = recipe + recipedb + ";";
                 }
             }
 
