@@ -240,10 +240,10 @@ public class Meals extends Activity {
         return line;
     }
 
-
-
+    Client client=new Client();
 
     public void onClick(View view) {
+
         /* создаем объект для работы с сервером*/
         loadSelectionFruit();
         loadSelectionVegetables();
@@ -258,24 +258,19 @@ public class Meals extends Activity {
         loadSelectionGreenery();
         loadSelectionBerries();
         Intent intent = new Intent(this, SelectedDishes.class);
-       //
-    Client client=new Client();
-
         Toast toast = Toast.makeText(getApplicationContext(), "Подключаемся к серверу!", Toast.LENGTH_SHORT);
         toast.show();
         client.start();
-
         while (true) {
-            if (client.inStroka != "") {
-                String data = client.inStroka;
-                System.out.println(client.inStroka);
-                intent.putExtra("name", data);
-                //intent.putExtra("name", data.toString());
+            if (client.inStroka != "" && client.idDish != "") {
+                String titleDish = client.inStroka;
+                String idDish = client.idDish;
+                intent.putExtra("titleDish", titleDish);
+                intent.putExtra("idDish", idDish);
                 break;
             }
 
         }
-        //
         startActivity(intent);
     }
 }

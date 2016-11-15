@@ -10,13 +10,13 @@ import java.io.*;
 public class Client extends Thread {
     public volatile String outStroka = "";
     public volatile String inStroka = "";
-    public volatile String recipe = "";
+    public volatile String idDish = "";
     static Socket socket;
-
     InputStream sin;
     OutputStream sout;
     DataInputStream in;
     DataOutputStream out;
+
     public void run() {
 
 
@@ -53,8 +53,9 @@ public class Client extends Thread {
             System.out.println("Посылаем серверу: " + outStroka);
             out.flush(); // заставляем поток закончить передачу данных.
             inStroka = in.readUTF(); // ждем пока сервер отошлет строку текста.
+            idDish = in.readUTF(); // ждем пока сервер отошлет строку текста.
             //recipe = in.readUTF(); // ждем пока сервер отошлет строку текста.
-           // System.out.println(recipe);
+            // System.out.println(recipe);
             //System.out.println("Сервер прислал: : " + stroka);
 
             // }
@@ -71,4 +72,4 @@ public class Client extends Thread {
             }
         } */
     }
-};
+}

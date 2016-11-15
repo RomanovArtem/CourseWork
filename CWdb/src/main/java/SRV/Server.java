@@ -4,7 +4,7 @@ import java.net.*;
 import java.io.*;
 public class Server {
     static String line = new String();
-    static String line22 = new String();
+    static String title = new String();
     public static void CreateServer() {
         int port = 31010; //случайный порт (может быть любое число от 1025 до 65535)
 
@@ -37,14 +37,23 @@ public class Server {
                 DataBase.ConnectDB();
                 String cook = DataBase.cook;
                 String noCook = DataBase.noCook;
-                String recipe = DataBase.recipe;
+                String idDish = DataBase.idDish;
+                String noIdDish = DataBase.noIdDish;
 
                 String str = new String();
+                String id = new String();
                 str = cook + "/" + noCook;
-                out.writeUTF(str); // отсылаем клиенту обратно ту самую строку текста.
+                id = idDish + "/" + noIdDish;
 
-                line22 = in.readUTF();
-                out.writeUTF(line22); // отсылаем клиенту обратно ту самую строку текста.
+                out.writeUTF(str); // отсылаем клиенту обратно ту самую строку текста.
+                out.flush(); // заставляем поток закончить передачу данных.
+                out.writeUTF(id); // отсылаем клиенту обратно ту самую строку текста.
+                out.flush(); // заставляем поток закончить передачу данных.
+                System.out.println("id которые уйдут: " + id);
+
+                title = in.readUTF();
+                DataBase.RecipeSearch(title);
+                out.writeUTF(title); // отсылаем клиенту обратно ту самую строку текста.
                 out.flush(); // заставляем поток закончить передачу данных.
                 System.out.println();
             }

@@ -22,21 +22,29 @@ import java.io.IOException;
 public class SelectedDishes extends AppCompatActivity {
     //String data = getIntent().getExtras().getString("testNameData");
     public static final String APP_PREFERENCES = "mysettings";
-    Client2 client2 =new Client2();
-
+    Client2 client2 = new Client2();
+    Intent intent;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.selected_dishes);
 
-        String data = getIntent().getStringExtra("name");
-        System.out.println("Что пришло: " + data);
-        String[] parts = data.split("/");
-        String part1 = parts[0];
-        String part2 = parts[1];
+        String titleDish = getIntent().getStringExtra("titleDish");
+        String idDish = getIntent().getStringExtra("idDish");
+        System.out.println("Что пришло: " + titleDish);
+        System.out.println("id которые пришли: " + idDish);
+        String[] partsTitle = titleDish.split("/");
+        String[] partsId = idDish.split("/");
 
-        final String[] dish1 = part1.split(";");
-        String[] dish2 = part2.split(";");
+        String partTitle1 = partsTitle[0];
+        String partTitle2 = partsTitle[1];
+        String partId1 = partsId[0];
+        String partId2 = partsId[1];
+
+        final String[] dish1 = partTitle1.split(";");
+        final String[] dish2 = partTitle2.split(";");
+        final String[] id1 = partId1.split(";");
+        final String[] id2 = partId2.split(";");
 
         int i = 0;
         int margin = 0;
@@ -52,7 +60,7 @@ public class SelectedDishes extends AppCompatActivity {
         titleCan.setText(getString(R.string.I_can_cook));
         lMain.addView(titleCan, lParams);
 
-        if (part1.length() != 0) {
+        if (partTitle1.length() != 0) {
             for (String aa : dish1) {
                 lParams = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
 
@@ -65,10 +73,13 @@ public class SelectedDishes extends AppCompatActivity {
 
 
                 final TextView finalTextView = textView;
+                final int finalI = i;
                 textView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(SelectedDishes.this, Recipe.class);
+                        client2.Client2(id1[finalI]);
+                        client2.start();
+                        intent = new Intent(SelectedDishes.this, Recipe.class);
                         startActivity(intent);
                     }
                 });
@@ -88,7 +99,7 @@ public class SelectedDishes extends AppCompatActivity {
         lMain.addView(titleNoCan, lParams);
 
         i = 0;
-        if (part2.length() != 0) {
+        if (partTitle2.length() != 0) {
             for (String aa : dish2) {
 
                 lParams = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
@@ -101,10 +112,13 @@ public class SelectedDishes extends AppCompatActivity {
                 lMain.addView(textView, lParams);
 
                 final TextView finalTextView = textView;
+                final int finalI1 = i;
                 textView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(SelectedDishes.this, Recipe.class);
+                        client2.Client2(id2[finalI1]);
+                        client2.start();
+                        intent = new Intent(SelectedDishes.this, Recipe.class);
                         startActivity(intent);
                     }
                 });
@@ -112,24 +126,10 @@ public class SelectedDishes extends AppCompatActivity {
             }
         }
 
-        titleCan.setOnClickListener(new View.OnClickListener() {
+       /* titleCan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("Kek");
                 client2.start();
-
-                   /* try {
-                        client.out.writeUTF("228");
-                        client.out.flush();
-                        client.recipe = client.in.readUTF();
-                        //System.out.println(client.recipe);
-                        client.socket.close();
-                        System.out.println("Сокет закрыт");
-                    } catch (IOException e) {
-                        System.err.println("Сокет не закрыт");
-                    } */
-
-
             }
         });
 
@@ -137,17 +137,9 @@ public class SelectedDishes extends AppCompatActivity {
         titleNoCan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                System.out.println("Trararar");
+                client2.start();
             }
-        });
-
-        // Инициализируем компонент
-      //  TextView textView = (TextView)findViewById(R.id.textView3);
-       // textView.setText(data);
-
-
-
-
+        }); */
     }
 
     public void onClick(View view) {

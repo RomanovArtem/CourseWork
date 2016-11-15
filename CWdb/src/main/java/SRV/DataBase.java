@@ -17,7 +17,8 @@ public class DataBase {
 
     public static String cook = new String();
     public static String noCook = new String();
-    public static String recipe = new String();
+    public static String idDish = new String();
+    public static String noIdDish = new String();
 
     public static void ConnectDB() {
         Map<Integer, Integer> dictionary = Dictionary.dictionary;
@@ -100,10 +101,9 @@ public class DataBase {
                 while (resultCook.next()) {
                     int id = resultCook.getInt(1);
                     String name = resultCook.getString(2);
-                    String recipedb = resultCook.getString(4);
 
+                    idDish = idDish + id + ";";
                     cook = cook + name + ";";
-                    recipe = recipe + recipedb + ";";
                 }
             }
             for (int j = 0; j < noCanCook.size(); j++)
@@ -116,10 +116,12 @@ public class DataBase {
                 while (resultNoCook.next()) {
                     int id = resultNoCook.getInt(1);
                     String name = resultNoCook.getString(2);
+                    //
                     String recipedb = resultNoCook.getString(4);
+                    //
 
+                    noIdDish = noIdDish + id + ";";
                     noCook = noCook + name + ";";
-                    recipe = recipe + recipedb + ";";
                 }
             }
 
@@ -135,6 +137,27 @@ public class DataBase {
             System.out.println("Соединение с БД закрыто!");
         }*/
     }
+
+
+    public static void RecipeSearch(String title) {
+        try (Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+             Statement statement = connection.createStatement()) {
+
+                String query = "SELECT recipe \n" +
+                        "FROM dish \n" +
+                        "WHERE name =" + title + " \n";
+                ResultSet resultSet = statement.executeQuery(query);
+
+                while (resultSet.next()) {
+                    String titleDB = resultSet.getString(1);
+                    System.out.println(titleDB);
+                }
+        }
+        catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 
 }

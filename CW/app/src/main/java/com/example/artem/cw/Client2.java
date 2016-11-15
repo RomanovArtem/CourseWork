@@ -20,6 +20,13 @@ public class Client2 extends Thread {
     //OutputStream sout;
     //DataInputStream in;
     //DataOutputStream out;
+    String id;
+    public void Client2(String _id)
+    {
+        id = _id;
+        System.out.println("id" + id);
+    }
+
     final Client client=new Client();
     public void run() {
 
@@ -39,7 +46,7 @@ public class Client2 extends Thread {
 
             System.out.println("Посылаем данные серверу...");
 
-            out.writeUTF("228"); // отсылаем введенную строку текста серверу.
+            out.writeUTF(id); // отсылаем введенную строку текста серверу.
             out.flush(); // заставляем поток закончить передачу данных.
             inStroka = in.readUTF(); // ждем пока сервер отошлет строку текста.
             System.out.println(inStroka);
