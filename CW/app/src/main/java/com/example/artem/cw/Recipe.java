@@ -1,8 +1,11 @@
 package com.example.artem.cw;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -11,6 +14,9 @@ import org.w3c.dom.Text;
  * Created by Artem on 13.11.2016.
  */
 public class Recipe extends AppCompatActivity {
+    public static final String APP_PREFERENCES = "mysettings";
+    Client2 client2 = new Client2();
+    Intent intent;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,4 +30,14 @@ public class Recipe extends AppCompatActivity {
         textView.setText(recipe);
         a.setText(title);
     }
+
+    public void onClick(View view) {
+        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES, MODE_PRIVATE);
+        SharedPreferences.Editor ed = sharedPreferences.edit();
+        // ed.clear();
+        // ed.commit();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
 }

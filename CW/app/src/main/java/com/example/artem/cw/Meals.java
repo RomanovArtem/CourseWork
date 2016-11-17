@@ -267,6 +267,8 @@ public class Meals extends Activity {
                 String idDish = client.idDish;
                 intent.putExtra("titleDish", titleDish);
                 intent.putExtra("idDish", idDish);
+                titleDish = "";
+                idDish = "";
                 break;
             }
 

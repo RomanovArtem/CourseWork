@@ -45,6 +45,15 @@ public class DataBase {
             System.out.println("Соединение с БД установлено!");
 
 
+            canCook.clear();
+            noCanCook.clear();
+            cook = "";
+            noCook = "";
+            idDish = "";
+            noIdDish = "";
+
+
+
             String[] a = Server.SplitString();
             int i = 0;
             for (String part : a )
@@ -141,9 +150,10 @@ public class DataBase {
         }*/
     }
 
-
+    static String idDB = "";
     public static String RecipeSearch(String title) {
-        String idDB = "";
+        idDB = "";
+
         try (Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
              Statement statement = connection.createStatement()) {
 

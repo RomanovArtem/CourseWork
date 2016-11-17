@@ -48,6 +48,7 @@ public class Client2 extends Thread {
             out.flush(); // заставляем поток закончить передачу данных.
             recipe = in.readUTF(); // ждем пока сервер отошлет строку текста.
             System.out.println(recipe);
+            recipe = "";
 
         } catch (Exception x) {
             x.printStackTrace();

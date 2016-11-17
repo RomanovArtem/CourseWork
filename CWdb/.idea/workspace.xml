@@ -46,32 +46,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataBase.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DataBase.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/SRV/DataBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="89" column="26" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
+            <state relative-caret-position="441">
+              <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
               <folding>
-                <marker date="1479407080332" expanded="true" signature="1711:1822" ph="SELECT id_di... ingredient" />
-                <marker date="1479407080332" expanded="true" signature="1711:1830" ph="SELECT id_di... ingredient" />
-                <marker date="1479407080332" expanded="true" signature="1711:1839" ph="SELECT id_di... ingredient" />
-                <marker date="1479407080332" expanded="true" signature="1711:1882" ph="SELECT id_di... ingredient" />
-                <marker date="1479407080332" expanded="true" signature="2330:2425" ph="SELECT count... dish" />
-                <marker date="1479407080332" expanded="true" signature="2330:2451" ph="SELECT count... dish" />
-                <marker date="1479407080332" expanded="true" signature="3403:3494" ph="SELECT * \nF... dish" />
-                <marker date="1479407080332" expanded="true" signature="3980:4071" ph="SELECT * \nF... dish" />
-                <marker date="1479407080332" expanded="true" signature="5241:5337" ph="SELECT recip... dish" />
-                <marker date="1479407080332" expanded="true" signature="5241:5354" ph="SELECT recip... dish" />
+                <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
+                <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
+                <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
+                <marker date="1479420019403" expanded="true" signature="1874:2045" ph="SELECT id_di... ingredient" />
+                <marker date="1479420019403" expanded="true" signature="2493:2588" ph="SELECT count... dish" />
+                <marker date="1479420019403" expanded="true" signature="2493:2614" ph="SELECT count... dish" />
+                <marker date="1479420019403" expanded="true" signature="3566:3657" ph="SELECT * \nF... dish" />
+                <marker date="1479420019403" expanded="true" signature="4143:4234" ph="SELECT * \nF... dish" />
+                <marker date="1479420019403" expanded="true" signature="5426:5522" ph="SELECT recip... dish" />
+                <marker date="1479420019403" expanded="true" signature="5426:5539" ph="SELECT recip... dish" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Server.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Server.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/SRV/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+            <state relative-caret-position="222">
+              <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -106,9 +106,9 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/SRV/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/SRV/DataBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/SRV/Dictionary.java" />
         <option value="$PROJECT_DIR$/src/main/java/SRV/Server.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SRV/DataBase.java" />
       </list>
     </option>
   </component>
@@ -655,16 +655,16 @@
       <workItem from="1479133955816" duration="768000" />
       <workItem from="1479218902468" duration="7233000" />
       <workItem from="1479286437510" duration="3822000" />
-      <workItem from="1479404502633" duration="8373000" />
+      <workItem from="1479404502633" duration="11445000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136489000" />
+    <option name="totallyTimeSpent" value="139561000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="916" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -673,7 +673,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49042144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21711366" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -757,16 +757,16 @@
         <state relative-caret-position="646">
           <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           <folding>
-            <marker date="1479407080332" expanded="true" signature="1711:1822" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1830" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1839" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1882" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="2330:2425" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="2330:2451" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="3403:3494" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="3980:4071" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5337" ph="SELECT recip... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5354" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2045" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="2493:2588" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="2493:2614" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="3566:3657" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="4143:4234" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5522" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5539" ph="SELECT recip... dish" />
           </folding>
         </state>
       </provider>
@@ -792,16 +792,16 @@
         <state relative-caret-position="646">
           <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           <folding>
-            <marker date="1479407080332" expanded="true" signature="1711:1822" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1830" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1839" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1882" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="2330:2425" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="2330:2451" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="3403:3494" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="3980:4071" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5337" ph="SELECT recip... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5354" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2045" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="2493:2588" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="2493:2614" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="3566:3657" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="4143:4234" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5522" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5539" ph="SELECT recip... dish" />
           </folding>
         </state>
       </provider>
@@ -827,16 +827,16 @@
         <state relative-caret-position="612">
           <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           <folding>
-            <marker date="1479407080332" expanded="true" signature="1711:1822" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1830" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1839" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1882" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="2330:2425" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="2330:2451" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="3403:3494" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="3980:4071" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5337" ph="SELECT recip... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5354" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2045" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="2493:2588" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="2493:2614" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="3566:3657" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="4143:4234" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5522" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5539" ph="SELECT recip... dish" />
           </folding>
         </state>
       </provider>
@@ -862,16 +862,16 @@
         <state relative-caret-position="646">
           <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           <folding>
-            <marker date="1479407080332" expanded="true" signature="1711:1822" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1830" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1839" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1882" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="2330:2425" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="2330:2451" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="3403:3494" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="3980:4071" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5337" ph="SELECT recip... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5354" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2045" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="2493:2588" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="2493:2614" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="3566:3657" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="4143:4234" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5522" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5539" ph="SELECT recip... dish" />
           </folding>
         </state>
       </provider>
@@ -897,16 +897,16 @@
         <state relative-caret-position="646">
           <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           <folding>
-            <marker date="1479407080332" expanded="true" signature="1711:1822" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1830" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1839" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1882" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="2330:2425" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="2330:2451" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="3403:3494" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="3980:4071" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5337" ph="SELECT recip... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5354" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2045" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="2493:2588" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="2493:2614" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="3566:3657" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="4143:4234" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5522" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5539" ph="SELECT recip... dish" />
           </folding>
         </state>
       </provider>
@@ -932,16 +932,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1479407080332" expanded="true" signature="1711:1822" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1830" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1839" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1882" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="2330:2425" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="2330:2451" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="3403:3494" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="3980:4071" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5337" ph="SELECT recip... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5354" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2045" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="2493:2588" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="2493:2614" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="3566:3657" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="4143:4234" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5522" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5539" ph="SELECT recip... dish" />
           </folding>
         </state>
       </provider>
@@ -967,16 +967,16 @@
         <state relative-caret-position="612">
           <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           <folding>
-            <marker date="1479407080332" expanded="true" signature="1711:1822" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1830" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1839" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1882" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="2330:2425" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="2330:2451" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="3403:3494" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="3980:4071" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5337" ph="SELECT recip... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5354" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2045" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="2493:2588" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="2493:2614" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="3566:3657" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="4143:4234" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5522" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5539" ph="SELECT recip... dish" />
           </folding>
         </state>
       </provider>
@@ -1002,16 +1002,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1479407080332" expanded="true" signature="1711:1822" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1830" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1839" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1882" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="2330:2425" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="2330:2451" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="3403:3494" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="3980:4071" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5337" ph="SELECT recip... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5354" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2045" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="2493:2588" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="2493:2614" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="3566:3657" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="4143:4234" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5522" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5539" ph="SELECT recip... dish" />
           </folding>
         </state>
       </provider>
@@ -1037,16 +1037,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1479407080332" expanded="true" signature="1711:1822" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1830" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1839" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1882" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="2330:2425" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="2330:2451" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="3403:3494" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="3980:4071" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5337" ph="SELECT recip... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5354" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2045" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="2493:2588" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="2493:2614" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="3566:3657" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="4143:4234" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5522" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5539" ph="SELECT recip... dish" />
           </folding>
         </state>
       </provider>
@@ -1072,16 +1072,16 @@
         <state relative-caret-position="544">
           <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
           <folding>
-            <marker date="1479407080332" expanded="true" signature="1711:1822" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1830" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1839" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1882" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="2330:2425" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="2330:2451" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="3403:3494" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="3980:4071" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5337" ph="SELECT recip... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5354" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2045" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="2493:2588" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="2493:2614" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="3566:3657" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="4143:4234" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5522" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5539" ph="SELECT recip... dish" />
           </folding>
         </state>
       </provider>
@@ -1107,16 +1107,16 @@
         <state relative-caret-position="408">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <marker date="1479407080332" expanded="true" signature="1711:1822" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1830" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1839" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1882" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="2330:2425" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="2330:2451" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="3403:3494" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="3980:4071" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5337" ph="SELECT recip... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5354" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2045" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="2493:2588" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="2493:2614" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="3566:3657" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="4143:4234" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5522" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5539" ph="SELECT recip... dish" />
           </folding>
         </state>
       </provider>
@@ -1142,16 +1142,16 @@
         <state relative-caret-position="408">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <marker date="1479407080332" expanded="true" signature="1711:1822" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1830" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1839" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1882" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="2330:2425" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="2330:2451" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="3403:3494" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="3980:4071" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5337" ph="SELECT recip... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5354" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2045" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="2493:2588" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="2493:2614" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="3566:3657" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="4143:4234" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5522" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5539" ph="SELECT recip... dish" />
           </folding>
         </state>
       </provider>
@@ -1184,16 +1184,16 @@
         <state relative-caret-position="204">
           <caret line="17" column="32" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="32" />
           <folding>
-            <marker date="1479407080332" expanded="true" signature="1711:1822" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1830" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1839" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1882" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="2330:2425" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="2330:2451" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="3403:3494" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="3980:4071" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5337" ph="SELECT recip... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5354" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2045" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="2493:2588" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="2493:2614" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="3566:3657" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="4143:4234" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5522" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5539" ph="SELECT recip... dish" />
           </folding>
         </state>
       </provider>
@@ -1226,16 +1226,16 @@
         <state relative-caret-position="289">
           <caret line="17" column="32" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="32" />
           <folding>
-            <marker date="1479407080332" expanded="true" signature="1711:1822" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1830" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1839" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1882" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="2330:2425" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="2330:2451" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="3403:3494" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="3980:4071" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5337" ph="SELECT recip... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5354" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2045" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="2493:2588" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="2493:2614" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="3566:3657" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="4143:4234" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5522" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5539" ph="SELECT recip... dish" />
           </folding>
         </state>
       </provider>
@@ -1277,25 +1277,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/SRV/DataBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="89" column="26" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
-          <folding>
-            <marker date="1479407080332" expanded="true" signature="1711:1822" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1830" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1839" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="1711:1882" ph="SELECT id_di... ingredient" />
-            <marker date="1479407080332" expanded="true" signature="2330:2425" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="2330:2451" ph="SELECT count... dish" />
-            <marker date="1479407080332" expanded="true" signature="3403:3494" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="3980:4071" ph="SELECT * \nF... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5337" ph="SELECT recip... dish" />
-            <marker date="1479407080332" expanded="true" signature="5241:5354" ph="SELECT recip... dish" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SRV/Dictionary.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -1306,9 +1287,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/SRV/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
+        <state relative-caret-position="222">
+          <caret line="43" column="29" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/SRV/DataBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+          <folding>
+            <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="1874:2045" ph="SELECT id_di... ingredient" />
+            <marker date="1479420019403" expanded="true" signature="2493:2588" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="2493:2614" ph="SELECT count... dish" />
+            <marker date="1479420019403" expanded="true" signature="3566:3657" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="4143:4234" ph="SELECT * \nF... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5522" ph="SELECT recip... dish" />
+            <marker date="1479420019403" expanded="true" signature="5426:5539" ph="SELECT recip... dish" />
+          </folding>
         </state>
       </provider>
     </entry>

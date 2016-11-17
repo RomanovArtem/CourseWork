@@ -41,7 +41,7 @@ public class Server {
                 String noIdDish = DataBase.noIdDish;
 
                 String str = new String();
-                String id = new String();
+                String id = "";
                 str = cook + "/" + noCook;
                 id = idDish + "/" + noIdDish;
 
