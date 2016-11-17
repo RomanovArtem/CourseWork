@@ -8,8 +8,6 @@ import java.net.*;
 import java.io.*;
 
 public class Client2 extends Thread {
-    public volatile String outStroka = "";
-    public volatile String inStroka = "";
     public volatile String recipe = "";
     static Socket socket;
     InputStream sin;
@@ -48,8 +46,8 @@ public class Client2 extends Thread {
 
             out.writeUTF(id); // отсылаем введенную строку текста серверу.
             out.flush(); // заставляем поток закончить передачу данных.
-            inStroka = in.readUTF(); // ждем пока сервер отошлет строку текста.
-            System.out.println(inStroka);
+            recipe = in.readUTF(); // ждем пока сервер отошлет строку текста.
+            System.out.println(recipe);
 
         } catch (Exception x) {
             x.printStackTrace();

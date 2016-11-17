@@ -46,16 +46,23 @@ public class Server {
                 id = idDish + "/" + noIdDish;
 
                 out.writeUTF(str); // отсылаем клиенту обратно ту самую строку текста.
+                str = "";
                 out.flush(); // заставляем поток закончить передачу данных.
                 out.writeUTF(id); // отсылаем клиенту обратно ту самую строку текста.
+
                 out.flush(); // заставляем поток закончить передачу данных.
                 System.out.println("id которые уйдут: " + id);
+                id = "";
 
                 title = in.readUTF();
-                DataBase.RecipeSearch(title);
-                out.writeUTF(title); // отсылаем клиенту обратно ту самую строку текста.
-                out.flush(); // заставляем поток закончить передачу данных.
-                System.out.println();
+                if(title != "0") {
+                    title = DataBase.RecipeSearch(title);
+                    out.writeUTF(title); // отсылаем клиенту обратно ту самую строку текста.
+
+                    out.flush(); // заставляем поток закончить передачу данных.
+                    System.out.println(title);
+                    title = "";
+                }
             }
         } catch(Exception x) { x.printStackTrace(); }
     }

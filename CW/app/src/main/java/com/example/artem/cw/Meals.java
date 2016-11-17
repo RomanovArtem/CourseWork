@@ -229,14 +229,14 @@ public class Meals extends Activity {
         }
     }
 
-    public static String Convert()
-    {
+    public static String Convert() {
         String line = new String();
         line = "";
+        System.out.println("11111" + line);
         for (String selectedProduct : selectedProducts) {
-        line = line + selectedProduct + " ";
-    }
-        System.out.println("line: " + line);
+            line = line + selectedProduct + " ";
+        }
+        selectedProducts.clear();
         return line;
     }
 

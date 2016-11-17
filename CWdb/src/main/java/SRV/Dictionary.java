@@ -38,6 +38,7 @@ public class Dictionary {
         {
             indexList.add(dictionary.get(keyList.get(i-1)));
         }
+        dictionary.clear();
     }
 
     static void DistributionId(ArrayList key, ArrayList value, ArrayList valueTable)

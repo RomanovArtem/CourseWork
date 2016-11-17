@@ -85,6 +85,9 @@ public class DataBase {
             System.out.println("Значения В таблице: " + indexListTable);
 
             Dictionary.DistributionId(keyList, indexList, indexListTable);
+            keyList.clear();
+            indexList.clear();
+            indexListTable.clear();
 
             System.out.println("Новые ключи: " + keyList );
             System.out.println("Могу приготовить: " + canCook );
@@ -139,23 +142,25 @@ public class DataBase {
     }
 
 
-    public static void RecipeSearch(String title) {
+    public static String RecipeSearch(String title) {
+        String idDB = "";
         try (Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
              Statement statement = connection.createStatement()) {
 
                 String query = "SELECT recipe \n" +
                         "FROM dish \n" +
-                        "WHERE name =" + title + " \n";
+                        "WHERE id =" + title + " \n";
                 ResultSet resultSet = statement.executeQuery(query);
 
                 while (resultSet.next()) {
-                    String titleDB = resultSet.getString(1);
-                    System.out.println(titleDB);
+                    idDB = resultSet.getString(1);
+                    System.out.println(idDB);
                 }
         }
         catch (SQLException e) {
             e.printStackTrace();
         }
+        return idDB;
     }
 
 

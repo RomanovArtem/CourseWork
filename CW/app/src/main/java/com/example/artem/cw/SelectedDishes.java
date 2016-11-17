@@ -15,6 +15,7 @@ import android.view.ViewGroup.LayoutParams;
 import android.widget.ToggleButton;
 
 import java.io.IOException;
+import java.net.Socket;
 
 /**
  * Created by Artem on 16.10.2016.
@@ -77,9 +78,16 @@ public class SelectedDishes extends AppCompatActivity {
                 textView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        intent = new Intent(SelectedDishes.this, Recipe.class);
                         client2.Client2(id1[finalI]);
                         client2.start();
-                        intent = new Intent(SelectedDishes.this, Recipe.class);
+                        while (true) {
+                            if (client2.recipe != "") {
+                                intent.putExtra("recipe", client2.recipe);
+                                intent.putExtra("title", dish1[finalI]);
+                                break;
+                            }
+                        }
                         startActivity(intent);
                     }
                 });
@@ -116,9 +124,16 @@ public class SelectedDishes extends AppCompatActivity {
                 textView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        intent = new Intent(SelectedDishes.this, Recipe.class);
                         client2.Client2(id2[finalI1]);
                         client2.start();
-                        intent = new Intent(SelectedDishes.this, Recipe.class);
+                        while (true) {
+                            if (client2.recipe != "") {
+                                intent.putExtra("recipe", client2.recipe);
+                                intent.putExtra("title", dish2[finalI1]);
+                                break;
+                            }
+                        }
                         startActivity(intent);
                     }
                 });
@@ -141,12 +156,15 @@ public class SelectedDishes extends AppCompatActivity {
             }
         }); */
     }
-
     public void onClick(View view) {
+    String str = "0";
+            client2.Client2(str);
+            client2.start();
+
         SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES, MODE_PRIVATE);
         SharedPreferences.Editor ed = sharedPreferences.edit();
-        ed.clear();
-        ed.commit();
+       // ed.clear();
+       // ed.commit();
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
