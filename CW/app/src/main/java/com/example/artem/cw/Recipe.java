@@ -3,9 +3,11 @@ package com.example.artem.cw;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -30,6 +32,23 @@ public class Recipe extends AppCompatActivity {
         textView.setText(recipe);
         a.setText(title);
     }
+
+
+    boolean flag = false;
+   public void ClickImageButton(View view) {
+       ImageButton imageButton = (ImageButton)findViewById(R.id.imageButton);
+       if (!flag) {
+           imageButton.setImageResource(R.drawable.nstar);
+           flag = true;
+       }
+       else {
+           imageButton.setImageResource(R.drawable.ystar);
+           flag = false;
+       }
+   }
+
+
+
 
     public void onClick(View view) {
         SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES, MODE_PRIVATE);

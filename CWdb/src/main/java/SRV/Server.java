@@ -55,6 +55,7 @@ public class Server {
                 id = "";
 
                 title = in.readUTF();
+                System.out.println("id выбранного товара: " + title);
                 if(title != "0") {
                     title = DataBase.RecipeSearch(title);
                     out.writeUTF(title); // отсылаем клиенту обратно ту самую строку текста.

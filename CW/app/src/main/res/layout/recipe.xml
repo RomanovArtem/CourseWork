@@ -37,16 +37,28 @@
             android:layout_marginStart="77dp" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="New Text"
             android:id="@+id/content"
-            android:layout_marginTop="56dp"
-            android:layout_below="@+id/title"
-            android:layout_alignRight="@+id/f_button_back"
-            android:layout_alignEnd="@+id/f_button_back"
-            android:layout_marginRight="41dp"
-            android:layout_marginEnd="41dp" />
+            android:layout_below="@+id/imageButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="53dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <ImageButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/imageButton"
+            android:background="#FAFAFA"
+            android:src="@drawable/nstar"
+            android:clickable="true"
+            android:onClick="ClickImageButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/title" />
 
     </RelativeLayout>
 
