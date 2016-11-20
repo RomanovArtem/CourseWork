@@ -83,6 +83,7 @@ public class SelectedDishes extends AppCompatActivity {
                         client2.start();
                         while (true) {
                             if (client2.recipe != "") {
+                                intent.putExtra("id", id1[finalI]);
                                 intent.putExtra("recipe", client2.recipe);
                                 intent.putExtra("title", dish1[finalI]);
                                 break;
@@ -129,6 +130,7 @@ public class SelectedDishes extends AppCompatActivity {
                         client2.start();
                         while (true) {
                             if (client2.recipe != "") {
+                                intent.putExtra("id", id2[finalI1]);
                                 intent.putExtra("recipe", client2.recipe);
                                 intent.putExtra("title", dish2[finalI1]);
                                 break;
