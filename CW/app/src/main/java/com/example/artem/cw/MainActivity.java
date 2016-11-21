@@ -30,7 +30,7 @@ import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
     public static final String APP_PREFERENCES = "mysettings";
-
+    Intent intent;
     ToggleButton toggleButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -122,10 +122,13 @@ public class MainActivity extends AppCompatActivity {
         //loadSelectionVegetables();
         //Thread ct=new Thread(doInThread);
         //ct.start();
-        Intent intent = new Intent(MainActivity.this, Meals.class);
+        intent = new Intent(this, Meals.class);
         startActivity(intent);
+    }
 
-
+    public void ClickImageButton(View view) {
+        intent =  new Intent(this, Favourites.class);
+        startActivity(intent);
     }
 
 

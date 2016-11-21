@@ -56,9 +56,18 @@ public class Recipe extends AppCompatActivity {
        // если БД нет - то в вызывает onCreate, если версия БД изменилась - onCreate
        ContentValues contentValues = new ContentValues(); // для добавления новых строк в таблицу
 
+       System.out.println("конь: " + flag);
+       if (flag == false) {
+           contentValues.put(DBHelper.KEY_NAME, textViewTitle.getText().toString());
+           contentValues.put(DBHelper.KEY_RECIPE, textViewContent.getText().toString());
 
-       if (!flag) {
-           database.delete(DBHelper.TABLE_NAME, null, null);
+           database.insert(DBHelper.TABLE_NAME, null, contentValues);
+           Toast toast = Toast.makeText(getApplicationContext(),
+                   "Вы добавили рецепт в избранное!",
+                   Toast.LENGTH_SHORT);
+           toast.setGravity(Gravity.CENTER, 0, 0);
+           toast.show();
+
         /*   Cursor cursor = database.query(DBHelper.TABLE_NAME, null, null, null, null, null, null); //чтенеие всех записей из таблицы
             if (cursor.moveToFirst()) { // перемемещает курсор на первую строку в рез-те запроса // и проверяет есть ли вообще записи в курсоре
                 int idIndex = cursor.getColumnIndex(DBHelper.KEY_ID);
@@ -75,23 +84,14 @@ public class Recipe extends AppCompatActivity {
             Log.d("mLog", "0 rows");
 
             cursor.close(); // закрываем для освобождения памяти  */
-           imageButton.setImageResource(R.drawable.nstar);
+           imageButton.setImageResource(R.drawable.ystar);
            flag = true;
            saveSelection();
 
        }
        else {
-            contentValues.put(DBHelper.KEY_NAME, textViewTitle.getText().toString());
-            contentValues.put(DBHelper.KEY_RECIPE, textViewContent.getText().toString());
-
-           database.insert(DBHelper.TABLE_NAME, null, contentValues);
-           Toast toast = Toast.makeText(getApplicationContext(),
-                   "Вы добавили рецепт в избранное!",
-                   Toast.LENGTH_SHORT);
-           toast.setGravity(Gravity.CENTER, 0, 0);
-           toast.show();
-
-           imageButton.setImageResource(R.drawable.ystar);
+           database.delete(DBHelper.TABLE_NAME, DBHelper.KEY_NAME + " = ?", new String[]{textViewTitle.getText().toString()});
+           imageButton.setImageResource(R.drawable.nstar);
            flag = false;
            saveSelection();
        }
@@ -123,11 +123,11 @@ public class Recipe extends AppCompatActivity {
         boolean select = sharedPreferences.getBoolean(id, false);
         imageButton = (ImageButton)findViewById(R.id.imageButton);
         if (select == false) {
-            imageButton.setImageResource(R.drawable.ystar);
+            imageButton.setImageResource(R.drawable.nstar);
             flag = false;
         }
         else {
-            imageButton.setImageResource(R.drawable.nstar);
+            imageButton.setImageResource(R.drawable.ystar);
             flag = true;
         }
     }

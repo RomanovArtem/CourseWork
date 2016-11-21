@@ -2,62 +2,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent" android:layout_width="match_parent">
 
-    <RelativeLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="top"
-        android:visibility="visible"
-        android:translationZ="2dp">
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="50dp"
-            android:id="@+id/textView2"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/radius"
-            android:text="ПРОСТО - ВКУСНО"
-            android:textColor="#FEFEFE"
-            android:gravity="center"
-            android:textSize="25dp"/>
-
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_gravity="bottom"
-        android:translationZ="2dp"
-        android:visibility="visible">
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="40dp"
-            android:id="@+id/textView3"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/footer_gradient"
-            android:textColor="#FEFEFE"
-            android:gravity="center"
-            android:textSize="25dp"
-            android:layout_alignParentBottom="true" />
-
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="33dp"
-            android:layout_height="33dp"
-            android:background="@drawable/next"
-            android:id="@+id/next"
-            android:onClick="onClick"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginRight="36dp"
-            android:layout_marginEnd="36dp" />
-
-    </RelativeLayout>
-
     <ScrollView
 
         android:layout_width="match_parent"
@@ -69,7 +13,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fillViewport="true"
-            >
+            android:gravity="bottom">
     <ToggleButton
         android:id="@+id/fruit"
         android:layout_width="100dp"
@@ -110,13 +54,14 @@
     <ToggleButton android:id="@+id/seasoning"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@drawable/button_background"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/seas_on_off"
         android:gravity="center_vertical"
         android:textOn="Приправы"
         android:textOff="Приправы"
         android:textSize="15dp"
         android:textAlignment="center"
-        android:textColor="@color/color"
+        android:textColor="#E72A30"
         android:onClick="onToggleButtonClick"
         android:checked="false"
         android:layout_alignBottom="@+id/vegetables"
@@ -127,13 +72,13 @@
     <ToggleButton android:id="@+id/dairy"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@drawable/button_background"
-        android:drawableTop="@drawable/fruit_on_off"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/dairy_off"
         android:gravity="center_vertical"
         android:textOn="Молочные продукты"
         android:textOff="Молочные продукты"
-        android:textSize="14dp"
-        android:textColor="@color/color"
+        android:textSize="13dp"
+        android:textColor="#E72A30"
         android:onClick="onToggleButtonClick"
         android:checked="false"
         android:layout_marginTop="35dp"
@@ -145,13 +90,13 @@
         android:id="@+id/supplements"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@drawable/button_background"
-        android:drawableTop="@drawable/fruit_on_off"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/supp_off"
         android:gravity="center_vertical"
         android:textOn="Пищевые добавки"
         android:textOff="Пищевые добавки"
-        android:textSize="10dp"
-        android:textColor="@color/color"
+        android:textSize="13dp"
+        android:textColor="#E72A30"
         android:onClick="onToggleButtonClick"
         android:checked="false"
         android:textAlignment="center"
@@ -181,13 +126,14 @@
         android:id="@+id/meat"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@drawable/button_background"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/meat_off"
         android:gravity="center_vertical"
         android:textOn="Мясо"
         android:textOff="Мясо"
         android:textSize="15dp"
         android:textAlignment="center"
-        android:textColor="@color/color"
+        android:textColor="#E72A30"
         android:onClick="onToggleButtonClick"
         android:checked="false"
         android:layout_below="@+id/dairy"
@@ -216,13 +162,14 @@
         android:id="@+id/seafood"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@drawable/button_background"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/sea_off"
         android:gravity="center_vertical"
         android:textOn="Морепродукты"
         android:textOff="Морепродукты"
-        android:textSize="15dp"
+        android:textSize="12dp"
         android:textAlignment="center"
-        android:textColor="@color/color"
+        android:textColor="#E72A30"
         android:onClick="onToggleButtonClick"
         android:checked="false"
         android:layout_alignBottom="@+id/refill"
@@ -234,13 +181,14 @@
         android:id="@+id/cereals"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@drawable/button_background"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/cer_off"
         android:gravity="center_vertical"
         android:textOn="Крупы"
         android:textOff="Крупы"
         android:textSize="15dp"
         android:textAlignment="center"
-        android:textColor="@color/color"
+        android:textColor="#E72A30"
         android:onClick="onToggleButtonClick"
         android:checked="false"
         android:layout_below="@+id/meat"
@@ -253,13 +201,14 @@
         android:id="@+id/greenery"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@drawable/button_background"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/gree_off"
         android:gravity="center_vertical"
         android:textOn="Зелень"
         android:textOff="Зелень"
         android:textSize="15dp"
         android:textAlignment="center"
-        android:textColor="@color/color"
+        android:textColor="#E72A30"
         android:onClick="onToggleButtonClick"
         android:checked="false"
         android:layout_below="@+id/refill"
@@ -271,13 +220,14 @@
                 android:id="@+id/berries"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:background="@drawable/button_background"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/ber_off"
                 android:gravity="center_vertical"
                 android:textOn="Ягоды"
                 android:textOff="Ягоды"
                 android:textSize="15dp"
                 android:textAlignment="center"
-                android:textColor="@color/color"
+                android:textColor="#E72A30"
                 android:onClick="onToggleButtonClick"
                 android:checked="false"
                 android:layout_below="@+id/seafood"
@@ -300,5 +250,77 @@
 
         </RelativeLayout>
     </ScrollView>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:visibility="visible"
+        android:translationZ="2dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/radius"
+            android:text="ПРОСТО - ВКУСНО"
+            android:textColor="#FEFEFE"
+            android:gravity="center"
+            android:textSize="25dp"/>
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/imageButton2"
+            android:background="@android:color/transparent"
+            android:src="@drawable/mainstar"
+            android:clickable="true"
+            android:onClick="ClickImageButton"
+            android:translationZ="2dp"
+            android:visibility="visible"
+            android:focusable="false"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:translationZ="2dp"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/footer_gradient"
+            android:textColor="#FEFEFE"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:layout_alignParentBottom="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:background="@drawable/next"
+            android:id="@+id/next"
+            android:onClick="onClick"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="36dp"
+            android:layout_marginEnd="36dp" />
+
+    </RelativeLayout>
 
 </FrameLayout>
