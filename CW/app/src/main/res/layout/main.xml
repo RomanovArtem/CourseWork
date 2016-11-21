@@ -1,31 +1,92 @@
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_alignParentBottom="true"
-    android:id="@+id/scrollView"
-    android:fillViewport="true"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="6dp"
-    android:background="@drawable/background_fon" >
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent" android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:visibility="visible"
+        android:translationZ="2dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/radius"
+            android:text="ПРОСТО - ВКУСНО"
+            android:textColor="#FEFEFE"
+            android:gravity="center"
+            android:textSize="25dp"/>
 
 
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:translationZ="2dp"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/footer_gradient"
+            android:textColor="#FEFEFE"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:layout_alignParentBottom="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:background="@drawable/next"
+            android:id="@+id/next"
+            android:onClick="onClick"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="36dp"
+            android:layout_marginEnd="36dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:background="@drawable/background_fon"
+        android:translationZ="1dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            >
     <ToggleButton
         android:id="@+id/fruit"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@drawable/button_background"
+        android:background="@android:color/transparent"
         android:drawableTop="@drawable/fruit_on_off"
         android:gravity="center_vertical"
         android:textOn="Фрукты"
         android:textOff="Фрукты"
         android:textSize="16dp"
         android:textAlignment="center"
-        android:textColor="@color/color"
+        android:textColor="#E72A30"
         android:onClick="onToggleButtonClick"
-        android:checked="false"/>
+        android:checked="false"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="3dp"
+        android:textStyle="normal" />
         <!-- android:drawableLeft="@drawable/icon_phone"
         android:textStyle="bold|italic"-->
 
@@ -33,14 +94,14 @@
         android:id="@+id/vegetables"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:background="@drawable/button_background"
-        android:drawableTop="@drawable/fruit_on_off"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/vegetables_on_off"
         android:gravity="center_vertical"
         android:textOn="Овощи"
         android:textOff="Овощи"
         android:textSize="16dp"
         android:textAlignment="center"
-        android:textColor="@color/color"
+        android:textColor="#E72A30"
         android:onClick="onToggleButtonClick"
         android:checked="false"
         android:layout_alignBottom="@+id/fruit"
@@ -60,7 +121,8 @@
         android:checked="false"
         android:layout_alignBottom="@+id/vegetables"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="3dp" />
 
     <ToggleButton android:id="@+id/dairy"
         android:layout_width="100dp"
@@ -74,11 +136,10 @@
         android:textColor="@color/color"
         android:onClick="onToggleButtonClick"
         android:checked="false"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="35dp"
         android:layout_below="@+id/fruit"
-        android:layout_alignRight="@+id/next"
-        android:layout_alignEnd="@+id/next"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:layout_marginLeft="3dp" />
 
     <ToggleButton
         android:id="@+id/supplements"
@@ -113,7 +174,8 @@
         android:checked="false"
         android:layout_alignTop="@+id/supplements"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="3dp" />
 
     <ToggleButton
         android:id="@+id/meat"
@@ -131,7 +193,8 @@
         android:layout_below="@+id/dairy"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="35dp" />
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="3dp" />
 
     <ToggleButton
         android:id="@+id/refill"
@@ -164,7 +227,8 @@
         android:checked="false"
         android:layout_alignBottom="@+id/refill"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="3dp" />
 
     <ToggleButton
         android:id="@+id/cereals"
@@ -180,9 +244,10 @@
         android:onClick="onToggleButtonClick"
         android:checked="false"
         android:layout_below="@+id/meat"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="35dp" />
+        android:layout_alignLeft="@+id/meat"
+        android:layout_alignStart="@+id/meat"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="3dp" />
 
     <ToggleButton
         android:id="@+id/greenery"
@@ -197,38 +262,43 @@
         android:textColor="@color/color"
         android:onClick="onToggleButtonClick"
         android:checked="false"
-        android:layout_alignBottom="@+id/cereals"
-        android:layout_alignRight="@+id/refill"
-        android:layout_alignEnd="@+id/refill" />
+        android:layout_below="@+id/refill"
+        android:layout_alignLeft="@+id/refill"
+        android:layout_alignStart="@+id/refill"
+        android:layout_marginTop="35dp" />
 
-    <ToggleButton
-        android:id="@+id/berries"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/button_background"
-        android:gravity="center_vertical"
-        android:textOn="Ягоды"
-        android:textOff="Ягоды"
-        android:textSize="15dp"
-        android:textAlignment="center"
-        android:textColor="@color/color"
-        android:onClick="onToggleButtonClick"
-        android:checked="false"
-        android:layout_above="@+id/next"
-        android:layout_alignLeft="@+id/seafood"
-        android:layout_alignStart="@+id/seafood" />
+            <ToggleButton
+                android:id="@+id/berries"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/button_background"
+                android:gravity="center_vertical"
+                android:textOn="Ягоды"
+                android:textOff="Ягоды"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:textColor="@color/color"
+                android:onClick="onToggleButtonClick"
+                android:checked="false"
+                android:layout_below="@+id/seafood"
+                android:layout_alignLeft="@+id/seafood"
+                android:layout_alignStart="@+id/seafood"
+                android:layout_marginTop="35dp" />
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Далее"
-        android:id="@+id/next"
-        android:onClick="onClick"
-        android:layout_below="@+id/cereals"
-        android:layout_alignRight="@+id/cereals"
-        android:layout_alignEnd="@+id/cereals"
-        android:layout_marginTop="50dp" />
+            <ToggleButton
+                android:id="@+id/toggleButton5"
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/transparent"
+                android:layout_below="@+id/berries"
+                android:layout_toRightOf="@+id/cereals"
+                android:layout_toEndOf="@+id/cereals" />
 
-</RelativeLayout>
+        </RelativeLayout>
     </ScrollView>
+
+</FrameLayout>

@@ -4,6 +4,6 @@
         android:drawable="@drawable/check"
         android:state_checked="true" />
     <item
-        android:drawable="@drawable/fruit_off"
+        android:drawable="@drawable/veg_off"
         android:state_checked="false" />
 </selector>

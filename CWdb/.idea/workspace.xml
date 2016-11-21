@@ -41,7 +41,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,6 +54,7 @@
             <state relative-caret-position="799">
               <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
               <folding>
+                <element signature="imports" expanded="false" />
                 <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
                 <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
                 <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
@@ -659,12 +662,12 @@
       <workItem from="1479286437510" duration="3822000" />
       <workItem from="1479404502633" duration="11445000" />
       <workItem from="1479452713769" duration="3323000" />
-      <workItem from="1479665530340" duration="4555000" />
+      <workItem from="1479665530340" duration="5757000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147439000" />
+    <option name="totallyTimeSpent" value="148641000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
@@ -752,7 +755,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -761,6 +766,7 @@
         <state relative-caret-position="646">
           <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
@@ -787,7 +793,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -796,6 +804,7 @@
         <state relative-caret-position="646">
           <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
@@ -822,7 +831,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -831,6 +842,7 @@
         <state relative-caret-position="612">
           <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
@@ -857,7 +869,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -866,6 +880,7 @@
         <state relative-caret-position="646">
           <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
@@ -892,7 +907,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -901,6 +918,7 @@
         <state relative-caret-position="646">
           <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
@@ -927,7 +945,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -936,6 +956,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
@@ -962,7 +983,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -971,6 +994,7 @@
         <state relative-caret-position="612">
           <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
@@ -997,7 +1021,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1006,6 +1032,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
@@ -1032,7 +1059,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1041,6 +1070,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
@@ -1067,7 +1097,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1076,6 +1108,7 @@
         <state relative-caret-position="544">
           <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
@@ -1102,7 +1135,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1111,6 +1146,7 @@
         <state relative-caret-position="408">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
@@ -1137,7 +1173,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1146,6 +1184,7 @@
         <state relative-caret-position="408">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
@@ -1179,7 +1218,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1188,6 +1229,7 @@
         <state relative-caret-position="204">
           <caret line="17" column="32" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="32" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
@@ -1221,7 +1263,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="5" selection-start-line="17" selection-start-column="7" selection-end-line="18" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1230,6 +1274,7 @@
         <state relative-caret-position="289">
           <caret line="17" column="32" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="32" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />
@@ -1277,7 +1322,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1296,6 +1343,7 @@
         <state relative-caret-position="799">
           <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
           <folding>
+            <element signature="imports" expanded="false" />
             <marker date="1479420019403" expanded="true" signature="1874:1985" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:1993" ph="SELECT id_di... ingredient" />
             <marker date="1479420019403" expanded="true" signature="1874:2002" ph="SELECT id_di... ingredient" />

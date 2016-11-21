@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:background="@drawable/background"
-    android:tileMode="repeat">
+    android:background="@drawable/background_fon"
+    android:scaleType="fitXY">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -1,10 +1,12 @@
-<ScrollView
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent" android:layout_width="match_parent">
+<ScrollView
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:background="@drawable/background"
-    android:tileMode="repeat">
+    android:background="@drawable/background_fon">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -293,19 +295,67 @@
             android:layout_alignStart="@+id/ve_24"
             android:layout_marginRight="3dp" />
 
-        <Button
-            android:layout_width="match_parent"
+        <ToggleButton
+            android:id="@+id/toggleButton6"
+            android:layout_width="1dp"
             android:layout_height="50dp"
-            android:text="Назад"
-            android:id="@+id/button3"
-            android:onClick="onClick"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="false"
-            android:layout_alignParentStart="false"
-            android:layout_alignParentRight="false"
-            android:layout_alignParentEnd="false"
-            android:background="#1127ed"  />
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/transparent"
+            android:layout_below="@+id/ve_25"/>
 
     </RelativeLayout>
 
 </ScrollView>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/radius"
+            android:text="ПРОСТО - ВКУСНО"
+            android:textColor="#FEFEFE"
+            android:gravity="center"
+            android:textSize="25dp"/>
+
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/button3"
+            android:onClick="onClick"
+            android:background="@drawable/back"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/footer_gradient"
+            android:textColor="#FEFEFE"
+            android:gravity="center"
+            android:textSize="25dp" />
+    </RelativeLayout>
+</FrameLayout>
