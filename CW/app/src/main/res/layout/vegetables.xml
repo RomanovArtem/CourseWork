@@ -4,18 +4,21 @@
 <ScrollView
 
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="1000dp"
     android:fillViewport="true"
-    android:background="@drawable/background_fon">
+    android:background="@drawable/background_fon"
+    android:scaleType="fitXY"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="30dp">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:fillViewport="true"
         >
         <ToggleButton
             android:id="@+id/ve_13"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/veg1"
             android:gravity="center_vertical"
@@ -26,13 +29,13 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_marginTop="60dp"
-            android:layout_marginLeft="3dp" />
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp" />
 
         <ToggleButton
             android:id="@+id/ve_14"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/veg2"
             android:gravity="center_vertical"
@@ -43,13 +46,15 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="60dp" />
+            android:layout_alignTop="@+id/ve_13"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp" />
 
         <ToggleButton
             android:id="@+id/ve_15"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/veg3"
             android:gravity="center_vertical"
@@ -60,15 +65,15 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_above="@+id/ve_16"
-            android:layout_alignLeft="@+id/ve_18"
-            android:layout_alignStart="@+id/ve_18"
-            android:layout_marginRight="3dp" />
+            android:layout_below="@+id/ve_13"
+            android:layout_alignLeft="@+id/ve_13"
+            android:layout_alignStart="@+id/ve_13"
+            android:layout_marginTop="30dp" />
 
         <ToggleButton
             android:id="@+id/ve_16"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/veg_cabbage"
             android:gravity="center_vertical"
@@ -79,16 +84,15 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_below="@+id/ve_13"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="35dp"
-            android:layout_marginLeft="3dp" />
+            android:layout_alignTop="@+id/ve_15"
+            android:layout_alignRight="@+id/ve_14"
+            android:layout_alignEnd="@+id/ve_14"
+            android:visibility="visible" />
 
         <ToggleButton
             android:id="@+id/ve_17"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/veg_potato"
             android:gravity="center_vertical"
@@ -99,14 +103,16 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_alignTop="@+id/ve_16"
-            android:layout_alignLeft="@+id/ve_14"
-            android:layout_alignStart="@+id/ve_14" />
+            android:visibility="visible"
+            android:layout_below="@+id/ve_15"
+            android:layout_alignLeft="@+id/ve_23"
+            android:layout_alignStart="@+id/ve_23"
+            android:layout_marginTop="30dp" />
 
         <ToggleButton
             android:id="@+id/ve_18"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/veg_corn"
             android:gravity="center_vertical"
@@ -117,15 +123,15 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
+            android:visibility="visible"
             android:layout_alignTop="@+id/ve_17"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginRight="3dp" />
+            android:layout_alignLeft="@+id/ve_16"
+            android:layout_alignStart="@+id/ve_16" />
 
         <ToggleButton
             android:id="@+id/ve_19"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/veg_bow"
             android:gravity="center_vertical"
@@ -136,16 +142,16 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_below="@+id/ve_16"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="35dp"
-            android:layout_marginLeft="3dp" />
+            android:layout_below="@+id/ve_17"
+            android:layout_alignLeft="@+id/ve_17"
+            android:layout_alignStart="@+id/ve_17"
+            android:visibility="visible"
+            android:layout_marginTop="30dp" />
 
         <ToggleButton
             android:id="@+id/ve_20"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/veg_carrot"
             android:gravity="center_vertical"
@@ -156,15 +162,15 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_below="@+id/ve_17"
-            android:layout_alignLeft="@+id/ve_17"
-            android:layout_alignStart="@+id/ve_17"
-            android:layout_marginTop="35dp" />
+            android:layout_alignTop="@+id/ve_19"
+            android:layout_alignRight="@+id/ve_18"
+            android:layout_alignEnd="@+id/ve_18"
+            android:visibility="visible" />
 
         <ToggleButton
             android:id="@+id/ve_21"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/veg_cucumber"
             android:gravity="center_vertical"
@@ -175,16 +181,16 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_below="@+id/ve_18"
-            android:layout_alignLeft="@+id/ve_18"
-            android:layout_alignStart="@+id/ve_18"
-            android:layout_marginTop="35dp"
-            android:layout_marginRight="3dp" />
+            android:layout_below="@+id/ve_19"
+            android:layout_alignLeft="@+id/ve_19"
+            android:layout_alignStart="@+id/ve_19"
+            android:visibility="visible"
+            android:layout_marginTop="30dp" />
 
         <ToggleButton
             android:id="@+id/ve_22"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/veg_pepper"
             android:gravity="center_vertical"
@@ -195,16 +201,14 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_below="@+id/ve_19"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="35dp"
-            android:layout_marginLeft="3dp" />
+            android:layout_alignTop="@+id/ve_21"
+            android:layout_alignLeft="@+id/ve_20"
+            android:layout_alignStart="@+id/ve_20" />
 
         <ToggleButton
             android:id="@+id/ve_23"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/veg_tomato"
             android:gravity="center_vertical"
@@ -215,14 +219,16 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_alignTop="@+id/ve_22"
-            android:layout_alignLeft="@+id/ve_20"
-            android:layout_alignStart="@+id/ve_20" />
+            android:layout_below="@+id/ve_21"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp" />
 
         <ToggleButton
             android:id="@+id/ve_24"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/veg_radish"
             android:gravity="center_vertical"
@@ -233,15 +239,14 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_alignBottom="@+id/ve_23"
-            android:layout_alignLeft="@+id/ve_21"
-            android:layout_alignStart="@+id/ve_21"
-            android:layout_marginRight="3dp" />
+            android:layout_alignTop="@+id/ve_23"
+            android:layout_alignLeft="@+id/ve_22"
+            android:layout_alignStart="@+id/ve_22" />
 
         <ToggleButton
             android:id="@+id/ve_25"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/veg_beet"
             android:gravity="center_vertical"
@@ -252,16 +257,15 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_below="@+id/ve_22"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="35dp"
-            android:layout_marginLeft="3dp" />
+            android:layout_below="@+id/ve_23"
+            android:layout_alignLeft="@+id/ve_23"
+            android:layout_alignStart="@+id/ve_23"
+            android:layout_marginTop="30dp" />
 
         <ToggleButton
             android:id="@+id/ve_26"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/veg_bean"
             android:gravity="center_vertical"
@@ -273,13 +277,13 @@
             android:onClick="onToggleButtonClick"
             android:checked="false"
             android:layout_alignTop="@+id/ve_25"
-            android:layout_alignLeft="@+id/ve_23"
-            android:layout_alignStart="@+id/ve_23" />
+            android:layout_alignLeft="@+id/ve_24"
+            android:layout_alignStart="@+id/ve_24" />
 
         <ToggleButton
             android:id="@+id/ve_27"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:background="@android:color/transparent"
             android:drawableTop="@drawable/veg_garlic"
             android:gravity="center_vertical"
@@ -290,21 +294,10 @@
             android:textColor="@color/color"
             android:onClick="onToggleButtonClick"
             android:checked="false"
-            android:layout_alignTop="@+id/ve_25"
-            android:layout_alignLeft="@+id/ve_24"
-            android:layout_alignStart="@+id/ve_24"
-            android:layout_marginRight="3dp" />
-
-        <ToggleButton
-            android:id="@+id/toggleButton6"
-            android:layout_width="1dp"
-            android:layout_height="50dp"
-            android:background="@android:color/transparent"
-            android:gravity="center_vertical"
-            android:textSize="15dp"
-            android:textAlignment="center"
-            android:textColor="@android:color/transparent"
-            android:layout_below="@+id/ve_25"/>
+            android:layout_below="@+id/ve_25"
+            android:layout_alignLeft="@+id/ve_25"
+            android:layout_alignStart="@+id/ve_25"
+            android:layout_marginTop="30dp" />
 
     </RelativeLayout>
 
@@ -329,33 +322,19 @@
 
 
         <Button
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:id="@+id/button3"
             android:onClick="onClick"
-            android:background="@drawable/back"
-            android:layout_marginLeft="33dp"
-            android:layout_marginStart="33dp"
-            android:layout_centerVertical="true"
+            android:background="@drawable/radius_button"
+            android:drawableStart="@drawable/back"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom">
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="40dp"
-            android:id="@+id/textView3"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/footer_gradient"
-            android:textColor="#FEFEFE"
+            android:layout_alignParentStart="true"
+            android:layout_alignBottom="@+id/textView2"
             android:gravity="center"
-            android:textSize="25dp" />
+            android:translationZ="3dp" />
+
     </RelativeLayout>
+
 </FrameLayout>

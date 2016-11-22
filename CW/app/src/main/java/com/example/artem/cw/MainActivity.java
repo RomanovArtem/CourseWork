@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void onToggleButtonClick (View view)
+    public void onToggleButtonClick(View view)
     {
         toggleButton = (ToggleButton) findViewById(R.id.fruit);
         if (toggleButton.isChecked() == true)

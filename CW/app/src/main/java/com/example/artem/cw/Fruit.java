@@ -36,7 +36,6 @@ public class Fruit extends Activity
         listTB.add((ToggleButton) findViewById(R.id.fr_10));
         listTB.add((ToggleButton) findViewById(R.id.fr_11));
 
-        ;
         loadSelection();
     }
 
