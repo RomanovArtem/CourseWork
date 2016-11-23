@@ -83,7 +83,7 @@ public class Vegetables extends Activity {
 
     void loadSelection()
     {
-        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES, MODE_PRIVATE);
         for (int i = 0; i < 15; i++)
         {
             String veg = "ve";
@@ -100,7 +100,15 @@ public class Vegetables extends Activity {
 
     public void onClick(View view) {
         saveSelection();
-        Intent intent = new Intent(Vegetables.this, MainActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void onBackPressed() {
+        // TODO Auto-generated method stub
+        // super.onBackPressed();
+        saveSelection();
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 

@@ -75,7 +75,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@android:color/transparent"
-        android:drawableTop="@drawable/dai_on_off"
+        android:drawableTop="@drawable/dairy_on_off"
         android:gravity="center_vertical"
         android:textOn="Молочные продукты"
         android:textOff="Молочные продукты"

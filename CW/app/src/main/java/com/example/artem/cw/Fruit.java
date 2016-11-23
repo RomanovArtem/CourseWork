@@ -78,7 +78,7 @@ public class Fruit extends Activity
 
     void loadSelection()
     {
-        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES , MODE_PRIVATE);
+        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES, MODE_PRIVATE);
         for (int i = 0; i < 11; i++)
         {
             String fru = "fr";
@@ -95,7 +95,16 @@ public class Fruit extends Activity
 
     public void onClick(View view) {
         saveSelection();
-        Intent intent = new Intent(Fruit.this, MainActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+
+    public void onBackPressed() {
+        // TODO Auto-generated method stub
+        // super.onBackPressed();
+        saveSelection();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
 }
