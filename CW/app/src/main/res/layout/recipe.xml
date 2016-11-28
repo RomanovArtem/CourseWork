@@ -15,7 +15,7 @@
             style="?android:attr/buttonStyleSmall"
             android:layout_width="150dp"
             android:layout_height="70dp"
-            android:text="Назад"
+            android:text="В меню"
             android:id="@+id/f_button_back"
             android:onClick="onClick"
             android:layout_alignParentBottom="true"

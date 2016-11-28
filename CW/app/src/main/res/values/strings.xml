@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Просто - вкусно</string>
-    <string name="I_can_cook">Что можете приготовить:</string>
-    <string name="I_cant_cook">Не хватает продуктов:</string>
+    <string name="I_can_cook">Вы можете приготовить:</string>
+    <string name="I_cant_cook">Придётся бежать за покупками!</string>
     <string name="myscreen">Этот экран написан не в ........а в ююююююююююююю</string>
     <string name="about_title">О программе</string>
 </resources>

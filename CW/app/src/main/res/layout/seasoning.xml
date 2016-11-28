@@ -86,7 +86,6 @@
             android:layout_height="100dp"
             android:background="@drawable/button_background"
             android:drawableTop="@drawable/fruit_dried_apricot"
-            android:gravity="center_vertical"
             android:textOn="Специи"
             android:textOff="Специи"
             android:textSize="14dp"

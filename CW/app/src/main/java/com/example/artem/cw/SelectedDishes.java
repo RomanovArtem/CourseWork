@@ -4,10 +4,15 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
+import android.media.Image;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -52,25 +57,48 @@ public class SelectedDishes extends AppCompatActivity {
         TextView textView = null;
         RelativeLayout lMain;
         lMain = (RelativeLayout) findViewById(R.id.selected);
-        RelativeLayout.LayoutParams lParams = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+        RelativeLayout.LayoutParams lParams = new RelativeLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
+        RelativeLayout.LayoutParams lParams1 ;
+        RelativeLayout.LayoutParams lParamsImageLeft;
 
         lParams.topMargin = 30;
-        margin = lParams.topMargin;
-
+        margin = 100;
         TextView titleCan = new TextView(this);
         titleCan.setText(getString(R.string.I_can_cook));
+        titleCan.setGravity(Gravity.CENTER_HORIZONTAL);
         lMain.addView(titleCan, lParams);
 
         if (partTitle1.length() != 0) {
             for (String aa : dish1) {
-                lParams = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+                lParams = new RelativeLayout.LayoutParams(LayoutParams.MATCH_PARENT, 200);
+                lParams1 = new RelativeLayout.LayoutParams(LayoutParams.MATCH_PARENT, 200);
+                lParamsImageLeft = new RelativeLayout.LayoutParams(250, 200 );
 
-                lParams.topMargin = margin + 130;
-                margin = lParams.topMargin;
+                lParams.topMargin = margin;
+                lParams1.topMargin = margin;
+                lParamsImageLeft.topMargin = margin;
+                margin = margin + 235;
+
+
 
                 textView = new TextView(this);
-                textView.setText(dish1[i]);
+               // textView.setText(dish1[i]);
+                //textView.setGravity(Gravity.CENTER);
+                textView.setBackgroundResource(R.drawable.radius_selected_dishes_yes);
+                //textView.setTextColor(Color.RED);
                 lMain.addView(textView, lParams);
+
+                ImageView imageLeft = new ImageView(this);
+                imageLeft.setImageResource(R.drawable.cap);
+                lMain.addView(imageLeft, lParamsImageLeft);
+
+                lParams1.leftMargin = 200;
+                lParams1.rightMargin = 50;
+                TextView textView1 = new TextView(this);
+                textView1.setText(dish1[i]);
+                textView1.setGravity(Gravity.CENTER);
+                textView1.setTextColor(Color.RED);
+                lMain.addView(textView1, lParams1);
 
 
                 final TextView finalTextView = textView;
@@ -95,30 +123,66 @@ public class SelectedDishes extends AppCompatActivity {
                 i++;
             }
         }
+        else {
+            lParams = new RelativeLayout.LayoutParams(LayoutParams.MATCH_PARENT, 200);
+            lParams.topMargin = margin + 30;
+            margin = lParams.topMargin;
 
-        lParams = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+
+
+           textView = new TextView(this);
+            textView.setText("НИЧЕГО!");
+            lMain.addView(textView, lParams);
+
+            /* ToggleButton toggleButton = new ToggleButton(this);
+            toggleButton.setBackgroundColor(Color.BLACK);
+            lMain.addView(toggleButton, lParams);*/
+        }
+
+        lParams = new RelativeLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
 
         System.out.println("margin" + margin);
-        lParams.topMargin = margin + 130;
-        margin = lParams.topMargin;
+        lParams.topMargin = margin + 30;
+        margin = margin + 100;
 
         TextView titleNoCan = new TextView(this);
 
         titleNoCan.setText(getString(R.string.I_cant_cook));
+        titleNoCan.setGravity(Gravity.CENTER_HORIZONTAL);
         lMain.addView(titleNoCan, lParams);
-
         i = 0;
         if (partTitle2.length() != 0) {
             for (String aa : dish2) {
+                lParams = new RelativeLayout.LayoutParams(LayoutParams.MATCH_PARENT, 200);
+                lParams1 = new RelativeLayout.LayoutParams(LayoutParams.MATCH_PARENT, 200);
+                lParamsImageLeft = new RelativeLayout.LayoutParams(250, 200 );
 
-                lParams = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+                lParams.topMargin = margin;
+                lParams1.topMargin = margin;
+                lParamsImageLeft.topMargin = margin;
+                margin = margin + 235;
 
-                lParams.topMargin = margin + 130;
-                margin = lParams.topMargin;
+
 
                 textView = new TextView(this);
-                textView.setText(dish2[i]);
+                // textView.setText(dish2[i]);
+                //textView.setGravity(Gravity.CENTER);
+                textView.setBackgroundResource(R.drawable.radius_selected_dishes_no);
+                //textView.setTextColor(Color.RED);
                 lMain.addView(textView, lParams);
+
+
+                ImageView imageLeft = new ImageView(this);
+                imageLeft.setImageResource(R.drawable.cap);
+                lMain.addView(imageLeft, lParamsImageLeft);
+
+                lParams1.leftMargin = 200;
+                lParams1.rightMargin = 50;
+                TextView textView1 = new TextView(this);
+                textView1.setText(dish2[i]);
+                textView1.setGravity(Gravity.CENTER);
+                textView1.setTextColor(Color.RED);
+                lMain.addView(textView1, lParams1);
 
                 final TextView finalTextView = textView;
                 final int finalI1 = i;
