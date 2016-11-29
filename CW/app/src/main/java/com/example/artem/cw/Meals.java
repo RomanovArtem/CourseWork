@@ -275,4 +275,11 @@ public class Meals extends Activity {
         }
         startActivity(intent);
     }
+
+    public void onBackPressed() {
+        // TODO Auto-generated method stub
+        // super.onBackPressed();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 }

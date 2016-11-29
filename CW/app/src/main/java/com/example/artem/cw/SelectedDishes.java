@@ -232,7 +232,17 @@ public class SelectedDishes extends AppCompatActivity {
         SharedPreferences.Editor ed = sharedPreferences.edit();
        // ed.clear();
        // ed.commit();
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, Meals.class);
+        startActivity(intent);
+    }
+    public void onBackPressed() {
+        // TODO Auto-generated method stub
+        // super.onBackPressed();
+        String str = "0";
+        client2.Client2(str);
+        client2.start();
+
+        Intent intent = new Intent(this, Meals.class);
         startActivity(intent);
     }
 

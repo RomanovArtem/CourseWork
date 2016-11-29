@@ -104,15 +104,13 @@ public class Favourites extends AppCompatActivity {
 
                 System.out.println(titleCan.getText().toString());
                 intent = new Intent(Favourites.this, Recipe.class);
-                 intent = new Intent(Favourites.this, Recipe.class);
-                 intent.putExtra("id", id);
-                 intent.putExtra("recipe", recipe);
-                 intent.putExtra("title", title);
+                intent = new Intent(Favourites.this, Recipe.class);
+                intent.putExtra("id", id);
+                intent.putExtra("recipe", recipe);
+                intent.putExtra("title", title);
 
                 startActivity(intent);
             }
-
-
 
 
         });
@@ -138,6 +136,13 @@ public class Favourites extends AppCompatActivity {
     }
 
     public void onClick(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void onBackPressed() {
+        // TODO Auto-generated method stub
+        // super.onBackPressed();
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
