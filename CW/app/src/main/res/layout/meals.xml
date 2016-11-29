@@ -1,10 +1,16 @@
+<FrameLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_height="match_parent" android:layout_width="match_parent">
+
 <ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
     android:background="@drawable/background_fon"
-    android:tileMode="repeat">
+    android:tileMode="repeat"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="30dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -15,103 +21,111 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Что будем готовить?"
+            android:text="Вы уверены, что выбрали все продукты?"
+            android:gravity="center_horizontal"
             android:textSize="30dp"
             android:textColor="#f1121d"
             android:id="@+id/textView"
-            android:layout_marginTop="50dp"
-            android:layout_alignParentTop="false"
-            android:layout_alignParentLeft="false"
-            android:layout_alignParentBottom="false"
-            android:layout_alignParentRight="false"
+            android:layout_marginTop="61dp"
             android:layout_alignWithParentIfMissing="false"
-            android:layout_centerHorizontal="true" />
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" />
 
-        <ToggleButton
-            android:id="@+id/toggleButton"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:background="@drawable/button_background"
-            android:drawableTop="@drawable/fruit_ananas"
-            android:gravity="center_vertical"
-            android:textOn="Суп"
-            android:textOff="Суп"
-            android:textSize="14dp"
-            android:textAlignment="center"
-            android:textColor="@color/color"
-            android:onClick="onToggleButtonClick"
-            android:checked="false"
-            android:layout_marginTop="56dp"
-            android:layout_below="@+id/textView"
-            android:layout_alignLeft="@+id/textView"
-            android:layout_alignStart="@+id/textView" />
-
-        <ToggleButton
-            android:id="@+id/toggleButton2"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:background="@drawable/button_background"
-            android:drawableTop="@drawable/fruit_ananas"
-            android:gravity="center_vertical"
-            android:textOn="Ананас"
-            android:textOff="чтот еще"
-            android:textSize="14dp"
-            android:textAlignment="center"
-            android:textColor="@color/color"
-            android:onClick="onToggleButtonClick"
-            android:checked="false"
-            android:layout_alignBottom="@+id/toggleButton"
-            android:layout_alignRight="@+id/textView"
-            android:layout_alignEnd="@+id/textView" />
-
-        <ToggleButton
-            android:id="@+id/toggleButton3"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:background="@drawable/button_background"
-            android:drawableTop="@drawable/fruit_ananas"
-            android:gravity="center_vertical"
-            android:textOn="Ананас"
-            android:textOff="Ананас"
-            android:textSize="14dp"
-            android:textAlignment="center"
-            android:textColor="@color/color"
-            android:onClick="onToggleButtonClick"
-            android:checked="false"
-            android:layout_below="@+id/toggleButton"
-            android:layout_alignLeft="@+id/toggleButton"
-            android:layout_alignStart="@+id/toggleButton"
-            android:layout_marginTop="50dp" />
-
-        <ToggleButton
-            android:id="@+id/toggleButton4"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:background="@drawable/button_background"
-            android:drawableTop="@drawable/fruit_ananas"
-            android:gravity="center_vertical"
-            android:textOn="Ананас"
-            android:textOff="Ананас"
-            android:textSize="14dp"
-            android:textAlignment="center"
-            android:textColor="@color/color"
-            android:onClick="onToggleButtonClick"
-            android:checked="false"
-            android:layout_alignTop="@+id/toggleButton3"
-            android:layout_alignLeft="@+id/toggleButton2"
-            android:layout_alignStart="@+id/toggleButton2" />
-
-        <Button
-            style="?android:attr/buttonStyleSmall"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Далее"
-            android:id="@+id/button"
-            android:onClick="onClick"
-            android:layout_below="@+id/toggleButton3"
-            android:layout_toLeftOf="@+id/toggleButton4"
-            android:layout_toStartOf="@+id/toggleButton4"
-            android:layout_marginTop="59dp" />
+            android:text="Может быть что - то забыли ?"
+            android:gravity="center_horizontal"
+            android:textSize="30dp"
+            android:textColor="#f1121d"
+            android:id="@+id/textView5"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="113dp" />
 
     </RelativeLayout>
 </ScrollView>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/radius"
+            android:text="Подтверждение"
+            android:textColor="#FEFEFE"
+            android:gravity="center"
+            android:textSize="25dp"/>
+
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:id="@+id/button3"
+            android:onClick="onClick"
+            android:background="@drawable/radius_button"
+            android:drawableStart="@drawable/back"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:translationZ="3dp"
+            android:layout_marginTop="5dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:translationZ="2dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/footer_gradient"
+            android:textColor="#FEFEFE"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:layout_alignParentBottom="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:background="@drawable/next"
+            android:id="@+id/next"
+            android:onClick="onClick"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="36dp"
+            android:layout_marginEnd="36dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Меню -> Подтверждение"
+            android:textColor="#E72A30"
+            android:id="@+id/textView4"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

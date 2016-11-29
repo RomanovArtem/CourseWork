@@ -24,7 +24,7 @@ public class Seasoning extends Activity {
         setContentView(R.layout.seasoning);
 
         listTB.add((ToggleButton) findViewById(R.id.se_28));
-        listTB.add((ToggleButton) findViewById(R.id.se_28));
+        listTB.add((ToggleButton) findViewById(R.id.se_29));
         listTB.add((ToggleButton) findViewById(R.id.se_30));
         listTB.add((ToggleButton) findViewById(R.id.se_31));
         listTB.add((ToggleButton) findViewById(R.id.se_32));

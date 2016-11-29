@@ -133,14 +133,14 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
-    public void onBackPressed() {
-        // TODO Auto-generated method stub
-        // super.onBackPressed();
-        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES, MODE_PRIVATE);
-        SharedPreferences.Editor ed = sharedPreferences.edit();
-        ed.clear();
-        ed.commit();
-    }
+        public void onBackPressed() {
+            // TODO Auto-generated method stub
+            // super.onBackPressed();
+            SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES, MODE_PRIVATE);
+            SharedPreferences.Editor ed = sharedPreferences.edit();
+            ed.clear();
+            ed.commit();
+        }
 
 
 

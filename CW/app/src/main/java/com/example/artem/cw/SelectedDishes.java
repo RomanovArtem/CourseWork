@@ -125,13 +125,14 @@ public class SelectedDishes extends AppCompatActivity {
         }
         else {
             lParams = new RelativeLayout.LayoutParams(LayoutParams.MATCH_PARENT, 200);
-            lParams.topMargin = margin + 30;
+            lParams.topMargin = margin - 20;
             margin = lParams.topMargin;
 
 
 
            textView = new TextView(this);
             textView.setText("НИЧЕГО!");
+            textView.setGravity(Gravity.CENTER);
             lMain.addView(textView, lParams);
 
             /* ToggleButton toggleButton = new ToggleButton(this);
@@ -142,8 +143,8 @@ public class SelectedDishes extends AppCompatActivity {
         lParams = new RelativeLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
 
         System.out.println("margin" + margin);
-        lParams.topMargin = margin + 30;
-        margin = margin + 100;
+        lParams.topMargin = margin + 150;
+        margin = margin + 210;
 
         TextView titleNoCan = new TextView(this);
 

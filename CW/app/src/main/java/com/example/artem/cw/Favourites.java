@@ -19,7 +19,12 @@ import android.widget.Toast;
  * Created by Artem on 21.11.2016.
  */
 public class Favourites extends AppCompatActivity {
-    public static final String APP_PREFERENCES = "myselect";
+    public static final String APP_PREFERENCES = "myselect1";
+    Intent intent;
+    TextView textView;
+    int idIndex;
+    int nameIndex;
+    int recipeIndex;
 
     DBHelper dbHelper;
     SQLiteDatabase database;
@@ -29,7 +34,10 @@ public class Favourites extends AppCompatActivity {
         setContentView(R.layout.favourites);
 
         SelectRecipes();
-    }
+
+
+
+}
 
     public void SelectRecipes() {
 
@@ -40,12 +48,12 @@ public class Favourites extends AppCompatActivity {
 
         Cursor cursor = database.query(DBHelper.TABLE_NAME, null, null, null, null, null, null); //чтенеие всех записей из таблицы
         if (cursor.moveToFirst()) { // перемемещает курсор на первую строку в рез-те запроса // и проверяет есть ли вообще записи в курсоре
-            int idIndex = cursor.getColumnIndex(DBHelper.KEY_ID);
-            int nameIndex = cursor.getColumnIndex(DBHelper.KEY_NAME);
-            int recipeIndex = cursor.getColumnIndex(DBHelper.KEY_RECIPE);
+            idIndex = cursor.getColumnIndex(DBHelper.KEY_ID);
+            nameIndex = cursor.getColumnIndex(DBHelper.KEY_NAME);
+            recipeIndex = cursor.getColumnIndex(DBHelper.KEY_RECIPE);
 
             do {
-                CreateTextView(cursor.getString(nameIndex));
+                CreateTextView(cursor.getString(nameIndex), cursor.getString(idIndex), cursor.getString(recipeIndex));
                 Log.d("mLog", "ID = " + cursor.getInt(idIndex) +
                         ", name = " + cursor.getString(nameIndex) +
                         ", recipe = " + cursor.getString(recipeIndex));
@@ -57,18 +65,58 @@ public class Favourites extends AppCompatActivity {
         cursor.close(); // закрываем для освобождения памяти
     }
 
-    public void CreateTextView(String title) {
-        TextView textView = null;
+    public void CreateTextView(final String title, final String id, final String recipe) {
+        textView = null;
         RelativeLayout lMain;
         lMain = (RelativeLayout) findViewById(R.id.fav);
         RelativeLayout.LayoutParams lParams = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
 
         lParams.topMargin = margin;
-        margin += lParams.topMargin;
+        margin = margin + 130;
+        lParams.leftMargin = 15;
 
-        TextView titleCan = new TextView(this);
+        final TextView titleCan = new TextView(this);
         titleCan.setText(title);
         lMain.addView(titleCan, lParams);
+
+
+
+        titleCan.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+               /* database = dbHelper.getWritableDatabase(); // открыть и вернуть экземпляр базы данных для работы
+                // если БД нет - то в вызывает onCreate, если версия БД изменилась - onCreate
+                ContentValues contentValues = new ContentValues(); // для добавления новых строк в таблицу
+                String[] selectionArgs = {titleCan.getText().toString()};
+                Cursor cursor = database.query(DBHelper.TABLE_NAME, null, DBHelper.KEY_NAME, selectionArgs, null, null, null); //чтенеие всех записей из таблицы
+                if (cursor.moveToFirst()) { // перемемещает курсор на первую строку в рез-те запроса // и проверяет есть ли вообще записи в курсоре
+                   idIndex = cursor.getColumnIndex(DBHelper.KEY_ID);
+                   nameIndex = cursor.getColumnIndex(DBHelper.KEY_NAME);
+                   recipeIndex = cursor.getColumnIndex(DBHelper.KEY_RECIPE);
+                }
+                else
+                    Log.d("mLog", "0 rows");
+
+                cursor.close(); // закрываем для освобождения памяти  */
+
+
+                System.out.println(titleCan.getText().toString());
+                intent = new Intent(Favourites.this, Recipe.class);
+                 intent = new Intent(Favourites.this, Recipe.class);
+                 intent.putExtra("id", id);
+                 intent.putExtra("recipe", recipe);
+                 intent.putExtra("title", title);
+
+                startActivity(intent);
+            }
+
+
+
+
+        });
+
     }
 
     public void ClickImageButton(View view) {

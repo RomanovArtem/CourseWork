@@ -22,7 +22,7 @@ import org.w3c.dom.Text;
  * Created by Artem on 13.11.2016.
  */
 public class Recipe extends AppCompatActivity {
-    public static final String APP_PREFERENCES = "myselect";
+    public static final String APP_PREFERENCES = "myselect1";
     TextView textViewContent;
     TextView textViewTitle;
     Client2 client2 = new Client2();
@@ -58,6 +58,7 @@ public class Recipe extends AppCompatActivity {
 
        System.out.println("конь: " + flag);
        if (flag == false) {
+           contentValues.put(DBHelper.KEY_ID, id.toString());
            contentValues.put(DBHelper.KEY_NAME, textViewTitle.getText().toString());
            contentValues.put(DBHelper.KEY_RECIPE, textViewContent.getText().toString());
 

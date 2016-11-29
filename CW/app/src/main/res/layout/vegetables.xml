@@ -351,6 +351,18 @@
             android:textColor="#FEFEFE"
             android:gravity="center"
             android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Меню -> Категория -> Овощи"
+            android:textColor="#E72A30"
+            android:id="@+id/textView4"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:textSize="17dp" />
     </RelativeLayout>
 
 </FrameLayout>

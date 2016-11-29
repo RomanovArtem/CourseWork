@@ -1,9 +1,14 @@
-<ScrollView
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent" android:layout_width="match_parent">
+
+    <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:tileMode="repeat">
+    android:tileMode="repeat"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp">
     <RelativeLayout
         android:id="@+id/selected"
         android:layout_width="match_parent"
@@ -12,18 +17,82 @@
         >
 
 
-        <Button
+        Button
             style="?android:attr/buttonStyleSmall"
             android:layout_width="150dp"
             android:layout_height="70dp"
             android:text="Назад"
             android:id="@+id/f_button_back"
-            android:onClick="onClick"
-            android:layout_alignParentBottom="true"
+
+            android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="600dp" />
+            android:layout_alignParentStart="true" />
 
     </RelativeLayout>
 
 </ScrollView>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/radius"
+            android:text="Выбор блюда"
+            android:textColor="#FEFEFE"
+            android:gravity="center"
+            android:textSize="25dp"/>
+
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:id="@+id/button3"
+            android:onClick="onClick"
+            android:background="@drawable/radius_button"
+            android:drawableStart="@drawable/back"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:translationZ="3dp"
+            android:layout_marginTop="5dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:translationZ="2dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/footer_gradient"
+            android:textColor="#FEFEFE"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:layout_alignParentBottom="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Меню -> Выбор блюда"
+            android:textColor="#E72A30"
+            android:id="@+id/textView4"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+</FrameLayout>
