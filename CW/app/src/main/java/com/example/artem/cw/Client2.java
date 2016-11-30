@@ -18,6 +18,8 @@ public class Client2 extends Thread {
     //OutputStream sout;
     //DataInputStream in;
     //DataOutputStream out;
+    static boolean flagClient = true;
+
     String id;
     public void Client2(String _id)
     {
@@ -48,10 +50,11 @@ public class Client2 extends Thread {
             out.flush(); // заставляем поток закончить передачу данных.
             recipe = in.readUTF(); // ждем пока сервер отошлет строку текста.
             System.out.println(recipe);
-            recipe = "";
+   ///!!!!!!!!!!         recipe = "";
 
         } catch (Exception x) {
             x.printStackTrace();
+            flagClient = false;
         }
 
         finally {

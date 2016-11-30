@@ -17,6 +17,7 @@ import android.widget.RelativeLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import java.io.IOException;
@@ -115,6 +116,14 @@ public class SelectedDishes extends AppCompatActivity {
                                 intent.putExtra("recipe", client2.recipe);
                                 intent.putExtra("title", dish1[finalI]);
                                 break;
+
+                            }
+                            if (client2.flagClient == false) {
+                                Toast toast = Toast.makeText(getApplicationContext(), "Не удаётся подключиться к серверу! Попробуйте позже!", Toast.LENGTH_LONG);
+                                toast.show();
+                                intent = new Intent(SelectedDishes.this, Meals.class);
+                                startActivity(intent);
+                                break;
                             }
                         }
                         startActivity(intent);
@@ -195,12 +204,21 @@ public class SelectedDishes extends AppCompatActivity {
                         client2.start();
                         while (true) {
                             if (client2.recipe != "") {
-                                intent.putExtra("id", id2[finalI1]);
-                                intent.putExtra("recipe", client2.recipe);
-                                intent.putExtra("title", dish2[finalI1]);
+                                    intent.putExtra("id", id2[finalI1]);
+                                    intent.putExtra("recipe", client2.recipe);
+                                    intent.putExtra("title", dish2[finalI1]);
+                                    break;
+
+                            }
+                            if (client2.flagClient == false) {
+                                Toast toast = Toast.makeText(getApplicationContext(), "Не удаётся подключиться к серверу! Попробуйте позже!", Toast.LENGTH_LONG);
+                                toast.show();
+                                intent = new Intent(SelectedDishes.this, Meals.class);
+                                startActivity(intent);
                                 break;
                             }
                         }
+
                         startActivity(intent);
                     }
                 });
