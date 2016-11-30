@@ -55,14 +55,17 @@ public class DataBase {
 
 
             String[] a = Server.SplitString();
+            ResultSet resultSet;
             int i = 0;
             for (String part : a )
             {
                 String query = "SELECT id_dish \n" +
                         "FROM ingredient \n" +
-                        "WHERE id_product =" + a[i] + " \n" +
-                        "GROUP BY id_dish";
-                ResultSet resultSet = statement.executeQuery(query);
+                        "WHERE id_product =" + a[i] + " \n";
+
+                    resultSet = statement.executeQuery(query);
+
+
                 i++;
 
                 while (resultSet.next()) {

@@ -11,11 +11,13 @@ public class Client extends Thread {
     public volatile String outStroka = "";
     public volatile String inStroka = "";
     public volatile String idDish = "";
-    static Socket socket;
+    static Socket socket = new Socket();
     InputStream sin;
     OutputStream sout;
     DataInputStream in;
     DataOutputStream out;
+static boolean flagClient = true;
+
 
     public void run() {
 
@@ -24,13 +26,20 @@ public class Client extends Thread {
         //String address = "192.168.0.102"; // это IP-адрес компьютера, где исполняется наша серверная программа.
         // Здесь указан адрес того самого компьютера где будет исполняться и клиент.
 
-        try {
+
+            System.out.println("b");
             InetSocketAddress inetAddress = new InetSocketAddress("192.168.0.101", 31010); // создаем объект который отображает вышеописанный IP-адрес.
             System.out.println("Сокет с адресом : " + inetAddress);
-            socket = new Socket(inetAddress.getAddress(), 31010); // создаем сокет используя IP-адрес и порт сервера.
+            try {
+                socket = new Socket(inetAddress.getAddress(), 31010); // создаем сокет используя IP-адрес и порт сервера.
+            } catch (Exception ex) {
+                inStroka = "-1";
+                idDish = "-1";
+                ex.printStackTrace();
+            }
 
             System.out.println("Сокет создан.");
-
+        try {
             // Берем входной и выходной потоки сокета, теперь можем получать и отсылать данные клиентом.
             sin = socket.getInputStream();
             sout = socket.getOutputStream();
@@ -47,13 +56,17 @@ public class Client extends Thread {
             //while (true) {
             //line = keyboard.readLine(); // ждем пока пользователь введет что-то и нажмет кнопку Enter.
             System.out.println("Посылаем данные серверу...");
-            outStroka = Meals.Convert();
+           // outStroka = Meals.Convert();
 
-            out.writeUTF(outStroka); // отсылаем введенную строку текста серверу.
-            System.out.println("Посылаем серверу: " + outStroka);
+            out.writeUTF(Meals.outputString); // отсылаем введенную строку текста серверу.
+            System.out.println("Посылаем серверу: " + Meals.outputString);
             out.flush(); // заставляем поток закончить передачу данных.
             inStroka = in.readUTF(); // ждем пока сервер отошлет строку текста.
             idDish = in.readUTF(); // ждем пока сервер отошлет строку текста.
+            if (inStroka.length() == 0 && idDish.length() == 0)
+            {
+                flagClient = false;
+            }
             //recipe = in.readUTF(); // ждем пока сервер отошлет строку текста.
             // System.out.println(recipe);
             //System.out.println("Сервер прислал: : " + stroka);

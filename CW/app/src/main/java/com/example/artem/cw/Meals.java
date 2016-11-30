@@ -3,8 +3,11 @@ package com.example.artem.cw;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.json.JSONObject;
@@ -28,12 +31,16 @@ public class Meals extends Activity {
     public static final String APP_PREFERENCES = "mysettings";
     //Map <String, Boolean> hashmap = new HashMap<String, Boolean>();
     static ArrayList<String> selectedProducts = new ArrayList();
-    JSONObject object = new JSONObject();
+    static Toast toast;
+    static Integer count;
+    Intent intent;
 
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.meals);
+
+        intent = new Intent(this, SelectedDishes.class);
     }
 
 
@@ -232,18 +239,18 @@ public class Meals extends Activity {
     public static String Convert() {
         String line = new String();
         line = "";
-        System.out.println("11111" + line);
+        count = 0;
         for (String selectedProduct : selectedProducts) {
             line = line + selectedProduct + " ";
+            count ++;
         }
         selectedProducts.clear();
         return line;
     }
 
     Client client=new Client();
-
+    static String outputString;
     public void onClick(View view) {
-
         /* создаем объект для работы с сервером*/
         loadSelectionFruit();
         loadSelectionVegetables();
@@ -257,22 +264,68 @@ public class Meals extends Activity {
         loadSelectionCereals();
         loadSelectionGreenery();
         loadSelectionBerries();
-        Intent intent = new Intent(this, SelectedDishes.class);
-        Toast toast = Toast.makeText(getApplicationContext(), "Подключаемся к серверу!", Toast.LENGTH_SHORT);
-        toast.show();
-        client.start();
-        while (true) {
-            if (client.inStroka != "" && client.idDish != "") {
-                String titleDish = client.inStroka;
-                String idDish = client.idDish;
-                intent.putExtra("titleDish", titleDish);
-                intent.putExtra("idDish", idDish);
-                titleDish = "";
-                idDish = "";
-                break;
+
+        outputString = Convert();
+        System.out.println("Сколько выбрали продуктов:  " + count);
+        if (count < 5) {
+            toast = Toast.makeText(getApplicationContext(), "Вы выбрали слишком мало продуктов! Выберите ещё " + (5 - count), Toast.LENGTH_SHORT);
+            toast.show();
+        }
+        else {
+
+            toast = Toast.makeText(getApplicationContext(), "Подключаемся к серверу!", Toast.LENGTH_SHORT);
+            toast.show();
+            client.start();
+            while (true) {
+                if (client.inStroka != "" && client.idDish != "") {
+                    if (client.idDish == "-1") {
+                        toast = Toast.makeText(getApplicationContext(), "Не удаётся подключиться к серверу! Попробуйте позже!", Toast.LENGTH_LONG);
+                        toast.show();
+                        Button button = (Button)findViewById(R.id.next);
+                        button.setEnabled(false);
+                        button.setVisibility(View.INVISIBLE);
+                        TextView textView = (TextView)findViewById(R.id.textView5);
+                        textView.setText("Не удаётся подключиться к серверу! Попробуйте позже!");
+                        break;
+                    }
+                    System.out.println(Client.flagClient);
+                    if (Client.flagClient == false) {
+                        toast = Toast.makeText(getApplicationContext(), "Из того что вы выбрали, вы ничего не сможете приготовить!", Toast.LENGTH_LONG);
+                        toast.show();
+                        Button button = (Button)findViewById(R.id.next);
+                        button.setEnabled(false);
+                        button.setVisibility(View.INVISIBLE);
+                        TextView textView = (TextView)findViewById(R.id.textView5);
+                        textView.setText("Из того что вы выбрали, вы ничего не сможете приготовить!");
+
+                        break;
+                    }
+                    else {
+                        String titleDish = client.inStroka;
+                        String idDish = client.idDish;
+                        intent.putExtra("titleDish", titleDish);
+                        intent.putExtra("idDish", idDish);
+                        titleDish = "";
+                        idDish = "";
+                        startActivity(intent);
+                        break;
+                    }
+
+                }
+
             }
 
         }
+    }
+
+
+    public void onClickBack(View view) {
+
+        SharedPreferences sharedPreferences = getSharedPreferences(APP_PREFERENCES, MODE_PRIVATE);
+        SharedPreferences.Editor ed = sharedPreferences.edit();
+        // ed.clear();
+        // ed.commit();
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 

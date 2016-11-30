@@ -72,7 +72,7 @@ android:layout_height="match_parent" android:layout_width="match_parent">
             android:layout_width="45dp"
             android:layout_height="40dp"
             android:id="@+id/button3"
-            android:onClick="onClick"
+            android:onClick="onClickBack"
             android:background="@drawable/radius_button"
             android:drawableStart="@drawable/back"
             android:layout_alignParentLeft="true"

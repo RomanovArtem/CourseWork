@@ -13,6 +13,8 @@ import static SRV.Server.title;
 public class KEK implements Runnable {
 
     Socket socket;
+    String str;
+    String id;
 
 
 
@@ -56,16 +58,23 @@ public class KEK implements Runnable {
         //
         //
         DataBase.ConnectDB();
-        String cook = DataBase.cook;
-        String noCook = DataBase.noCook;
-        String idDish = DataBase.idDish;
-        String noIdDish = DataBase.noIdDish;
+       // if (DataBase.flag == true) {
+            String cook = DataBase.cook;
+            String noCook = DataBase.noCook;
+            String idDish = DataBase.idDish;
+            String noIdDish = DataBase.noIdDish;
 
-        String str = new String();
-        String id = "";
-        str = cook + "/" + noCook;
-        id = idDish + "/" + noIdDish;
-
+           str = "";
+           id = "";
+            str = cook + "/" + noCook;
+            id = idDish + "/" + noIdDish;
+        String a = idDish + noIdDish;
+        System.out.println(a);
+        if (a.length() == 0) {
+            str = "";
+            id = "";
+            System.out.println(str + "  " + id);
+        }
         try {
             out.writeUTF(str); // отсылаем клиенту обратно ту самую строку текста.
         } catch (IOException e) {
